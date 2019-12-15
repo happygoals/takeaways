@@ -5,7 +5,7 @@ parent: Project Management
 
 nav_order: 3
 ---
-# Communication Plan
+# Responsibility of Project Success
 {: .no_toc }
 
 ## Table of contents
