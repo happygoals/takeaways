@@ -1,7 +1,22 @@
-# Responsibility of Project Success
+---
+layout: default
+title: Responsibility of Project Success
+parent: Project Management
 
-## 
-Everyone on the team is responsible for the success of a project! All of the team members are responsible.
+nav_order: 3
+---
+# Communication Plan
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Everyone on the team is responsible for the success of a project! All of the team members are responsible.
 
 * A project manager is a teacher/guide to help other team members contribute to the project. 
 * Servant leadership. 
