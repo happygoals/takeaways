@@ -23,5 +23,8 @@ nav_order: 7
 * May cost more if the relationship does not work out.
 
 
-![](https://github.com/happygoals/takeaways/assets/images/Outsourcing_2019-12-16.png)
+![Outsourcing image](https://github.com/happygoals/takeaways/assets/images/Outsourcing_2019-12-16.png)
 
+<p align="center">
+<img src="https://github.com/happygoals/takeaways/assets/images/Outsourcing_2019-12-16.png" width="600px" >
+</p>
