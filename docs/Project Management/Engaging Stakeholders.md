@@ -6,7 +6,9 @@ parent: Project Management
 nav_order: 5
 ---
 
-# How to engage stakeholders
+# Engaging Stakeholders
+
+## How to engage stakeholders
 <div class="code-example" markdown="1">
 1. (Best Ways) Agile // Project development cycle 
 1. (Communication plan) Deliver, get feedback, and adapt to get them involved
@@ -15,10 +17,10 @@ nav_order: 5
 1. Ask questions
 </div>
 
-# Questions we can ask stakeholders to get involved in 
+## Questions we can ask stakeholders to get involved in 
 <div class="code-example" markdown="1">
 1. Are we on track? 
 1. How does this look like? 
 </div>
 
-## c.f. Progress reports are information, not engagement.
+### c.f. Progress reports are information, not engagement.
