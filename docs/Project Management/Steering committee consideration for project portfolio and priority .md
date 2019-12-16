@@ -23,6 +23,11 @@ This is also why agile works really well
 Thanks to person hours, we have so many person hours. 
 We have 6 months worth of development money. Unlikely, parallel project can be possible. 
 
+## The order of the final project is very important. 
+
+Initiate -> Plan(Procurement happens) -> Execute -> Monitor / Control (Quality Assurance happens) -> Case 
+
+
 If you put the royalty program force, operational excellence project 
 
 
