@@ -18,11 +18,10 @@ These takeaway will help you figure out the concept of the project management fo
 
 ## Getting started
 
-### Quick start: Follow the topics on the forum on Blackboard or use the search bar
+### Quick start
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-
-Resources from [remote theme](https://pfw.blackboard.com/webapps/discussionboard/do/conference?toggle_mode=read&action=list_forums&course_id=_816886_1&nav=discussion_board_entry&mode=view) 
+1.  Follow the topics on the forum on [BlackBoard](https://pfw.blackboard.com/webapps/discussionboard/do/conference?toggle_mode=read&action=list_forums&course_id=_816886_1&nav=discussion_board_entry&mode=view) 
+2. use the search bar on the top and type the topic or keywords
 
 
 ## About the template of the documents
