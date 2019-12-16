@@ -30,15 +30,6 @@ This template is from Just the Docs and it is &copy; 2017-2019 by [Patrick Marsc
 
 ### Contributing
 
-Haemin and Khoa are contributed for the takeways. When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change.
+Haemin and Khoa are contributed for the takeways. When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-#### Thank you to the contributors of Takeaways!
-
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
+#### Good luck on your final exam!
