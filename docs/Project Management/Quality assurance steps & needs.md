@@ -28,14 +28,14 @@ nav_order: 4
 ## Project Quality Management involves three main processes:
 <div class="code-example" markdown="1">
 1. Planning Quality Management 
-Identifying which quality requirements and standards are relevant to the project and how to satisfy them.
-Main outputs: Quality management plan, a process involvement plan, quality metrics, quality checklists, and project documents updates.
+#### Identifying which quality requirements and standards are relevant to the project and how to satisfy them.
+##### Main outputs: Quality management plan, a process involvement plan, quality metrics, quality checklists, and project documents updates.
 1. Planning Quality Management 
-Identifying which quality requirements and standards are relevant to the project and how to satisfy them.
-Main outputs: Quality management plan, a process involvement plan, quality metrics, quality checklists, and project documents updates.
+#### Identifying which quality requirements and standards are relevant to the project and how to satisfy them.
+##### Main outputs: Quality management plan, a process involvement plan, quality metrics, quality checklists, and project documents updates.
 1. Controlling Quality 
-Monitoring specific project results to ensure that they comply with the relevant quality standards while identifying ways to improve overall quality.
-Main outputs: Quality control measurements, validated changes, validated deliverables, work performance information, change requests, project management plan updates, project documents updates, and organizational process asset updates.
+#### Monitoring specific project results to ensure that they comply with the relevant quality standards while identifying ways to improve overall quality.
+##### Main outputs: Quality control measurements, validated changes, validated deliverables, work performance information, change requests, project management plan updates, project documents updates, and organizational process asset updates.
 </div>
 
 
@@ -51,10 +51,9 @@ Main outputs: Quality control measurements, validated changes, validated deliver
 * COLLAPSE
 * Think about inspection points, agnostic to development style/process. 
 
-Q1. If Quality criteria is not met, what is the result of it? 
+### Q1. If Quality criteria is not met, what is the result of it? 
  ->  Unhappy stakeholders. 
-
-Q2. As a software developer, what do you do?
+### Q2. As a software developer, what do you do?
 
  -> Reworking/refactoring/make it better.
  -> Lean helps us understand how to avoid some refactoring that isn't necessary. (Preventing waste)
