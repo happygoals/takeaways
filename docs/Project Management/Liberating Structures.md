@@ -5,7 +5,7 @@ parent: Project Management
 
 nav_order: 5
 ---
-# Communication Plan
+# Liberating Structures
 {: .no_toc }
 
 ## Table of contents
