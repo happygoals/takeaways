@@ -5,7 +5,7 @@ parent: Project Management
 
 nav_order: 2
 ---
-# Communication Plan
+# Procurement Process & Artifacts
 {: .no_toc }
 
 ## Table of contents
