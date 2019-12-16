@@ -3,7 +3,7 @@ layout: default
 title: Engaging Stakeholders
 parent: Project Management
 
-nav_order: 5
+nav_order: 6
 ---
 
 # Engaging Stakeholders
