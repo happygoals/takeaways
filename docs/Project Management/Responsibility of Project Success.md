@@ -26,5 +26,6 @@ nav_order: 3
 
 ## Project manager's responsibility
  #### Project management is a discipline of delivering a unique endeaver with an aboslute start and end date.
+ 
  * While a strong project manager can help in being successful, equal collaboration from everyone on the team is just as vital.
 
