@@ -12,8 +12,6 @@ nav_order: 4
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
-{:toc}
 
 ---
 
@@ -21,9 +19,9 @@ nav_order: 4
 * To ensure that the project will satisfy the needs for which it was undertaken. 
 * To make a good product
 
-### The customer determines what quality means to them, and it is everyone's responsibility to deliver that quality.
+** The customer determines what quality means to them, and it is everyone's responsibility to deliver that quality.
 
-### Quality must be on equal level with project scope, time, and cost.
+** Quality must be on equal level with project scope, time, and cost.
 
 ## Project Quality Management involves three main processes:
 <div class="code-example" markdown="1">
@@ -53,6 +51,7 @@ nav_order: 4
 
 ### Q1. If Quality criteria is not met, what is the result of it? 
  ->  Unhappy stakeholders. 
+ 
 ### Q2. As a software developer, what do you do?
 
  -> Reworking/refactoring/make it better.
