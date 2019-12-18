@@ -15,7 +15,7 @@ nav_order: 5
 {:toc}
 
 ---
-[November 4 & 6, 2019] http://www.liberatingstructures.com/
+[November 4 & 6, 2019] [Liberating Structures](http://www.liberatingstructures.com/)
 
 
 ## Liberating structures are alternative frameworks(exercises) for common meetings/conversations
