@@ -21,7 +21,7 @@ nav_order: 8
     - Overworked
     - Working to fast
     - Missing requirements
-6. Waiting - time that an object is waiting to be worked on
+6. Waiting - Time that an object is waiting to be worked on
   - Causes:
     - Procrastination
     - Irresponsibility
