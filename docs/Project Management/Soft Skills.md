@@ -1,3 +1,10 @@
+---
+layout: default
+title: Soft Skills
+parent: Project Management
+
+nav_order: 12
+---
 <b>Why hiring for Ideal Team Players is important to companies?</b>
 
 Both parties are investing in each other, so when a company hires a new person they are taking a certain amount of risk based on whether or not that employee with work out. These three traits make it more likely that the investment will pay off for the company doing the hiring.
