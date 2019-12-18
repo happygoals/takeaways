@@ -6,7 +6,7 @@ parent: Project Management
 nav_order: 8
 ---
 
-# Outsourcing
+# Software waste type and ways to limit it
 
 - Transport - Cost of moving work
 - Defects - bugs
