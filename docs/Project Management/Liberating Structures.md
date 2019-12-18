@@ -15,6 +15,7 @@ nav_order: 5
 {:toc}
 
 ---
+[November 4 & 6, 2019] http://www.liberatingstructures.com/
 
 
 ### Liberating structures are alternative frameworks for common meetings/conversations 
@@ -30,4 +31,3 @@ These can be found (surprisingly) at LiberatingStructures.com.
 
 Are to engage. A way for everyone to contribute.
 Do not have to be a project manager to use, great for brainstorming, sparking curiosity and innovation.
-http://www.liberatingstructures.com/
