@@ -22,4 +22,4 @@ nav_order: 2
 <img src="https://github.com/happygoals/takeaways/assets/images/Procurement_2019-12-16.png" alt="Procurement" height="420" width="420">
 
 <a>
-<img src="/takeaways/assets/images/Procurement_2019-12-16.png" ></a>
+<img src="/assets/images/Procurement_2019-12-16.png" ></a>
