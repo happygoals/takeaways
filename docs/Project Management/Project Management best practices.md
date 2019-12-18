@@ -6,7 +6,7 @@ parent: Project Management
 nav_order: 10
 ---
 
-# Project Mgmt best practices. Considerations for establishing project management
+# Project Management best practices. Considerations for establishing project management
 
 1. Understand the project objectives and requirements. 
 2. Stable the Scope and Objectives (Milestones). 
