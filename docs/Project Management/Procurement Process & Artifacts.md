@@ -15,3 +15,6 @@ nav_order: 2
 {:toc}
 
 ---
+
+
+![](hhttps://github.com/happygoals/takeaways/assets/images/Procurement_2019-12-16.png)
