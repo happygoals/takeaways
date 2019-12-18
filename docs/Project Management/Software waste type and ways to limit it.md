@@ -27,7 +27,7 @@ nav_order: 8
     - Irresponsibility
     - Misunderstanding requirements
     - Unexpected circumstances
-    - training
+    - Training
 7. Overproduction - Large releases
   - Causes:
     - Focusing on perfection
