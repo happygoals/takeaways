@@ -76,9 +76,10 @@ Make them aware of the problem/why/change, make them desire to change (show them
 
 <b> Dealing with bad team mates </b>
 
-Understand why they are resisting, uncover other motives, (initial reaction: hire people that aren't like that, lol Conrad), empathy training, doing self-abasements, trying to understand the other person's perspective about why they are asking what they are asking, it's better to have motivation within the team rather than having an outside force motivate the team (focus on the same goal as a team). If you understand the motivations behind someone asking or doing something then it is less stressful for you as an individual as well.
+Understand why they are resisting, uncover other motives, (Initial reaction: hire people that aren't like that), empathy training, doing self-abasements, trying to understand the other person's perspective about why they are asking what they are asking, it's better to have motivation within the team rather than having an outside force motivate the team (focus on the same goal as a team). 
+If you understand the motivations behind someone asking or doing something then it is less stressful for you as an individual as well.
 
-<b> Attacking  a person's identity </b>
+<b> Attacking a person's identity </b>
 
-Lessons learned: initiated dramatic changes and attacks a person's identity because it's attached to a persons' self worth.
+* Lessons learned: Initiated dramatic changes and attacks a person's identity because it's attached to a persons' self worth.
 To monitor how much change you are trying to initiate: don't completely replace a person's skill set, gradual change.
