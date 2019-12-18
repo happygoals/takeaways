@@ -17,7 +17,5 @@ nav_order: 2
 ---
 
 
-![](/assets/images/Procurement_2019-12-16.png)
 
-<a>
-<img src="/assets/images/Procurement_2019-12-16.png" ></a>
+<a><img src="/assets/images/Procurement_2019-12-16.png" ></a>
