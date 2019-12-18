@@ -59,5 +59,6 @@ Your order has changed. So that means I can say 2 project can move on.
 ### Q3. (Second rank) pick one
 Second pick: Loyalty // The loyalty program may bring in other that data main structure reveals something different. 
 
-# The lesson in this debate: I validate my hypothesis. You walked in pretty soon and had a consensus on what was rank force
-Information, true questions, you actually divided, but the majority of individuals in the room picked one. And you will almost always have that one executive that yields in a steer in a border.  
+## The lesson in this debate
+* I validate my hypothesis. You walked in pretty soon and had a consensus on what was rank force
+* Information, true questions, you actually divided, but the majority of individuals in the room picked one. And you will almost always have that one executive that yields in a steer in a border.  
