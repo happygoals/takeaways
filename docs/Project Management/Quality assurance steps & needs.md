@@ -37,10 +37,8 @@ nav_order: 4
 ##### Main outputs: Quality control measurements, validated changes, validated deliverables, work performance information, change requests, project management plan updates, project documents updates, and organizational process asset updates.
 </div>
 
-
-### Happens in the Monitor / Control phase of project development
-
-## Feature of  Quality Insurance 
+## Features of  Quality Insurance 
+* Happens in the Monitor / Control phase of project development
 * An inspection point
 * Cannot add quality
 * How to make the Quality better -> Eliminating Waste
@@ -55,5 +53,5 @@ nav_order: 4
  
 ### Q2. As a software developer, what do you do?
 
- -> Reworking/refactoring/make it better.
- -> Lean helps us understand how to avoid some refactoring that isn't necessary. (Preventing waste)
+ -> Reworking / refactoring / make it better.
+ -> Lean helps us understand how to avoid some refactoring that isn't necessary (Preventing waste).
