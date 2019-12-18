@@ -14,23 +14,23 @@ nav_order: 8
 4. Inventory - Cost of products in storage
 5. Motion - Waste in moving people or task switching
   - Causes:
-    - Switching a task before finishing
-    - Coming up with new questions
-    - Becoming bored or distracted
-    - Lack of confidence
-    - Overworked
-    - Working to fast
-    - Missing requirements
+      - Switching a task before finishing
+      - Coming up with new questions
+      - Becoming bored or distracted
+      - Lack of confidence
+      - Overworked
+      - Working to fast
+      - Missing requirements
 6. Waiting - Time that an object is waiting to be worked on
   - Causes:
-    - Procrastination
-    - Irresponsibility
-    - Misunderstanding requirements
-    - Unexpected circumstances
-    - Training
+      - Procrastination
+      - Irresponsibility
+      - Misunderstanding requirements
+      - Unexpected circumstances
+      - Training
 7. Overproduction - Large releases
   - Causes:
-    - Focusing on perfection
-    - Repeating work
-    - Large workloads
-    - Trying to match contribution
+      - Focusing on perfection
+      - Repeating work
+      - Large workloads
+      - Trying to match contribution
