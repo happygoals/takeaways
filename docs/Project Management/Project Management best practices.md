@@ -24,7 +24,7 @@ nav_order: 10
     -  Regular reports and regular meetings of the project team to identify when things are off-target. 
 7. Change Management. 
     - ADKAR = a model of individual change: 
-    Awareness | Desire | Knowledge | Ability | Reinforcement 
+    - Awareness | Desire | Knowledge | Ability | Reinforcement 
     - The goal of ADKAR is to give each individual the knowledge and tools to be successful in change. 
 8. Risk Management. 
     - Make a risk document 
