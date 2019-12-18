@@ -19,8 +19,8 @@ nav_order: 5
 
 
 ## Liberating structures are alternative frameworks(exercises) for common meetings/conversations
-:  An alternative way to approach and design how people work together
-:  It provides a menu of thirty-three Liberating Structures to replace or complement conventional practices.
+-  An alternative way to approach and design how people work together
+-  It provides a menu of thirty-three Liberating Structures to replace or complement conventional practices.
  - Examples of conventional practices: presentations, managed discussions, status reports, open discussions, brainstorms
     These can be found (surprisingly) at LiberatingStructures.com. 
 
