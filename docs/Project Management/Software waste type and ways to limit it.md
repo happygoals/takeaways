@@ -8,11 +8,11 @@ nav_order: 8
 
 # Software waste type and ways to limit it
 
-- Transport - Cost of moving work
-- Defects - bugs
-- Over Processing - creating complex solutions / over analysis
-- Inventory - Cost of products in storage
-- Motion - waste in moving people or task switching
+1. Transport - Cost of moving work
+2. Defects - Bugs
+3. Over Processing - Creating complex solutions / over analysis
+4. Inventory - Cost of products in storage
+5. Motion - Waste in moving people or task switching
   - Causes:
     - Switching a task before finishing
     - Coming up with new questions
@@ -21,14 +21,14 @@ nav_order: 8
     - Overworked
     - Working to fast
     - Missing requirements
-- Waiting - time that an object is waiting to be worked on
+6. Waiting - time that an object is waiting to be worked on
   - Causes:
     - Procrastination
     - Irresponsibility
     - Misunderstanding requirements
     - Unexpected circumstances
     - training
-- Overproduction - Large releases
+7. Overproduction - Large releases
   - Causes:
     - Focusing on perfection
     - Repeating work
