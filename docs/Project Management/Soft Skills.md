@@ -61,7 +61,7 @@ Make them aware of the problem/why/change, make them desire to change (show them
 
 * Humble: noticeable when someone isn't humble, disconnect between where they feel they should be and where they actually are
 
-* Fine line between hungry and humble: hungry: you need to reach, humble: not so much
+* Fine line between hungry and humble: hungry - you need to reach, humble - not so much
 
 * Smart: emotional intelligence, personal motivators. Understanding your role. Passion on the technical side, when interviewing they look for people who have committed free time to working on technical things. Technical knowledge has less weight than soft skills.
 
