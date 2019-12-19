@@ -55,15 +55,15 @@ ADKAR (Awareness, desire, knowledge, ability, and reinforcement)
 
 Make them aware of the problem/why/change, make them desire to change (show them why they would benefit from the change), give them the knowledge they need to make a change, give them the ability to enact the change (knowledge is knowing what it is, ability is enacting that), and reinforcement is rewarding them when they make the change or start acting in the new desirable way.
 
-<b>Ideal Team Member</b>
+<b>Three Characteristics of An Ideal Team Member</b>
 
 * Hungry: going for internships, being proactive
 
 * Humble: noticeable when someone isn't humble, disconnect between where they feel they should be and where they actually are
 
-* Fine line between hungry and humble: hungry - you need to reach, humble - not so much
-
 * Smart: emotional intelligence, personal motivators. Understanding your role. Passion on the technical side, when interviewing they look for people who have committed free time to working on technical things. Technical knowledge has less weight than soft skills.
+
+    - Fine line between hungry and humble: hungry - you need to reach, humble - not so much
 
 * Better than tech: soft skills, character, emotional intelligence, and culturally fit (fitting the team culture)
 
@@ -83,3 +83,12 @@ If you understand the motivations behind someone asking or doing something then 
 
 * Lessons learned: Initiated dramatic changes and attacks a person's identity because it's attached to a persons' self worth.
 To monitor how much change you are trying to initiate: don't completely replace a person's skill set, gradual change.
+
+
+_________________________________________
+
+<b> My personal action plan </b> 
+
+1. Make a contribution plan list (Outside of hours my area)
+2. Listen others and have more conversations with people who have different thoughts and perspectives
+3. Stay accountable with my goals
