@@ -55,7 +55,7 @@ ADKAR (Awareness, desire, knowledge, ability, and reinforcement)
 
 Make them aware of the problem/why/change, make them desire to change (show them why they would benefit from the change), give them the knowledge they need to make a change, give them the ability to enact the change (knowledge is knowing what it is, ability is enacting that), and reinforcement is rewarding them when they make the change or start acting in the new desirable way.
 
-<b>Three Characteristics of An Ideal Team Member</b>
+<b>Three Characteristics of An Ideal Team Member</b> [Related link](https://www.tablegroup.com/imo/media/doc/IdealTeamPlayerSelfAsssesment(11)NEW.pdf)
 
 * Hungry: going for internships, being proactive
 
