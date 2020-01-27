@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Project #1 Mathematical and Array Manipulation Utility
