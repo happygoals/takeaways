@@ -17,6 +17,35 @@ nav_order: 2
 
 ---
 
+Given the following XML:
+  <div class="code-example" markdown="1">
+books.xml
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<book category="cooking">
+<title>Everyday Italian</title>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+
+  </div>
+Example of nodes in the XML document above:
+
+<book> (root element node)
+category="cooking" (attribute node)
+<title>Everyday Italian</title> (element node)
+
+Q. Create XPath Queries that do the following:
+<b>Select the Title of the Book<b>
+//book/title
+//title
+book/title
+ <b>Select the Year of the book</b>
+book/year
+ <b>Select the category attribute of the book nodebook</b>
+/@category
+
 <div class="code-example" markdown="1">
  <?xml version="1.0" encoding="ISO-8859-1"?>
 <bookstore>
