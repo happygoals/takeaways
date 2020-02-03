@@ -88,3 +88,56 @@ Select all book nodes that have more than one author
 
   select="/bookstore/book[author.count() &gt; 1]">
   <xsl:value-of select="title" disable-output-escaping="yes" />
+  
+  
+      <xsl:template match="/">
+	  <html>
+	  <body>
+			<ol>
+        <!-- Select the first book node -->
+        <li><xsl:value-of select="bookstore/book[1]/*" /></li>      
+        <!-- Select all book nodes that are in the "web" category -->
+        <li>
+          <ul>
+            <xsl:for-each select="/bookstore/book[@category='web']">
+              <li>
+                <xsl:value-of select="title" disable-output-escaping="yes" />
+              </li>
+            </xsl:for-each>
+          </ul>
+        </li>
+        <!-- Select all book nodes for books that were published after 2003 -->
+        <li>
+          <ul>
+            <xsl:for-each select="/bookstore/book[year &gt; 2003]">
+              <li>
+                <xsl:value-of select="title" disable-output-escaping="yes" />
+              </li>
+            </xsl:for-each>
+          </ul>
+        </li>
+        <!-- Select all book nodes for books that contains the letter "l" in the title -->
+        <li>
+          <ul>
+            <xsl:for-each select="/bookstore/book[contains(title,'l')]">
+              <li> <xsl:value-of select="title" disable-output-escaping="yes" />  </li>
+            </xsl:for-each>
+          </ul>
+        </li>
+        <!-- Select all book nodes that have more than one author -->
+        <li>
+          <ul>
+            <xsl:for-each select="/bookstore/book">
+              <xsl:if test="count(author) &gt; 1">
+                <li>
+                  <xsl:value-of select="title" disable-output-escaping="yes"/>
+                </li>
+              </xsl:if>
+            </xsl:for-each>
+          </ul>
+        </li>
+			</ol>
+	  </body>
+  </html>
+    </xsl:template>
+  
