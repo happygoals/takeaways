@@ -39,7 +39,7 @@ aux_links:
     - "//github.com/happygoals/takeaways"
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "Good luck on your finals for the PM and happy Christmas"
+footer_content: "Forever Learning"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
