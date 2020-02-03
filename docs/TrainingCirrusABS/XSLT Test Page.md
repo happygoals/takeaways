@@ -21,5 +21,4 @@
     <xsl:template match="/">
       Hello Woot: <xsl:value-of select="/root/woot[1]" />
     </xsl:template>
-    
 </xsl:stylesheet>
