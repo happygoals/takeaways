@@ -28,7 +28,6 @@ However, only five entities are provided by XML.
 
 
 <div class="code-example" markdown="1">
-
 | Symbol       | Entity Name | Hexadecimal Entity | Description                  |
 |:-------------|:------------|:-------------------|:-----------------------------|
 | <            | &lt;        | &#60;              | less than                    |
@@ -36,17 +35,4 @@ However, only five entities are provided by XML.
 | &            | &amp;       | &#38;              | An ampersand, And            |
 | "            | &quot;      | &#34;              | Double quotes                |
 | '            | &apos;      | &#39;              | Single quotes, An apostrophe |
-
-</div>
-
-
-<div class="code-example" markdown="1">
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
 </div>
