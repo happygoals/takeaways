@@ -3,7 +3,7 @@ layout: default
 title: XPath Query
 parent: XML
 
-nav_order: 1
+nav_order: 2
 ---
 
 # Chapter 1 - XPath Query Lessons
