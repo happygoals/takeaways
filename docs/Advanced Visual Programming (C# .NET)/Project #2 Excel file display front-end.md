@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Project #2 Excel file display front-end
+title: Excel file display front-end
 parent: Advanced Visual Programming (C# .NET)
 
 nav_order: 2
 ---
 
-# Excel file display front-end
+# Project #2 Excel file display front-end
 {: .no_toc }
 
 ## Table of contents
