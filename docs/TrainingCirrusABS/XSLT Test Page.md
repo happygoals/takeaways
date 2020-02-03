@@ -6,7 +6,7 @@ parent: TrainingCirrusABS
 
 nav_order: 1
 ---
-# Communication Plan
+# XSLT Test Page
 {: .no_toc }
 
 ## Table of contents
@@ -18,14 +18,17 @@ nav_order: 1
 ---
 ## XML String 
 
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <woot>Yes</woot>
-    <woot>No</woot>
-</root
+{% highlight markdown %}
+        <?xml version="1.0" encoding="utf-8"?>
+        <root>
+            <woot>Yes</woot>
+            <woot>No</woot>
+        </root>
+{% endhighlight %}
+
 
 ## XSLT
-
+{% highlight markdown %}
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
@@ -39,3 +42,5 @@ nav_order: 1
       Hello Woot: <xsl:value-of select="/root/woot[1]" />
     </xsl:template>
 </xsl:stylesheet>
+{% endhighlight %}
+
