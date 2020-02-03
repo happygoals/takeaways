@@ -76,6 +76,8 @@ category="cooking" (attribute node)
 Create XPath Queries that do the following:
 Select the Title of the Book
 /book[1]
+//book/title
+//title
 Select the Year of the book
 /book[last()-1]
 Select the category attribute of the book node
@@ -91,4 +93,19 @@ Select the category attribute of the book node
 | @*           | Matches any attribute node  |
 | node()       | Matches any node of any kind  |
 
-</div>
+  </div>
+
+
+  /bookstore/* 	Selects all the child element nodes of the bookstore element
+  //*           Selects all elements in the document
+  //title[@*] 	 Selects all title elements which have at least one attribute of any kind
+
+   ### Selecting Several Paths (AND)
+   By using the | operator in an XPath expression you can select several paths.
+
+  //book/title | //book/price	      Selects all the title AND price elements of all book elements
+  //title | //price             	   Selects all the title AND price elements in the document
+  /bookstore/book/title | //price	  Selects all the title elements of the book element of the bookstore element AND all the price elements in the document
+   
+ ## XPath Syntax
+  
