@@ -1,4 +1,21 @@
 
+---
+layout: default
+title: XSLT Test Page
+parent: TrainingCirrusABS
+
+nav_order: 1
+---
+# Communication Plan
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 ## XML String 
 
 <?xml version="1.0" encoding="utf-8"?>
