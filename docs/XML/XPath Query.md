@@ -40,7 +40,7 @@ nav_order: 1
   ..	      Selects the parent of the current node
   @	       Selects attributes
   ### Predicates
-  <div class="code-example" markdown="1">
+
   - To find a specific node or a node that contains a specific value.
   - Always embedded in square brackets.
   
@@ -53,34 +53,6 @@ nav_order: 1
   /bookstore/book[price>35.00]	Selects all the book elements of the bookstore element that have a price element with a value greater than 35.00
   /bookstore/book[price>35.00]/title	Selects all the title elements of the book elements of the bookstore element that have a price element with a value greater than 35.00
 
-Given the following XML:
-  <div class="code-example" markdown="1">
-books.xml
-
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<book category="cooking">
-<title>Everyday Italian</title>
-<author>Giada De Laurentiis</author>
-<year>2005</year>
-<price>30.00</price>
-</book>
-
-  </div>
-Example of nodes in the XML document above:
-
-<book> (root element node)
-category="cooking" (attribute node)
-<title>Everyday Italian</title> (element node)
-
-Q. Create XPath Queries that do the following:
-<b>Select the Title of the Book<b>
-//book/title
-//title
-book/title
- <b>Select the Year of the book</b>
-book/year
- <b>Select the category attribute of the book nodebook</b>
-/@category
    ### Selecting Unknown Nodes
    <div class="code-example" markdown="1">
 
