@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Project #1 Mathematical and Array Manipulation Utility
+title: Mathematical and Array Manipulation Utility
 parent: Advanced Visual Programming (C# .NET)
 
 nav_order: 1
 ---
 
-# Mathematical and Array Manipulation Utility
+# Project 1 Mathematical and Array Manipulation Utility
 {: .no_toc }
 
 ## Table of contents
