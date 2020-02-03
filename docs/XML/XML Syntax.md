@@ -1,3 +1,22 @@
+---
+layout: default
+title: XML Syntax
+parent: XML
+
+nav_order: 1
+---
+
+# XML Syntax
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 ## XML Entity
 
 There are five special symbols that are reserved in XML.
