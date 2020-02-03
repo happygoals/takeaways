@@ -73,17 +73,15 @@ Example of nodes in the XML document above:
 category="cooking" (attribute node)
 <title>Everyday Italian</title> (element node)
 
-Create XPath Queries that do the following:
-Select the Title of the Book
-/book[1]
+Q. Create XPath Queries that do the following:
+<b>Select the Title of the Book<b>
 //book/title
 //title
-Select the Year of the book
-/book[last()-1]
-Select the category attribute of the book node
-//book[@category]
-
-
+book/title
+ <b>Select the Year of the book</b>
+book/year
+ <b>Select the category attribute of the book nodebook</b>
+/@category
    ### Selecting Unknown Nodes
    <div class="code-example" markdown="1">
 
