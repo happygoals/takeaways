@@ -1,5 +1,21 @@
-Chapter 1 - XPath Query Lessons
+---
+layout: default
+title: XPath Query
+parent: XML
 
+nav_order: 1
+---
+
+# Chapter 1 - XPath Query Lessons
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 --------------------------------------------------
 ## What is XPath?
