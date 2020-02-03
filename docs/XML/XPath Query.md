@@ -17,7 +17,6 @@ nav_order: 1
 
 ---
 
---------------------------------------------------
 ## What is XPath?
 = A major element in the XSLT standard.
 = It can be used to navigate nodes through elements and attributes in an XML document.
