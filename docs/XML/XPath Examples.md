@@ -181,6 +181,7 @@ Right answer :
 	    
     </div>
 Right answer : 
+
   <div class="code-example" markdown="1">
 
   <xsl:template match="/">
