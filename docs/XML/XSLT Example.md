@@ -156,37 +156,78 @@ Raw HTML:
       </body>
     </html>
   </xsl:template>
-  
-  2) My Final Answer (Simple way, DRY: using generate-id)
-  
-    <xsl:template match="/">
-      <html>
+  2) My Second Answer (Simple way, DRY-> using xsl:for-each)
+
+<xsl:template match="/">
+   <html>
       <body>
-        <xsl:for-each select="/bookstore/book/year[generate-id(.) = generate-id(key('distinctYears', .)[1])]">
           <table cellspacing="5px" cellpadding="5px" border="1" width ="200px">
-            <xsl:variable name="currentYeaer" select="." />
             <tr>
-            <td colspan="2">
-              <xsl:value-of select="/bookstore/book[year = $currentYeaer]/year"/> Titles              
-            </td>
-          </tr>
-            <xsl:for-each select="/bookstore/book[year = $currentYeaer]" >
+              <td colspan="2">2003 titles</td>
+            </tr>
+            <xsl:for-each select="bookstore/book[year=2003]" >
+              <tr>
+                <td>
+                  <xsl:value-of select="title" />
+                </td>
+                <td>
+                  <xsl:value-of select="price" />
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+          <br />
+          <table cellspacing="5px" cellpadding="5px" border="1" width ="200px">
             <tr>
-              <td>
-                <xsl:value-of select="title" />
-              </td>
-              <td>
-                <xsl:value-of select="price" />
+              <td colspan="2">
+                <xsl:value-of select="bookstore/book[year=2005]/year" /> titles
               </td>
             </tr>
+            <xsl:for-each select="bookstore/book[year=2005]" >
+              <tr>
+                <td>
+                  <xsl:value-of select="title" />
+                </td>
+                <td>
+                  <xsl:value-of select="price" />
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+      </body>
+    </html>
+   </xsl:template>
+   
+  3) My Final Answer (Simple way, DRY-> using generate-id)
+
+<xsl:template match="/">
+   <html>
+      <body>
+        <xsl:for-each select="/bookstore/book/year[generate-id(.) = generate-id(key('distinctYears', .)[1])]">
+          <xsl:sort order="ascending" select= "."/>
+          <table cellspacing="5px" cellpadding="5px" border="1" width ="200px">
+            <xsl:variable name="currentYear" select="." />
+            <tr>
+              <td colspan="2">
+                <xsl:value-of select="/bookstore/book[year = $currentYear]/year"/> Titles
+              </td>
+            </tr>
+            <xsl:for-each select="/bookstore/book[year = $currentYear]" >
+              <tr>
+                <td>
+                  <xsl:value-of select="title" />
+                </td>
+                <td>
+                  <xsl:value-of select="price" />
+                </td>
+              </tr>
             </xsl:for-each>
           </table>
           <br />
         </xsl:for-each>
       </body>
     </html>
-    </xsl:template>
-
+   </xsl:template>
 
 
 Reference: https://stackoverflow.com/questions/15548783/using-xslt-key-for-finding-unique-values
