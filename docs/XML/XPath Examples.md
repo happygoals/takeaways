@@ -19,6 +19,7 @@ nav_order: 3
 
 Given the following XML:
 books.xml
+
 <div class="code-example" markdown="1">
   
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -30,6 +31,7 @@ books.xml
 </book>
 
   </div>
+  
 Example of nodes in the XML document above:
 
 <book> (root element node)
@@ -81,6 +83,7 @@ book/year
 </bookstore>
 
  </div>
+ 
 --------------------------------------------------------------- 
  Q. Create XPath Queries that do the following:
 Select the first book node
@@ -94,6 +97,7 @@ My first answer :
   <xsl:value-of select="title" disable-output-escaping="yes" />
 
 Right answer : 
+
   <div class="code-example" markdown="1">
   
       <xsl:template match="/">
@@ -176,5 +180,53 @@ Right answer :
          </xsl:for-each>
 	    
     </div>
-  
+Right answer : 
   <div class="code-example" markdown="1">
+
+   <xsl:template match="/">
+	  <html>
+	  <body>
+      <ol>
+      <!-- Select all book nodes that belong to the web category, have at least one author, were published in 2003, and cost more than $40 -->
+      <li>
+        <ul>
+           <!--one node at the same time, on the same node, in the same level.--> 
+          <xsl:for-each select="//book[@category='web' and count(author) &gt; 1 and year = '2003' and price &gt; 40]">
+            <li>
+              <xsl:value-of select="title" disable-output-escaping="yes" />
+            </li>
+          </xsl:for-each>
+        </ul>
+      </li>
+     <!-- Select the first book's title, but trim any leading or trailing whitespace -->
+      <li>
+        <xsl:value-of select="normalize-space(bookstore/book[1]/title)" disable-output-escaping="yes" />
+      </li>
+     <!-- select all book nodes that have titles greater in length than 12 characters -->
+        <li>
+          <ul>
+            <xsl:for-each select="/bookstore/book/title[string-length(.) &gt; 12 ]">
+              <li>
+                <xsl:value-of select="." disable-output-escaping="yes" />
+              </li>
+            </xsl:for-each>
+          </ul>
+        </li>
+     <!-- Select all book nodes after the first node that only have a single author -->
+        <li>
+          <ul>
+            <xsl:for-each select="//book">
+                <xsl:if test=" position() &gt; 1 and count(author) = 1">
+                  <li>
+                   <xsl:value-of select="title" disable-output-escaping="yes" />
+                  </li>
+                </xsl:if>
+            </xsl:for-each>
+          </ul>
+        </li>
+      </ol>
+     </body>
+  </html>
+    </xsl:template>
+    
+    </div>
