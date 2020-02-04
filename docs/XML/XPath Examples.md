@@ -18,9 +18,9 @@ nav_order: 3
 ---
 
 Given the following XML:
-  <div class="code-example" markdown="1">
 books.xml
-
+<div class="code-example" markdown="1">
+  
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <book category="cooking">
 <title>Everyday Italian</title>
@@ -47,6 +47,7 @@ book/year
 /@category
 
 <div class="code-example" markdown="1">
+
  <?xml version="1.0" encoding="ISO-8859-1"?>
 <bookstore>
 <book category="cooking">
@@ -78,7 +79,9 @@ book/year
 <price>39.95</price>
 </book>
 </bookstore>
+
  </div>
+--------------------------------------------------------------- 
  Q. Create XPath Queries that do the following:
 Select the first book node
 Select all book nodes that are in the "web" category
@@ -86,9 +89,12 @@ Select all book nodes for books that were published after 2003
 Select all book nodes for books that contains the letter "l" in the title
 Select all book nodes that have more than one author
 
+My first answer : 
   select="/bookstore/book[author.count() &gt; 1]">
   <xsl:value-of select="title" disable-output-escaping="yes" />
-  
+
+Right answer : 
+  <div class="code-example" markdown="1">
   
       <xsl:template match="/">
 	  <html>
@@ -140,4 +146,35 @@ Select all book nodes that have more than one author
 	  </body>
   </html>
     </xsl:template>
+    
+   </div>
   
+  --------------------------------------------------------------- 
+  My Errored answers : 
+  1. Select all book nodes that belong to the web category, have at least one author, were published in 2003, and cost more than $40
+  
+   <div class="code-example" markdown="1">
+
+      <!--one node at the same time, on the same node, in the same level.--> 
+       <xsl:for-each select="//book[@category='web' and count(author) &gt; 1 and year = '2003' and price &gt; 40]">
+              <li>
+                <xsl:value-of select="title" disable-output-escaping="yes" />
+              </li>
+       </xsl:for-each>
+	    
+   </div>
+   
+   2. Select all book nodes that have titles greater in length than 12 characters
+   
+   <div class="code-example" markdown="1">
+   
+ 	<!--There's a duplication of location specification. Double titled. --> 
+         <xsl:for-each select="/bookstore/book/title[string-length(.) &gt; 12 ]">
+              <li>
+                <xsl:value-of select="title" disable-output-escaping="yes" />
+              </li>
+         </xsl:for-each>
+	    
+    </div>
+  
+  <div class="code-example" markdown="1">
