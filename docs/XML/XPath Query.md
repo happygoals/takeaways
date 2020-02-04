@@ -86,3 +86,4 @@ nav_order: 2
 count()              count the numbers of node
 nomalize-space()     Trim any leading or trailing whitespace
 string-length()      count the length of the string value
+position()
