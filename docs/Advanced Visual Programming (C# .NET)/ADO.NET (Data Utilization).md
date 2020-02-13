@@ -35,14 +35,14 @@ nav_order: 3
  
  <div class="code-example" markdown="1">
  
- // Create an in-memory dataset and tables
- using (var ds = new System.Data.DataSet(0)
- {
-    // Create a table that will belong to the dataset. Create a structure of a database table. 
-    DataTable table1 = new DataTable("tblUsers");
-    table1.Columns.Add("FirstName", typeof(string)); 
-    table1.Columns.Add("LastName", typeof(string));
-    table1.Columns.Add("Age", typeof(int));
+   // Create an in-memory dataset and tables
+   using (var ds = new System.Data.DataSet())
+   {
+      // Create a table that will belong to the dataset. Create a structure of a database table. 
+      DataTable table1 = new DataTable("tblUsers");
+      table1.Columns.Add("FirstName", typeof(string)); 
+      table1.Columns.Add("LastName", typeof(string));
+      table1.Columns.Add("Age", typeof(int));
     
     // Create a rows of data for our in-memory table
     var row1 = table1.NewRow(); 
@@ -63,6 +63,7 @@ nav_order: 3
     // Add the table to our dataset
     ds.Tables.Add(table1); 
     ds.WriteXml("example.xml"); 
+   }
     
  </div>
  
