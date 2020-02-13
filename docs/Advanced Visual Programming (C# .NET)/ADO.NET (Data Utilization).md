@@ -157,3 +157,28 @@ using (var ds = new System.Data.DataSet())
 }
 
 </div>
+
+Resultant XML: 
+
+<div class="code-example" markdown="1">
+
+<?xml version="1.0" standalone="yes"?>
+<MyDataSet>
+ <tblDepartment>
+  <Id>1</Id>
+  <Name>Marketing</Name>
+  <tblUsers>
+    <FirstName>Haemin</FirstName> 
+    <LastName>Ryu</LastName> 
+    <Age>24</Age>
+    <DepartmentId>1</DepartmentId> 
+  </tblUsers> 
+  <tblUsers>
+    <FirstName>Haemin</FirstName>
+    <LastName>Ryu</LastName>
+    <DepartmentId>1</DepartmentId> 
+  </tblUsers>
+ </tblDepartment>
+</MyDataSet>
+
+</div>
