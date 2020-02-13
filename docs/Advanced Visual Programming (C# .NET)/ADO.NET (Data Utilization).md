@@ -6,7 +6,7 @@ parent: Advanced Visual Programming (C# .NET)
 nav_order: 3
 ---
 
-# Data Utilization (ADO.NET)
+# ADO.NET (Data Utilization)
 {: .no_toc }
 
 ## Table of contents
@@ -33,7 +33,8 @@ nav_order: 3
  DataSet implement IDisposable. Immediately we can use 'using' statement. 
  No Database access happen. 
  
- <code> 
+ <div class="code-example" markdown="1">
+ 
  // Create an in-memory dataset and tables
  using (var ds = new System.Data.DataSet(0)
  {
@@ -63,10 +64,11 @@ nav_order: 3
     ds.Tables.Add(table1); 
     ds.WriteXml("example.xml"); 
     
- </code> 
+ </div>
  
 ### Converting the DataSet into XML(Baked into the .Net Framework): 
-<code> 
+<div class="code-example" markdown="1">
+
 <?xml version="1.0" standalone="yes"?>
 <MyDataSet>
   <tblUsers>
@@ -79,7 +81,8 @@ nav_order: 3
     <LastName>Ryu</LastName> 
   </tblUsers>
 </MyDataSet>
-</code>
+
+</div>
 
  ### Important Facts about DataSets
   * DBNull.Value - This is a special singleton object that represents a NULL value from the original data source. 
