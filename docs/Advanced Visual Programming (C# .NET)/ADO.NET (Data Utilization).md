@@ -44,27 +44,27 @@ nav_order: 3
       table1.Columns.Add("LastName", typeof(string));
       table1.Columns.Add("Age", typeof(int));
     
-    // Create a rows of data for our in-memory table
-    var row1 = table1.NewRow(); 
-    row1["FirstName"] = "Haemin";
-    row1["LastName"] = "Ryu";
-    row1["Age"] = "24";
-    
-    // Create a rows of data for our in-memory table
-    var row2 = table1.NewRow(); 
-    row2["FirstName"] = "Haemin";
-    row2["LastName"] = "Ryu";
-    row2["Age"] = DBNull.Value;
-    
-    // Add the rows to the table
-    table1.Rows.Add(row1);
-    table1.Rows.Add(row2);
-    
-    // Add the table to our dataset
-    ds.Tables.Add(table1); 
-    ds.WriteXml("example.xml"); 
-   }
-    
+       // Create a rows of data for our in-memory table
+       var row1 = table1.NewRow(); 
+       row1["FirstName"] = "Haemin";
+       row1["LastName"] = "Ryu";
+       row1["Age"] = "24";
+
+       // Create a rows of data for our in-memory table
+       var row2 = table1.NewRow(); 
+       row2["FirstName"] = "Haemin";
+       row2["LastName"] = "Ryu";
+       row2["Age"] = DBNull.Value;
+
+       // Add the rows to the table
+       table1.Rows.Add(row1);
+       table1.Rows.Add(row2);
+
+       // Add the table to our dataset
+       ds.Tables.Add(table1); 
+       ds.WriteXml("example.xml"); 
+    }
+
  </div>
  
 ### Converting the DataSet into XML(Baked into the .Net Framework): 
@@ -92,5 +92,68 @@ nav_order: 3
   * DataSets implement IDisposable and can be used within a Using Statement.
   * DataSets can contain relation information between two tables, and those relations can be enforced with the AcceptChanges() method when changes are made to the tables it contains.
   
-    
-  
+
+### Consider the following Department – User relationship
+Any number of users may belong to a department
+All users must belong to a department
+
+1) Create the tblUsers table programmatically 
+2) Add two users programmatically
+3) Create the tblDepartments table programmatically
+4) Establish relationship between tblUsers and tblDepartments
+5) Write the result out to an XML file
+
+<div class="code-example" markdown="1">
+
+using (var ds = new System.Data.DataSet())
+{
+      // Create a table that will belong to the dataset. Create a structure of a database table. ... 1)
+      var table1 = new System.Data.DataTable("tblUsers");
+      table1.Columns.Add("FirstName", typeof(string)); 
+      table1.Columns.Add("LastName", typeof(string));
+      table1.Columns.Add("Age", typeof(int));
+      var departmentIDColumn = new System.data.DataColumn("DepartmentId", typeof(int));
+      table1.Columns.Add(departmentIdColumn); 
+     
+       // Create a rows of data for our in-memory table  ...2)
+       var row1 = table1.NewRow(); 
+       row1["FirstName"] = "Haemin";
+       row1["LastName"] = "Ryu";
+       row1["Age"] = "24";
+       row1["DepartmentId"] = 1;
+
+       // Create a rows of data for our in-memory table  ...2) 
+       var row2 = table1.NewRow(); 
+       row2["FirstName"] = "Haemin";
+       row2["LastName"] = "Ryu";
+       row2["Age"] = DBNull.Value;
+       row2["DepartmentId"] = 1;
+       
+       // now add the rows to the table
+       table1.Rows.Add(row1); 
+       table1.Rows.Add(row2); 
+       
+       // Create the department table schema  ...3) 
+       var table2 = new System.Data.DataTable("tblDepartment"); 
+       var parentColumn = new System.Data.DataColumn("Id", typeof(int)); 
+       table2.Columns.Add(parentColumn); 
+       table2.Columns.Add("name", typeof(string));
+       
+       // Create the marketing department entry    ...3) 
+       var marketingDepartment = table2.NewRow(); 
+       marketingDepartment["Id"] = 1; 
+       marketingDepartment["Name"] = "Marketing";
+       table2.Rows.Add(marketingDepartment); 
+       
+       // Add both tables to our dataset  ...3) 
+       ds.Tables.Add(table1); 
+       ds.Tables.Add(table2); 
+       
+       // Configure the relationship that requires a user must belong to a valid department ...4) 
+       var relation = ds.Relations.Add("DepartmentRelation", parentColumn, departmentIdColumn);
+       relation.Nested = true; // Cause the parent to contain the children in generated XML
+       
+       ds.WriteXml("nesting-example.xml");   ...5) 
+}
+
+</div>
