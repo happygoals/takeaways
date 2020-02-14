@@ -69,7 +69,7 @@ nav_order: 4
  * IoT Development:  Supported C# Embeded version by MS, but the cost an arm and a leg.
 
 ### Current State of .NET Ecosystem
-![DotNet structure](../assets/images/Csharp_dotnetframwork-structure_2020-02-14.png")
+![DotNet structure](../../assets/images/Csharp_dotnetframwork-structure_2020-02-14.png")
 
 ## C# Syntax
 ### Access Levels
