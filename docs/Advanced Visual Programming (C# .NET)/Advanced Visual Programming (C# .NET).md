@@ -14,11 +14,11 @@ This course continues the study of visual programming. Students will create mult
 
  ## Course Prerequisite: 
  The following information has been provided to assist you in preparing to use technology successfully in this course.
-• Internet access/connection: high speed recommended 
-• Microsoft Windows 10 Operating System will be utilized for development
-• Microsoft Visual Studio 2019 Community Edition(updated to the latest version) : https://visualstudio.microsoft.com/downloads/
-• Latest version of Microsoft Office: https://office.com 
-• Microsoft Access Database Engine 2016 Redistributable: https://www.microsoft.com/en-us/download/details.aspx?id=54920
+*• Internet access/connection: high speed recommended 
+*• Microsoft Windows 10 Operating System will be utilized for development
+*• Microsoft Visual Studio 2019 Community Edition(updated to the latest version) : https://visualstudio.microsoft.com/downloads/
+*• Latest version of Microsoft Office: https://office.com 
+*• Microsoft Access Database Engine 2016 Redistributable: https://www.microsoft.com/en-us/download/details.aspx?id=54920
 
  ## Course Goals
   * The goal of this course is to develop best practice habits with modern application development utilizing the C# .NET language and .NET Framework.  
