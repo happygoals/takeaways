@@ -3,7 +3,7 @@ layout: default
 title: Mathematical and Array Manipulation Utility
 parent: Advanced Visual Programming (C# .NET)
 
-nav_order: 1
+nav_order: 2
 ---
 
 # Project 1 Mathematical and Array Manipulation Utility
@@ -21,7 +21,8 @@ nav_order: 1
  *  Start Date: 01/21/2020
  *  Last Modified Date: 01/23/2020
  
- Future Work : Calculation functions can be simple by removing duplication. If we make a function include operator as a parameter, it will make less duplication code.  
+ * Future Work : Calculation functions can be simple by removing duplication. 
+ If we make a function include operator as a parameter, it will make less duplication code.  
  
  
  <div class="code-example" markdown="1">
