@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Chapter 2 - Regular Expressions
+title: Regular Expressions
 parent: XML
 
 nav_order: 6
 ---
 
-# Regular Expressions
+# Chapter 3 - Regular Expressions
 
 \d                    Digit. Find the number (Only one number of number character).
 \w                    Character. Find the character. Not special character but underscore(_).
@@ -56,6 +56,6 @@ Others
 
 
 Reference: 
-https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
-https://regex101.com/
+[Reference1](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+[Reference2](https://regex101.com/)
 
