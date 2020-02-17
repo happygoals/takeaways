@@ -1,3 +1,22 @@
+---
+layout: default
+title: XPath Query
+parent: XML
+
+nav_order: 4
+---
+
+# XSLT Examples
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 ##Practice 5
 
 books.xml
