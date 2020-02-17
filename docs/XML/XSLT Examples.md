@@ -69,7 +69,7 @@ Raw HTML:
 
 1) My First Answer
 
-{% highlight ruby linenos %}
+```ruby
       <div>Book Title: <xsl:value-of select="bookstore/book[1]/*" /> (by 
        <xsl:value-of select="bookstore/book[1]/author" />, 
        <xsl:value-of select="bookstore/book[1]/year" />)
@@ -88,11 +88,11 @@ Raw HTML:
        <xsl:value-of select="bookstore/book[4]/author" />, 
        <xsl:value-of select="bookstore/book[4]/year" />)
       </div>
-{% endhighlight %}
+```
 
 2) My Final Answer (Simple way, DRY)
 
-{% highlight ruby linenos %}
+```ruby
       <div>
         <xsl:for-each select="bookstore/book" >
           Book Title:
@@ -104,7 +104,7 @@ Raw HTML:
           <br></br>
         </xsl:for-each>
       </div>
-{% endhighlight %}      
+```     
 
  ## Practice 6
  
@@ -156,7 +156,7 @@ Raw HTML:
 
 1) My First Answer
 
-{% highlight ruby linenos %}
+```ruby
   <xsl:template match="/">
     <html>
       <body>
@@ -210,12 +210,10 @@ Raw HTML:
       </body>
     </html>
   </xsl:template>
-  
-{% endhighlight %}
+```
 
   2) My Second Answer (Simple way, DRY-> using xsl:for-each)
-
-{% highlight ruby linenos %}
+```ruby
 <xsl:template match="/">
    <html>
       <body>
@@ -255,11 +253,10 @@ Raw HTML:
       </body>
     </html>
    </xsl:template>
- {% endhighlight %}
+```
  
   3) My Final Answer (Simple way, DRY-> using generate-id)
-
-{% highlight ruby linenos %}
+```ruby
 <xsl:template match="/">
    <html>
       <body>
@@ -288,6 +285,6 @@ Raw HTML:
       </body>
     </html>
    </xsl:template>
-{% endhighlight %}
+```
 
 Reference: https://stackoverflow.com/questions/15548783/using-xslt-key-for-finding-unique-values
