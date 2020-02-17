@@ -6,7 +6,7 @@ parent: Advanced Visual Programming (C# .NET)
 nav_order: 1
 ---
 
-# C# Fundamentals
+# C# Fundamentals 1
 {: .no_toc }
 
 ## Table of contents
