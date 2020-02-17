@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Chapter 2 - URL Redirects Examples
+title: URL Redirects Examples
 parent: XML
 
 nav_order: 5
 ---
+# Chapter 2 - URL Redirects Examples
 
 Original URL
 New URL
