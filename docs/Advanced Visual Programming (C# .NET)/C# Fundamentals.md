@@ -94,10 +94,6 @@ nav_order: 1
 
 ** Note about Namespaces: All C# languege source files must have a namespace declaration. The IDE will actually construct the namespace from the location on disk relative to the root of the project. The root namespace is defined under the project properties within your IDE. 
 
-
-<Project 1> 
-
-example
 ```ruby
 // Using statement allow you say that append this name space appropriate. 
 using exp = System.Text.RegularExpressions; // Simplification, shorthand
@@ -236,7 +232,7 @@ internal class Class1
 }
 ```
  
- ### Object Initializer Shorthand Syntax 
+### Object Initializer Shorthand Syntax 
  
 ```ruby
 public void exampleMethod()
