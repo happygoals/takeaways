@@ -1,6 +1,6 @@
 ---
 layout: default
-title: C# Fundamentals
+title: C# Fundamentals 1
 parent: Advanced Visual Programming (C# .NET)
 
 nav_order: 1
@@ -71,7 +71,7 @@ nav_order: 1
 ### Current State of .NET Ecosystem
 ![DotNet structure](../../assets/images/Csharp_dotnetframwork-structure_2020-02-14.png)
 
-# Visibility, Variables, Arrays, Classes
+# Visibility, Variables, Classes
 ## C# Syntax
 ### Access Levels
 * private – Code in the type that declares a private element, including code within contained types, can access the element. Other code file will not be able to access of this private code. 
@@ -249,4 +249,3 @@ public void exampleMethod()
 }
 ```
 
-## C# Array Declarations 
