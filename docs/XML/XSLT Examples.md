@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Chapter 2 - XPath Query
+title: XSLT Examples
 parent: XML
 
 nav_order: 4
 ---
 
-# XSLT Examples
+# Chapter 2 - XSLT Examples
 {: .no_toc }
 
 ## Table of contents
