@@ -109,17 +109,17 @@ Raw HTML:
  
  2. Create an XSLT using the above XML that produces the following HTML (everything between the lines):
 
-2003 Titles
-Learning XML
-39.95
-XQuery Kick Start
-49.99
+* 2003 Titles
+      * Learning XML
+      * 39.95
+      * XQuery Kick Start
+      * 49.99
 
-2005 Titles
-Everyday Italian
-29.99
-Harry Potter
-30.00
+* 2005 Titles
+      * Everyday Italian
+      * 29.99
+      * Harry Potter
+      * 30.00
 
 Raw HTML:
 
@@ -286,4 +286,4 @@ Raw HTML:
    </xsl:template>
 ```
 
-Reference: https://stackoverflow.com/questions/15548783/using-xslt-key-for-finding-unique-values
+[Reference](https://stackoverflow.com/questions/15548783/using-xslt-key-for-finding-unique-values)
