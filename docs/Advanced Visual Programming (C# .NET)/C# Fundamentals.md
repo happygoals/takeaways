@@ -3,7 +3,7 @@ layout: default
 title: C# Fundamentals
 parent: Advanced Visual Programming (C# .NET)
 
-nav_order: 4
+nav_order: 1
 ---
 
 # C# Fundamentals
