@@ -1,6 +1,6 @@
 ---
 layout: default
-title: XPath Query
+title: XPath Query Examples
 parent: XML
 
 nav_order: 3
