@@ -24,46 +24,57 @@ nav_order: 5
 
 </div>
 
-<div class="code-example" markdown="1">
-   <!--Haemin's Lesson-7 PART 1-->
-        <!--You have been asked to configure URL Redirects for an existing client's website-->
+```ruby
+  <system.webServer>
+    <rewrite>
+      <rules>
         <!--Haemin's Rules 1-->
-        <rule name="Contact Us" >  <!--stopProcessing="true"-->
-          <match url="(contact).+" />  <!--(contacts)_us.html-->
-          <action type="Redirect" url="{R:1}-us.aspx" redirectType="Permanent" />
+        <!--(contact)_us.html-->
+        <rule name="ContactUs" stopProcessing="true">
+          <match url="^(contact)_(us).html$" />
+          <action type="Redirect" url="{R:1}-{R:2}.aspx" redirectType="Permanent" />
         </rule>
+        
         <!--Haemin's Rules 2-->
-        <rule name="About Us" >
+        <rule name="AboutUs">
           <match url="our_philosophy.cfm" />
           <action type="Redirect" url="about-us.aspx" redirectType="Permanent" />
         </rule>
+        
         <!--Haemin's Rules 3-->
-        <rule name="Brochures" >
+        <rule name="Brochures" stopProcessing="true" >
           <match url="brochures" />
           <action type="Redirect" url="{R:0}.aspx" redirectType="Permanent" />
         </rule>
+        
         <!--Haemin's Rules 4-->
-        <rule name="Promotional Ad 4" >
+        <rule name="PromotionalAd4" stopProcessing="true">
           <match url="promotional_ad\.php" />
           <conditions logicalGrouping="MatchAll">
             <add input="{QUERY_STRING}" pattern="id\=([4-6]{1})$" />
           </conditions>
           <action type="Redirect" url="/promotions/ad-{C:1}" redirectType="Found" appendQueryString="false" />
         </rule>
+        
         <!--Haemin's Rules 5-->
-        <rule name="Hot new story" >
+        <rule name="HotNewStory" stopProcessing="true">
           <match url="ho\w{1}[-]?(\w{3})[-]?\w{5}" />
           <action type="Redirect" url="{R:1}s/{R:0}" redirectType="Permanent" />
         </rule>
-        <!--Haemin's Rules 7-->
-        <rule name="Your Community" stopProcessing="true" >
-          <match url="y\w{3}[-]?\w{9}" />
-          <action type="Redirect" url="{R:0}.aspx" redirectType="Permanent" />
-        </rule>
+        
         <!--Haemin's Rules 6-->
-        <rule name="Latest News" >
+        <rule name="LatestNews" stopProcessing="true">
           <match url="(n\w{3})$" />
           <action type="Redirect" url="{R:1}.aspx" redirectType="Permanent" />
         </rule>
         
-</div>
+        <!--Haemin's Rules 7-->
+        <rule name="YourCommunity" stopProcessing="true" >
+          <match url="y\w{3}[-]?\w{9}" />
+          <action type="Redirect" url="{R:0}.aspx" redirectType="Permanent" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+        
+```
