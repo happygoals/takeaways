@@ -3,7 +3,7 @@ layout: default
 title: Excel file display front-end
 parent: Advanced Visual Programming (C# .NET)
 
-nav_order: 3
+nav_order: 4
 ---
 
 # Project #2 Excel file display front-end
