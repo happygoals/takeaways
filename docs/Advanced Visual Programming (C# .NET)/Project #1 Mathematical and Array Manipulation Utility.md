@@ -3,7 +3,7 @@ layout: default
 title: Mathematical and Array Manipulation Utility
 parent: Advanced Visual Programming (C# .NET)
 
-nav_order: 2
+nav_order: 3
 ---
 
 # Project #1 Mathematical and Array Manipulation Utility
