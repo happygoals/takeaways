@@ -19,9 +19,7 @@ nav_order: 3
 
 Given the following XML:
 books.xml
-
-<div class="code-example" markdown="1">
-  
+```ruby
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <book category="cooking">
 <title>Everyday Italian</title>
@@ -29,16 +27,16 @@ books.xml
 <year>2005</year>
 <price>30.00</price>
 </book>
-
-  </div>
+```
   
 Example of nodes in the XML document above:
-
+```ruby
 <book> (root element node)
 category="cooking" (attribute node)
 <title>Everyday Italian</title> (element node)
-
+```
 Q. Create XPath Queries that do the following:
+```ruby
 <b>Select the Title of the Book<b>
 //book/title
 //title
@@ -47,9 +45,9 @@ book/title
 book/year
  <b>Select the category attribute of the book nodebook</b>
 /@category
+```
 
-<div class="code-example" markdown="1">
-
+```ruby
  <?xml version="1.0" encoding="ISO-8859-1"?>
 <bookstore>
 <book category="cooking">
@@ -81,22 +79,21 @@ book/year
 <price>39.95</price>
 </book>
 </bookstore>
-
- </div>
+```
  
---------------------------------------------------------------- 
- Q. Create XPath Queries that do the following:
-Select the first book node
-Select all book nodes that are in the "web" category
-Select all book nodes for books that were published after 2003
-Select all book nodes for books that contains the letter "l" in the title
-Select all book nodes that have more than one author
 
-My first answer : 
+ Q. Create XPath Queries that do the following:
+* Select the first book node
+* Select all book nodes that are in the "web" category
+* Select all book nodes for books that were published after 2003
+* Select all book nodes for books that contains the letter "l" in the title
+* Select all book nodes that have more than one author
+
+A. My first answer : 
   select="/bookstore/book[author.count() &gt; 1]">
   <xsl:value-of select="title" disable-output-escaping="yes" />
 
-Right answer : 
+A. Right answer : 
 
   <div class="code-example" markdown="1">
   
@@ -146,12 +143,12 @@ Right answer :
             </xsl:for-each>
           </ul>
         </li>
-			</ol>
-	  </body>
-  </html>
+     </ol>
+     </body>
+     </html>
     </xsl:template>
     
-   </div>
+ </div>
   
   --------------------------------------------------------------- 
   My Errored answers : 
@@ -180,7 +177,8 @@ Right answer :
          </xsl:for-each>
 	    
     </div>
-Right answer : 
+
+A. Right answer : 
 
   <div class="code-example" markdown="1">
 
@@ -227,8 +225,8 @@ Right answer :
         </li>
       </ol>
      </body>
-  </html>
-    </xsl:template>
+    </html>
+  </xsl:template>
     
     </div>
 
@@ -312,7 +310,7 @@ Right answer :
         </li>
       </ol>
 	  </body>
-  </html>
-  </xsl:template>
+	</html>
+	</xsl:template>
   
   </div>
