@@ -69,7 +69,6 @@ for (int ctr = 0; ctr <= 6; ctr++)
 ```
 # Comparison 
 ## Comparison Operator 
-<div class="code-example" markdown="1">
 
 | Condition Tested                                                          |       Comparison Operator        |
 |:--------------------------------------------------------------------------|:---------------------------------|
@@ -79,8 +78,6 @@ for (int ctr = 0; ctr <= 6; ctr++)
 | Is the value on the left greater than the value on the right?             |   > (greater than)               |
 | Is the value on the left less than or equal to the value on the right?    |   <= (less than or equal to)     |
 | Is the value on the left greater than or equal to the value on the right? |   >= (greater than or equal to)  |
-
-</div>
 
 ## Object Comparison Operators 
 
