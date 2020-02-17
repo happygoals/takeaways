@@ -69,6 +69,7 @@ nav_order: 5
  
 ### Converting the DataSet into XML(Baked into the .Net Framework): 
 
+```ruby
 <?xml version="1.0" standalone="yes"?>
 <MyDataSet>
   <tblUsers>
@@ -81,7 +82,7 @@ nav_order: 5
     <LastName>Ryu</LastName> 
   </tblUsers>
 </MyDataSet>
-
+```
 
  ### Important Facts about DataSets
   * DBNull.Value - This is a special singleton object that represents a NULL value from the original data source. 
@@ -157,7 +158,7 @@ All users must belong to a department
 </div>
 
 Resultant XML: 
-
+```ruby
 <?xml version="1.0" standalone="yes"?>
 <MyDataSet>
  <tblDepartment>
@@ -176,4 +177,4 @@ Resultant XML:
   </tblUsers>
  </tblDepartment>
 </MyDataSet>
-
+```
