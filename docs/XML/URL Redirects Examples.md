@@ -7,27 +7,24 @@ nav_order: 5
 ---
 # Chapter 2 - URL Redirects Examples
 
-Original URL
-New URL
-http://www.acme.com/contact_us.html
-/contact-us.aspx
-http://www.acme.com/our_philosophy.cfm
-/about-us.aspx
-http://www.acme.com/brochures
-/brochures.aspx
-http://www.acme.com/promotional_ad.php?id=4
-/promotions/ad-4
-http://www.acme.com/promotional_ad.php?id=5
-/promotions/ad-5
-http://www.acme.com/promotional_ad.php?id=6
-/promotions/ad-6
-http://www.acme.com/2007/03/05/hot-new-story
-/news/hot-new-story
-http://www.acme.com/latest-news
-/news.aspx
-http://www.acme.com/latest-news/your-community
-/your-community.aspx   
-   
+
+<div class="code-example" markdown="1">
+
+| Original URL                                   | New URL              |
+|:-----------------------------------------------|:---------------------|
+| http://www.acme.com/contact_us.html            | /contact-us.aspx     |
+| http://www.acme.com/our_philosophy.cfm         | /about-us.aspx       |
+| http://www.acme.com/brochures                  | /brochures.aspx      |
+| http://www.acme.com/promotional_ad.php?id=4    | /promotions/ad-4     |
+| http://www.acme.com/promotional_ad.php?id=5    | /promotions/ad-5     |
+| http://www.acme.com/promotional_ad.php?id=6    | /promotions/ad-6     |
+| http://www.acme.com/2007/03/05/hot-new-story   | /news/hot-new-story  |
+| http://www.acme.com/latest-news                | /news.aspx           |
+| http://www.acme.com/latest-news/your-community | /your-community.aspx |
+
+</div>
+
+<div class="code-example" markdown="1">
    <!--Haemin's Lesson-7 PART 1-->
         <!--You have been asked to configure URL Redirects for an existing client's website-->
         <!--Haemin's Rules 1-->
@@ -68,3 +65,5 @@ http://www.acme.com/latest-news/your-community
           <match url="(n\w{3})$" />
           <action type="Redirect" url="{R:1}.aspx" redirectType="Permanent" />
         </rule>
+        
+</div>
