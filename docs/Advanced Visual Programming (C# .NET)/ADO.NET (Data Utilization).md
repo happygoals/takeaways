@@ -34,16 +34,16 @@ nav_order: 3
  No Database access happen. 
  
  <div class="code-example" markdown="1">
- 
-   // Create an in-memory dataset and tables
-   using (var ds = new System.Data.DataSet())
-   {
-      // Create a table that will belong to the dataset. Create a structure of a database table. 
-      DataTable table1 = new DataTable("tblUsers");
-      table1.Columns.Add("FirstName", typeof(string)); 
-      table1.Columns.Add("LastName", typeof(string));
-      table1.Columns.Add("Age", typeof(int));
-    
+
+     // Create an in-memory dataset and tables 
+     using (var ds = new System.Data.DataSet())
+     {
+       // Create a table that will belong to the dataset. Creat a structure of a database table. 
+       DataTable table1 = new DataTable("tblUsers");
+       table1.Columns.Add("FirstName", typeof(string)); 
+       table1.Columns.Add("LastName", typeof(string)); 
+       table1.Columns.Add("Age", typeof(int));
+       
        // Create a rows of data for our in-memory table
        var row1 = table1.NewRow(); 
        row1["FirstName"] = "Haemin";
@@ -68,7 +68,6 @@ nav_order: 3
  </div>
  
 ### Converting the DataSet into XML(Baked into the .Net Framework): 
-<div class="code-example" markdown="1">
 
 <?xml version="1.0" standalone="yes"?>
 <MyDataSet>
@@ -83,7 +82,6 @@ nav_order: 3
   </tblUsers>
 </MyDataSet>
 
-</div>
 
  ### Important Facts about DataSets
   * DBNull.Value - This is a special singleton object that represents a NULL value from the original data source. 
@@ -105,17 +103,17 @@ All users must belong to a department
 
 <div class="code-example" markdown="1">
 
-using (var ds = new System.Data.DataSet())
-{
       // Create a table that will belong to the dataset. Create a structure of a database table. ... 1)
+    using (var ds = new System.Data.DataSet())
+    {
       var table1 = new System.Data.DataTable("tblUsers");
       table1.Columns.Add("FirstName", typeof(string)); 
       table1.Columns.Add("LastName", typeof(string));
       table1.Columns.Add("Age", typeof(int));
       var departmentIDColumn = new System.data.DataColumn("DepartmentId", typeof(int));
       table1.Columns.Add(departmentIdColumn); 
-     
-       // Create a rows of data for our in-memory table  ...2)
+
+       // Create a rows of data for our in-memory table  ...2)       
        var row1 = table1.NewRow(); 
        row1["FirstName"] = "Haemin";
        row1["LastName"] = "Ryu";
@@ -154,13 +152,11 @@ using (var ds = new System.Data.DataSet())
        relation.Nested = true; // Cause the parent to contain the children in generated XML
        
        ds.WriteXml("nesting-example.xml");   ...5) 
-}
+    }
 
 </div>
 
 Resultant XML: 
-
-<div class="code-example" markdown="1">
 
 <?xml version="1.0" standalone="yes"?>
 <MyDataSet>
@@ -181,4 +177,3 @@ Resultant XML:
  </tblDepartment>
 </MyDataSet>
 
-</div>
