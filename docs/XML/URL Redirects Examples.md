@@ -1,3 +1,11 @@
+---
+layout: default
+title: Chapter 2 - URL Redirects Examples
+parent: XML
+
+nav_order: 5
+---
+
 Original URL
 New URL
 http://www.acme.com/contact_us.html
