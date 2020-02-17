@@ -1,6 +1,6 @@
 ---
 layout: default
-title: XPath Query
+title: XPath Query Lessons
 parent: XML
 
 nav_order: 2
