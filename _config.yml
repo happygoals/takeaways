@@ -35,8 +35,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Takeaways on GitHub":
-    - "//github.com/happygoals/takeaways"
+  "Takeaways on GitHub": "//github.com/happygoals/takeaways"
 
 # Footer content appears at the bottom of every page's main content
 footer_content: "Forever Learning"
