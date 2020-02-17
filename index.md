@@ -21,7 +21,7 @@ These takeaways will help you figure out the concept of course for each topic an
 ### Quick start
 
 1. Use the search bar on the top
-2. Type the topic title or keywords
+2. Input the topic title or keywords
 
 
 ## About the template of the documents
