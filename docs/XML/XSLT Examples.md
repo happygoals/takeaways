@@ -1,6 +1,6 @@
 ---
 layout: default
-title: XPath Query
+title: Chapter 2 - XPath Query
 parent: XML
 
 nav_order: 4
