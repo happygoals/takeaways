@@ -18,4 +18,4 @@ nav_order: 2
 
 
 
-[3 Different Procurements](../../assets/images/Procurement_2019-12-16.png")
+![3 Different Procurements](../../assets/images/Procurement_2019-12-16.png")
