@@ -79,7 +79,7 @@ nav_order: 1
 "It gets the a little bit of concept of inheritance, you can create the sub classes and those sub classes are able to access variables." 
 * protected - Code in the class that declares a protected element, or a class derived from it, can access the element.
 * internal - Code in the assembly that declares a friend element can access it.
-"You will actually see the internal keywords in several places in the project. It is same thing as private but other code files in the same project will be able to access that method."
+"You will actually see the internal keywords in several places in the project. It is same thing as private but other code files in the same project will be able to access that method. Within the project itself, everyone can see the methods and variables."
 * protected internal – (Union of protected and internal) Code in the same class or the same assembly as a protected internal element, or within any class derived from the element's class, can access it.
 * public - Any code that can see a public element can access it.
 
