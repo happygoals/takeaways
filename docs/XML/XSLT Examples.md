@@ -17,7 +17,7 @@ nav_order: 4
 
 ---
 
-##Practice 5
+## Practice 5
 
 books.xml
 ```ruby
@@ -54,13 +54,12 @@ books.xml
 </bookstore>
 ```
 
-1. 
-Create an XSLT using the above XML that produces the following HTML (everything between the lines):
+1. Create an XSLT using the above XML that produces the following HTML (everything between the lines):
 
-Book Title: Everyday Italian (by Giada De laurentiis, 2005)
-Book Title: Harry Potter (by J K. Rowling, 2005)
-Book Title: XQuery Kick Start (by James McGovern, Per Bothner, Kurt Cagle, James Linn, and Vaidyanathan Nagarajan, 2003)
-Book Title: Learning XML (by Erik T. Ray)
+* Book Title: Everyday Italian (by Giada De laurentiis, 2005)
+* Book Title: Harry Potter (by J K. Rowling, 2005)
+* Book Title: XQuery Kick Start (by James McGovern, Per Bothner, Kurt Cagle, James Linn, and Vaidyanathan Nagarajan, 2003)
+* Book Title: Learning XML (by Erik T. Ray)
 
 Raw HTML:
 ```ruby
