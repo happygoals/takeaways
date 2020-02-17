@@ -9,7 +9,7 @@ permalink: /
 # Course Contents Summary 
 {: .fs-9 }
 
-These takeaway will help you figure out the concept of course for each topic and it hosted on GitHub Pages.
+These takeaways will help you figure out the concept of course for each topic and it hosted on GitHub Pages.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/happygoals/takeaways){: .btn .fs-5 .mb-4 .mb-md-0 }
