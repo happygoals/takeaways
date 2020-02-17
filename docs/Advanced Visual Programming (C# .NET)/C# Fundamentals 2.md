@@ -81,3 +81,47 @@ for (int ctr = 0; ctr <= 6; ctr++)
 | Is the value on the left greater than or equal to the value on the right? |   >= (greater than or equal to)  |
 
 </div>
+## Object Comparison Operators 
+```ruby
+public void comparisonTests1()
+{
+     testClass x = null; 
+     testClass y = new testClass();
+     x = y;
+     if (x == y)
+     {
+         // perform equality logic here ... 
+     }
+}
+```
+Result : True
+
+```ruby
+public void comparisonTests2()
+{
+     testClass x = new testClass(); 
+     testClass y = new testClass();
+     if (x == y)
+     {
+         // perform equality logic here ... 
+     }
+}
+```
+Result : False. Same types but not the same thing. 
+
+
+## Primitive Operator Parsing
+```ruby
+public void typeCheck1()
+{
+     var btn = new Sysyem.Windows.Forms.Button(); // Create a button
+     if (btn is System.Windows.Forms.Control)
+     {
+         // insert code to run if the 'btn' variable is compatible (inherits) from Control
+     }
+}
+```
+Result : True
+
+# Exceptions
+## Excetpions and Try/Catch/Finally
