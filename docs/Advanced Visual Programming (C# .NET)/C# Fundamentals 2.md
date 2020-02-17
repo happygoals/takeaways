@@ -81,7 +81,9 @@ for (int ctr = 0; ctr <= 6; ctr++)
 | Is the value on the left greater than or equal to the value on the right? |   >= (greater than or equal to)  |
 
 </div>
+
 ## Object Comparison Operators 
+
 ```ruby
 public void comparisonTests1()
 {
