@@ -46,16 +46,16 @@ nav_order: 1
 - Code comments are meant to provide a brief explanation in areas where the code is less self-explanatory. 
 - This will cause the IDE to automatically create the commenting structure that you will need to fill in. 
 
-<div class="code-example" markdown="1">
+```ruby
 
-/// <summary> 
+ /// <summary> 
   ///
   /// </summary> 
   /// <param name="input1"></param> 
   /// <param name="input2"></param> 
   /// <returns></returns> 
 
-</div> 
+```
 
 ## C# .NET Features
 ### Pros and Cons as a language
