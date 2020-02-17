@@ -6,7 +6,7 @@ parent: Advanced Visual Programming (C# .NET)
 nav_order: 2
 ---
 
-# Project 1 Mathematical and Array Manipulation Utility
+# Project #1 Mathematical and Array Manipulation Utility
 {: .no_toc }
 
 ## Table of contents
