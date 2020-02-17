@@ -91,6 +91,7 @@ Raw HTML:
 {% endhighlight %}
 
 2) My Final Answer (Simple way, DRY)
+
 {% highlight ruby linenos %}
       <div>
         <xsl:for-each select="bookstore/book" >
@@ -104,6 +105,7 @@ Raw HTML:
         </xsl:for-each>
       </div>
 {% endhighlight %}      
+
  ## Practice 6
  
  2. Create an XSLT using the above XML that produces the following HTML (everything between the lines):
@@ -153,6 +155,7 @@ Raw HTML:
 ```
 
 1) My First Answer
+
 {% highlight ruby linenos %}
   <xsl:template match="/">
     <html>
@@ -209,7 +212,9 @@ Raw HTML:
   </xsl:template>
   
 {% endhighlight %}
+
   2) My Second Answer (Simple way, DRY-> using xsl:for-each)
+
 {% highlight ruby linenos %}
 <xsl:template match="/">
    <html>
@@ -253,6 +258,7 @@ Raw HTML:
  {% endhighlight %}
  
   3) My Final Answer (Simple way, DRY-> using generate-id)
+
 {% highlight ruby linenos %}
 <xsl:template match="/">
    <html>
