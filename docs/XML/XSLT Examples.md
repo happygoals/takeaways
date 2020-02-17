@@ -20,6 +20,7 @@ nav_order: 4
 ##Practice 5
 
 books.xml
+```ruby
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <bookstore>
 <book category="cooking">
@@ -51,6 +52,7 @@ books.xml
 <price>39.95</price>
 </book>
 </bookstore>
+```
 
 1. 
 Create an XSLT using the above XML that produces the following HTML (everything between the lines):
@@ -61,12 +63,13 @@ Book Title: XQuery Kick Start (by James McGovern, Per Bothner, Kurt Cagle, James
 Book Title: Learning XML (by Erik T. Ray)
 
 Raw HTML:
-
+```ruby
 <div>Book Title: Everyday Italian (by Giada De laurentiis, 2005)</div> <div>Book Title: Harry Potter (by J K. Rowling, 2005)</div> <div>Book Title: XQuery Kick Start (by James McGovern, Per Bothner, Kurt Cagle, James Linn, and Vaidyanathan Nagarajan, 2003)</div> <div>Book Title: Learning XML (by Erik T. Ray, 2003)</div> 
-
+```
 
 1) My First Answer
 
+{% highlight ruby linenos %}
       <div>Book Title: <xsl:value-of select="bookstore/book[1]/*" /> (by 
        <xsl:value-of select="bookstore/book[1]/author" />, 
        <xsl:value-of select="bookstore/book[1]/year" />)
@@ -85,9 +88,10 @@ Raw HTML:
        <xsl:value-of select="bookstore/book[4]/author" />, 
        <xsl:value-of select="bookstore/book[4]/year" />)
       </div>
+{% endhighlight %}
 
 2) My Final Answer (Simple way, DRY)
-
+{% highlight ruby linenos %}
       <div>
         <xsl:for-each select="bookstore/book" >
           Book Title:
@@ -99,8 +103,8 @@ Raw HTML:
           <br></br>
         </xsl:for-each>
       </div>
-      
- ##Practice 6
+{% endhighlight %}      
+ ## Practice 6
  
  2. Create an XSLT using the above XML that produces the following HTML (everything between the lines):
 
@@ -118,10 +122,38 @@ Harry Potter
 
 Raw HTML:
 
-<table cellspacing="5px" cellpadding="5px" border="1"> <tr> <td colspan="2">2003 Titles</td> </tr> <tr> <td>Learning XML</td> <td>39.95</td> </tr> <tr> <td>XQuery Kick Start</td> <td>49.99</td> </tr> </table><br /> <table cellspacing="5px" cellpadding="5px" border="1"> <tr> <td colspan="2">2005 Titles</td> </tr> <tr> <td>Everyday Italian</td> <td>29.99</td> </tr> <tr> <td>Harry Potter</td> <td>30.00</td> </tr> </table> 
-
+```ruby
+<table cellspacing="5px" cellpadding="5px" border="1"> 
+ <tr>
+   <td colspan="2">2003 Titles</td>
+ </tr>
+ <tr> 
+   <td>Learning XML</td> 
+   <td>39.95</td> 
+ </tr> 
+ <tr> 
+   <td>XQuery Kick Start</td> 
+   <td>49.99</td> 
+ </tr> 
+</table
+<br /> 
+<table cellspacing="5px" cellpadding="5px" border="1"> 
+  <tr> 
+    <td colspan="2">2005 Titles</td> 
+  </tr> 
+  <tr> 
+    <td>Everyday Italian</td> 
+    <td>29.99</td> 
+  </tr> 
+  <tr> 
+    <td>Harry Potter</td> 
+    <td>30.00</td> 
+  </tr> 
+</table> 
+```
 
 1) My First Answer
+{% highlight ruby linenos %}
   <xsl:template match="/">
     <html>
       <body>
@@ -175,8 +207,10 @@ Raw HTML:
       </body>
     </html>
   </xsl:template>
+  
+{% endhighlight %}
   2) My Second Answer (Simple way, DRY-> using xsl:for-each)
-
+{% highlight ruby linenos %}
 <xsl:template match="/">
    <html>
       <body>
@@ -216,9 +250,10 @@ Raw HTML:
       </body>
     </html>
    </xsl:template>
-   
+ {% endhighlight %}
+ 
   3) My Final Answer (Simple way, DRY-> using generate-id)
-
+{% highlight ruby linenos %}
 <xsl:template match="/">
    <html>
       <body>
@@ -247,6 +282,6 @@ Raw HTML:
       </body>
     </html>
    </xsl:template>
-
+{% endhighlight %}
 
 Reference: https://stackoverflow.com/questions/15548783/using-xslt-key-for-finding-unique-values
