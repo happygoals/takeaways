@@ -1,3 +1,11 @@
+---
+layout: default
+title: Chapter 2 - Regular Expressions
+parent: XML
+
+nav_order: 6
+---
+
 # Regular Expressions
 
 \d                    Digit. Find the number (Only one number of number character).
