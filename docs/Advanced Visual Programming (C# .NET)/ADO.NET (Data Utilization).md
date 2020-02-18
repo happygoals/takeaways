@@ -30,7 +30,7 @@ nav_order: 5
               e.g. A view of same data that only filter by last name.
 
 # DataSet, DataTable, and DataRow
-## Example of DataSet, DataTable, and DataRow
+## Examples of DataSet, DataTable, and DataRow
 - DataSet implement IDisposable. Immediately we can use 'using' statement. 
 - No Database access happens. 
  
@@ -200,12 +200,71 @@ table.Columns.Add("Job Title", typeof(string));
 
 ## DataRow
 ### Important facts about DataRow
-- These items represent the raw data on your table
-- Columns are accessed (get or set) using an indexer
-- The indexer can be an ordinal (integer) or a string (column name)
- * Ordinal – This is a unique number that identifies a column for the current data table.  Columns are generally assigned an ordinal (integer) value based on the order they are added.
- * String Name – The raw name given to the appropriate DataColumn
- * Performance: Similar to other areas of the .NET Framework, it is almost always faster to utilize an ordinal instead of a string column name, but for most applications and smaller data sets, the gains are negligible and in practice seldom makes a significant difference
-- The DataRow values are of type Object, despite being constrained by the actual column type or a DataRelation object on the DataSet itself
-- SetAdd(), SetModified() and Delete() modify the state of a row programmatically when utilizing a TableAdapter that propagates changes to a database.
+- Items represent the raw data on your table. <b>Data in each row</b>. 
+- Columns are accessed (get or set) using an <b>indexer</b>.
+- The indexer can be an <b>ordinal</b> (integer) or a <b>string name</b> (column name)
+ * Ordinal: A unique number that identifies a column for the current data table. Zero-based index of the column. Columns are generally assigned an ordinal (integer) value based on the order they are added.
+ * String Name: The raw name given to the appropriate DataColumn.
+ * Performance: Similar to other areas of the .NET Framework, it is almost always <b>faster to utilize an ordinal</b> instead of a string column name, but for most applications and smaller data sets, the gains are negligible and in practice seldom makes a significant difference.
+- The DataRow values are of type <b>Object</b>, despite being constrained by the actual column type or a DataRelation object on the DataSet itself.  
+- SetAdd(), SetModified() and Delete() modify the state of a row programmatically when utilizing a TableAdapter that propagates changes to a database. 
 
+### Setting a value on a row using column name vs ordinal index
+* Column name
+```ruby
+public void AccessRowColumnByName()
+{
+  // Create the table schema programmatically 
+  var table = new System.Data.DataTable("tblEmployee"); 
+  table.Columns.Add("ID", typeof(int)); 
+  table.Columns.Add("First Name", typeof(string)); 
+  table.Columns.Add("Last Name", typeof(string)); 
+  table.Columns.Add("E-mail Name", typeof(string)); 
+  table.Columns.Add("business Phone", typeof(string)); 
+  table.Columns.Add("Company", typeof(string)); 
+  table.Columns.Add("Job Title", typeof(string)); 
+  
+  // Create a new row
+  var newRow = table.NewRow(); 
+  
+  // Set the column using ordinal 
+  newRow["Job Title"] = "Chieg Technology Officer"; 
+}
+```
+* Ordinal index
+```ruby
+public void AccessRowColumnByOrdninal()
+{
+  // Create the table schema programmatically 
+  var table = new System.Data.DataTable("tblEmployee"); 
+  table.Columns.Add("ID", typeof(int)); 
+  table.Columns.Add("First Name", typeof(string)); 
+  table.Columns.Add("Last Name", typeof(string)); 
+  table.Columns.Add("E-mail Name", typeof(string)); 
+  table.Columns.Add("business Phone", typeof(string)); 
+  table.Columns.Add("Company", typeof(string)); 
+  table.Columns.Add("Job Title", typeof(string)); 
+  var jobTitleColumn = table.Columns.Add("Job Title", typeof(string)); 
+  
+  // Retrieve the column ordinal (index) 
+  var jobTitleColumnOrdinal = jobTitleColumn.Ordinal;
+  
+  // Create a new row
+  var newRow = table.NewRow(); 
+  
+  // Set the column using ordinal 
+  newRow[jobTitleColumn] = "Chieg Technology Officer"; 
+}
+```
+### Beware DbNull! 
+- Null != DbNull in C#
+- You may want to know the database with cells doesn't have information in there. 
+- A singletone value that can be checked for on an individual column within a DataRow by calling IsNull() on the DataRow. 
+```ruby
+// Check for DBNULL.Value and actual "null" values 
+if (newRow.IsNull("Job title"))
+{
+    // Do logic if Job Title is DBNULL or actual null 
+    Console.WriteLine("Found null value!"); 
+}
+```
