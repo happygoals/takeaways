@@ -268,3 +268,21 @@ if (newRow.IsNull("Job title"))
     Console.WriteLine("Found null value!"); 
 }
 ```
+## Advantages and Disadvantages for the DataSet, DataTable, and associated objects
+### Advantages 
+- Typically <b>auto-populated</b> from a SQL query, Excel or XML query. Done automatically by simply connecting to the data source and tell .NET to read Schema directly from the data source.
+- Typically do not contain relationships in code and instead rely on the underlying persistent medium (database) to enforce those constraints. <b>Not forced</b>
+- Provide functionality that allows for programmatic manipulation that can be propagated to and from an underlying persistent medium (database), which will be explored soon via <b>Table Adapters</b> and <b>Data Readers</b>.
+- Provides <b>a standard interface</b> for interacting with data, columns and sets of that data in <b>any known structure</b>.
+### Disadvantages
+- These objects do not contain nor are they strongly typed. <b>Nothing strongly typed.</b> 
+- Column data is defined as the root Object type, which <b>does not enforce compile type</b> checking that would allow incorrect data to enter a column. Comfiling was fine, but when it runs, it will fail. <b>C# is a strongly typed language.</b> 
+- Prone to misuse and loading of entire representative data sets that can be a <b>source of performance and memory utilization issues</b>. 
+- Does not support native serialization into anything except XML. 
+
+# Reference Links
+[Overview of ADO.NET in the .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
+[Overview of DataSets, DataTables & DataViews](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/index?view=netframework-4.8)
+[Overview of DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8)
+[Overview of the DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=netframework-4.8)
+[Overview of DataRow](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarow?view=netframework-4.8)
