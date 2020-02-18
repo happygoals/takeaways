@@ -203,9 +203,9 @@ table.Columns.Add("Job Title", typeof(string));
 - Items represent the raw data on your table. <b>Data in each row</b>. 
 - Columns are accessed (get or set) using an <b>indexer</b>.
 - The indexer can be an <b>ordinal</b> (integer) or a <b>string name</b> (column name)
- * Ordinal: A unique number that identifies a column for the current data table. Zero-based index of the column. Columns are generally assigned an ordinal (integer) value based on the order they are added.
- * String Name: The raw name given to the appropriate DataColumn.
- * Performance: Similar to other areas of the .NET Framework, it is almost always <b>faster to utilize an ordinal</b> instead of a string column name, but for most applications and smaller data sets, the gains are negligible and in practice seldom makes a significant difference.
+ 1. Ordinal: A unique number that identifies a column for the current data table. Zero-based index of the column. Columns are generally assigned an ordinal (integer) value based on the order they are added.
+ 2. String Name: The raw name given to the appropriate DataColumn.
+ 3. Performance: Similar to other areas of the .NET Framework, it is almost always <b>faster to utilize an ordinal</b> instead of a string column name, but for most applications and smaller data sets, the gains are negligible and in practice seldom makes a significant difference.
 - The DataRow values are of type <b>Object</b>, despite being constrained by the actual column type or a DataRelation object on the DataSet itself.  
 - SetAdd(), SetModified() and Delete() modify the state of a row programmatically when utilizing a TableAdapter that propagates changes to a database. 
 
