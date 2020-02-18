@@ -101,58 +101,60 @@ A. My first answer :
 ```
 A. Right answer : 
 ```ruby
-      <xsl:template match="/">
-	  <html>
-	  <body>
-			<ol>
-        <!-- Select the first book node -->
-        <li><xsl:value-of select="bookstore/book[1]/*" /></li>      
-        <!-- Select all book nodes that are in the "web" category -->
-        <li>
-          <ul>
-            <xsl:for-each select="/bookstore/book[@category='web']">
-              <li>
-                <xsl:value-of select="title" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!-- Select all book nodes for books that were published after 2003 -->
-        <li>
-          <ul>
-            <xsl:for-each select="/bookstore/book[year &gt; 2003]">
-              <li>
-                <xsl:value-of select="title" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!-- Select all book nodes for books that contains the letter "l" in the title -->
-        <li>
-          <ul>
-            <xsl:for-each select="/bookstore/book[contains(title,'l')]">
-              <li> <xsl:value-of select="title" disable-output-escaping="yes" />  </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!-- Select all book nodes that have more than one author -->
-        <li>
-          <ul>
-            <xsl:for-each select="/bookstore/book">
-              <xsl:if test="count(author) &gt; 1">
-                <li>
-                  <xsl:value-of select="title" disable-output-escaping="yes"/>
-                </li>
-              </xsl:if>
-            </xsl:for-each>
-          </ul>
-        </li>
-     </ol>
-     </body>
-     </html>
-    </xsl:template>
-    
- </div>
+<xsl:template match="/">
+   <html>
+      <body>
+         <ol>
+            <!-- Select the first book node -->
+            <li>
+               <xsl:value-of select="bookstore/book[1]/*" />
+            </li>
+            <!-- Select all book nodes that are in the "web" category -->
+            <li>
+               <ul>
+                  <xsl:for-each select="/bookstore/book[@category='web']">
+                     <li>
+                        <xsl:value-of select="title" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!-- Select all book nodes for books that were published after 2003 -->
+            <li>
+               <ul>
+                  <xsl:for-each select="/bookstore/book[year &gt; 2003]">
+                     <li>
+                        <xsl:value-of select="title" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!-- Select all book nodes for books that contains the letter "l" in the title -->
+            <li>
+               <ul>
+                  <xsl:for-each select="/bookstore/book[contains(title,'l')]">
+                     <li>
+                        <xsl:value-of select="title" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!-- Select all book nodes that have more than one author -->
+            <li>
+               <ul>
+                  <xsl:for-each select="/bookstore/book">
+                     <xsl:if test="count(author) &gt; 1">
+                        <li>
+                           <xsl:value-of select="title" disable-output-escaping="yes"/>
+                        </li>
+                     </xsl:if>
+                  </xsl:for-each>
+               </ul>
+            </li>
+         </ol>
+      </body>
+   </html>
+</xsl:template>
  ```
   --------------------------------------------------------------- 
   My Errored answers : 
@@ -230,81 +232,81 @@ A. Right answer :
 
 ------------------------------------------------------------------------
 ```ruby
-    <xsl:template match="/">
-     <html>
+<xsl:template match="/">
+   <html>
       <body>
-      <ol>
-        <!--Select all tblPages nodes that have an _id less than 10-->
-       <li>
-        <ul>
-          <xsl:for-each select="Entities/Data/tblPages[@_id &lt; 10]">
-              <li>
-                <xsl:value-of select="./Title" disable-output-escaping="yes" />
-              </li>
-          </xsl:for-each>
-        </ul>
-       </li>
-        <!--Select the trimmed DisplayName of the 4th tblPages node-->
-        <li>
-          <ul>
-            <xsl:for-each select="Entities/Data/tblPages[position() = 4]">
-              <li>
-                <xsl:value-of select="normalize-space(./DisplayName)" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!--Select the number of sename nodes in this document-->
-        <li>
-          <ul>
-            <xsl:for-each select="Entities/Data">
-              <li>
-                <xsl:value-of select="count(sename)" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!--Starting with the 5th tblPages node count the number of tblPages that have FDIC set to true-->
-        <li>
-          <ul>
+         <ol>
+            <!--Select all tblPages nodes that have an _id less than 10-->
             <li>
-              <xsl:value-of select="count(Entities/Data/tblPages[@_index &gt; 4 and FDIC = 'true'])" disable-output-escaping="yes" />
+               <ul>
+                  <xsl:for-each select="Entities/Data/tblPages[@_id &lt; 10]">
+                     <li>
+                        <xsl:value-of select="./Title" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
             </li>
-          </ul>
-        </li>
-        <!--Select the CanonicalUrl of the first tblPages node that has a title which contains 'Calculators'-->
-        <li>
-          <ul>
-            <xsl:for-each select="Entities/Data/sename[TableName = 'tblPages' and contains(CanonicalUrl,'calculators')]">
-              <li>
-                <xsl:value-of select="CanonicalUrl" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!--Select the DisplayName of the tblPages node pointed to by the last sename node without using the sename node's EntityMasterRecordId-->
-        <li>
-          <ul>
-            <xsl:for-each select="Entities/Data">
-              <li>
-                <xsl:variable name="entityid" select="sename[last()]/EntityId" />
-                <xsl:value-of select="tblPages[@_id = $entityid]/DisplayName" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-        <!--Select the number of parent nodes that the last tblPages node has-->
-        <li>
-          <ul>
-            <xsl:for-each select="Entities/Data/tblPages[last()]">
-              <li>
-                <xsl:value-of select="count(./ancestor::*)" disable-output-escaping="yes" />
-              </li>
-            </xsl:for-each>
-          </ul>
-        </li>
-      </ol>
-	  </body>
-	</html>
-	</xsl:template>
+            <!--Select the trimmed DisplayName of the 4th tblPages node-->
+            <li>
+               <ul>
+                  <xsl:for-each select="Entities/Data/tblPages[position() = 4]">
+                     <li>
+                        <xsl:value-of select="normalize-space(./DisplayName)" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!--Select the number of sename nodes in this document-->
+            <li>
+               <ul>
+                  <xsl:for-each select="Entities/Data">
+                     <li>
+                        <xsl:value-of select="count(sename)" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!--Starting with the 5th tblPages node count the number of tblPages that have FDIC set to true-->
+            <li>
+               <ul>
+                  <li>
+                     <xsl:value-of select="count(Entities/Data/tblPages[@_index &gt; 4 and FDIC = 'true'])" disable-output-escaping="yes" />
+                  </li>
+               </ul>
+            </li>
+            <!--Select the CanonicalUrl of the first tblPages node that has a title which contains 'Calculators'-->
+            <li>
+               <ul>
+                  <xsl:for-each select="Entities/Data/sename[TableName = 'tblPages' and contains(CanonicalUrl,'calculators')]">
+                     <li>
+                        <xsl:value-of select="CanonicalUrl" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!--Select the DisplayName of the tblPages node pointed to by the last sename node without using the sename node's EntityMasterRecordId-->
+            <li>
+               <ul>
+                  <xsl:for-each select="Entities/Data">
+                     <li>
+                        <xsl:variable name="entityid" select="sename[last()]/EntityId" />
+                        <xsl:value-of select="tblPages[@_id = $entityid]/DisplayName" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+            <!--Select the number of parent nodes that the last tblPages node has-->
+            <li>
+               <ul>
+                  <xsl:for-each select="Entities/Data/tblPages[last()]">
+                     <li>
+                        <xsl:value-of select="count(./ancestor::*)" disable-output-escaping="yes" />
+                     </li>
+                  </xsl:for-each>
+               </ul>
+            </li>
+         </ol>
+      </body>
+   </html>
+</xsl:template>
 ```
