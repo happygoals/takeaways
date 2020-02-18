@@ -281,8 +281,8 @@ if (newRow.IsNull("Job title"))
 - Does not support native serialization into anything except XML. 
 
 # Reference Links
-[Overview of ADO.NET in the .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
-[Overview of DataSets, DataTables & DataViews](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/index?view=netframework-4.8)
-[Overview of DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8)
-[Overview of the DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=netframework-4.8)
-[Overview of DataRow](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarow?view=netframework-4.8)
+* [Overview of ADO.NET in the .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
+* [Overview of DataSets, DataTables & DataViews](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/index?view=netframework-4.8)
+* [Overview of DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8)
+* [Overview of the DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=netframework-4.8)
+* [Overview of DataRow](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarow?view=netframework-4.8)
