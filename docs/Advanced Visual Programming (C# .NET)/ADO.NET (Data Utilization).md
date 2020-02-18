@@ -17,8 +17,8 @@ nav_order: 5
 
 ---
 
-## System.Data Namespace (ADO.NET) 
-### ADO.NET component
+# System.Data Namespace (ADO.NET) 
+## ADO.NET component
  1. ADO.NET: How .NET refers to these libraries which associated with interacting with Databases and CSV files. .Net iteration. 
  2. Fundamental components in ADO.NET
  * DataSet - Represents a collection of data tables(Multiple tables of data). 
@@ -29,8 +29,8 @@ nav_order: 5
             - A snapshot of a DataTable if you need to create one. 
               e.g. A view of same data that only filter by last name.
 
-## DataSet, DataTable, and DataRow
-### Example of DataSet, DataTable, and DataRow
+# DataSet, DataTable, and DataRow
+## Example of DataSet, DataTable, and DataRow
 - DataSet implement IDisposable. Immediately we can use 'using' statement. 
 - No Database access happens. 
  
@@ -84,7 +84,7 @@ nav_order: 5
   </tblUsers>
 </MyDataSet>
 ```
-
+## DataSet
 ### Important Facts about DataSets
   * DBNull.Value - This is a special singleton object that represents a NULL value from the original data source. 
   * DataSets can be converted into JSON using the Newtonsoft.JSON library and demonstrate a data-format independent from of data representation. 
@@ -200,3 +200,12 @@ table.Columns.Add("Job Title", typeof(string));
 
 ## DataRow
 ### Important facts about DataRow
+- These items represent the raw data on your table
+- Columns are accessed (get or set) using an indexer
+- The indexer can be an ordinal (integer) or a string (column name)
+ * Ordinal – This is a unique number that identifies a column for the current data table.  Columns are generally assigned an ordinal (integer) value based on the order they are added.
+ * String Name – The raw name given to the appropriate DataColumn
+ * Performance: Similar to other areas of the .NET Framework, it is almost always faster to utilize an ordinal instead of a string column name, but for most applications and smaller data sets, the gains are negligible and in practice seldom makes a significant difference
+- The DataRow values are of type Object, despite being constrained by the actual column type or a DataRelation object on the DataSet itself
+- SetAdd(), SetModified() and Delete() modify the state of a row programmatically when utilizing a TableAdapter that propagates changes to a database.
+
