@@ -18,9 +18,9 @@ nav_order: 5
 ---
 
 ## System.Data Namespace (ADO.NET) 
- ### ADO.NET component
- - ADO.NET: How .NET refers to these libraries which associated with interacting with Databases and CSV files. .Net iteration. 
- - Fundamental components in ADO.NET
+### ADO.NET component
+ 1. ADO.NET: How .NET refers to these libraries which associated with interacting with Databases and CSV files. .Net iteration. 
+ 2. Fundamental components in ADO.NET
  * DataSet - Represents a collection of data tables(Multiple tables of data). 
  * DataTable - Represents one table of in-memory data. 
  * DataColumn - Represents the schema of a column in a DataTable 
@@ -29,9 +29,9 @@ nav_order: 5
             - A snapshot of a DataTable if you need to create one. 
               e.g. A view of same data that only filter by last name.
               
- ### Example of DataSet, DataTable, and DataRow
- DataSet implement IDisposable. Immediately we can use 'using' statement. 
- No Database access happen. 
+### Example of DataSet, DataTable, and DataRow
+- DataSet implement IDisposable. Immediately we can use 'using' statement. 
+- No Database access happens. 
  
  <div class="code-example" markdown="1">
 
@@ -66,7 +66,7 @@ nav_order: 5
     }
 
  </div>
- 
+
 ### Converting the DataSet into XML(Baked into the .Net Framework): 
 
 ```ruby
@@ -84,7 +84,7 @@ nav_order: 5
 </MyDataSet>
 ```
 
- ### Important Facts about DataSets
+### Important Facts about DataSets
   * DBNull.Value - This is a special singleton object that represents a NULL value from the original data source. 
   * DataSets can be converted into JSON using the Newtonsoft.JSON library and demonstrate a data-format independent from of data representation. 
   * DataSets can contain more than one DataTable.
@@ -93,14 +93,13 @@ nav_order: 5
   
 
 ### Consider the following Department – User relationship
-Any number of users may belong to a department
-All users must belong to a department
-
-1) Create the tblUsers table programmatically 
-2) Add two users programmatically
-3) Create the tblDepartments table programmatically
-4) Establish relationship between tblUsers and tblDepartments
-5) Write the result out to an XML file
+- Any number of users may belong to a department
+- All users must belong to a department
+1. Create the tblUsers table programmatically 
+2. Add two users programmatically
+3. Create the tblDepartments table programmatically
+4. Establish relationship between tblUsers and tblDepartments
+5. Write the result out to an XML file
 
 <div class="code-example" markdown="1">
 
