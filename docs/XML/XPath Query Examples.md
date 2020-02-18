@@ -22,10 +22,10 @@ books.xml
 ```ruby
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <book category="cooking">
-<title>Everyday Italian</title>
-<author>Giada De Laurentiis</author>
-<year>2005</year>
-<price>30.00</price>
+   <title>Everyday Italian</title>
+   <author>Giada De Laurentiis</author>
+   <year>2005</year>
+   <price>30.00</price>
 </book>
 ```
   
@@ -38,46 +38,50 @@ category="cooking" (attribute node)
 Q. Create XPath Queries that do the following:
 ```ruby
 <b>Select the Title of the Book<b>
+```
 //book/title
 //title
 book/title
+```ruby
  <b>Select the Year of the book</b>
+ ```
 book/year
+```ruby
  <b>Select the category attribute of the book nodebook</b>
+ ```
 /@category
-```
 
 ```ruby
- <?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <bookstore>
-<book category="cooking">
-<title lang="en">Everyday Italian</title>
-<author>Giada De Laurentiis</author>
-<year>2005</year>
-<price>30.00</price>
-</book>
-<book category="children">
-<title lang="en">Harry Potter</title>
-<author>J K. Rowling</author>
-<year>2005</year>
-<price>29.99</price>
-</book>
-<book category="web">
-<title lang="en">XQuery Kick Start</title>
-<author>James McGovern</author>
-<author>Per Bothner</author>
-<author>Kurt Cagle</author>
-<author>James Linn</author>
-<author>Vaidyanathan Nagarajan</author>
-<year>2003</year>
-<price>49.99</price>
-</book>
-<book category="web" cover="paperback">
-<title lang="en">Learning XML</title>
-<author>Erik T. Ray</author>
-<year>2003</year>
-<price>39.95</price>
-</book>
+   <book category="cooking">
+      <title lang="en">Everyday Italian</title>
+      <author>Giada De Laurentiis</author>
+      <year>2005</year>
+      <price>30.00</price>
+   </book>
+   <book category="children">
+      <title lang="en">Harry Potter</title>
+      <author>J K. Rowling</author>
+      <year>2005</year>
+      <price>29.99</price>
+   </book>
+   <book category="web">
+      <title lang="en">XQuery Kick Start</title>
+      <author>James McGovern</author>
+      <author>Per Bothner</author>
+      <author>Kurt Cagle</author>
+      <author>James Linn</author>
+      <author>Vaidyanathan Nagarajan</author>
+      <year>2003</year>
+      <price>49.99</price>
+   </book>
+   <book category="web" cover="paperback">
+      <title lang="en">Learning XML</title>
+      <author>Erik T. Ray</author>
+      <year>2003</year>
+      <price>39.95</price>
+   </book>
 </bookstore>
 ```
  
@@ -90,13 +94,13 @@ book/year
 * Select all book nodes that have more than one author
 
 A. My first answer : 
-  select="/bookstore/book[author.count() &gt; 1]">
-  <xsl:value-of select="title" disable-output-escaping="yes" />
-
+```ruby
+  <xsl:for-each select="/bookstore/book[author.count() &gt; 1]">
+  	<xsl:value-of select="title" disable-output-escaping="yes" />
+  </xsl:for-each>
+```
 A. Right answer : 
-
-  <div class="code-example" markdown="1">
-  
+```ruby
       <xsl:template match="/">
 	  <html>
 	  <body>
@@ -149,39 +153,34 @@ A. Right answer :
     </xsl:template>
     
  </div>
-  
+ ```
   --------------------------------------------------------------- 
   My Errored answers : 
   1. Select all book nodes that belong to the web category, have at least one author, were published in 2003, and cost more than $40
   
-   <div class="code-example" markdown="1">
-
+```ruby
       <!--one node at the same time, on the same node, in the same level.--> 
        <xsl:for-each select="//book[@category='web' and count(author) &gt; 1 and year = '2003' and price &gt; 40]">
               <li>
                 <xsl:value-of select="title" disable-output-escaping="yes" />
               </li>
        </xsl:for-each>
-	    
-   </div>
+```
    
    2. Select all book nodes that have titles greater in length than 12 characters
    
-   <div class="code-example" markdown="1">
-   
+```ruby
  	<!--There's a duplication of location specification. Double titled. --> 
          <xsl:for-each select="/bookstore/book/title[string-length(.) &gt; 12 ]">
               <li>
                 <xsl:value-of select="title" disable-output-escaping="yes" />
               </li>
          </xsl:for-each>
-	    
-    </div>
+```
 
 A. Right answer : 
 
-  <div class="code-example" markdown="1">
-
+```ruby
   <xsl:template match="/">
    <html>
     <body>
@@ -227,14 +226,10 @@ A. Right answer :
      </body>
     </html>
   </xsl:template>
-    
-    </div>
-
+```
 
 ------------------------------------------------------------------------
-
-  <div class="code-example" markdown="1">
-  
+```ruby
     <xsl:template match="/">
      <html>
       <body>
@@ -312,5 +307,4 @@ A. Right answer :
 	  </body>
 	</html>
 	</xsl:template>
-  
-  </div>
+```
