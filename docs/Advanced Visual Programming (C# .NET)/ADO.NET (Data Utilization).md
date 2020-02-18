@@ -28,7 +28,8 @@ nav_order: 5
  * DataView - Represents a databindable, customized view of a DataTable for sorting, filtering, searching, editing, and navigation. 
             - A snapshot of a DataTable if you need to create one. 
               e.g. A view of same data that only filter by last name.
-              
+
+## DataSet, DataTable, and DataRow
 ### Example of DataSet, DataTable, and DataRow
 - DataSet implement IDisposable. Immediately we can use 'using' statement. 
 - No Database access happens. 
@@ -177,3 +178,25 @@ Resultant XML:
  </tblDepartment>
 </MyDataSet>
 ```
+
+## DataTable
+### Important facts about DataTable
+- A DataTable in an <b>independent in-memory</b> representation of tabular data.
+- It is a collection of columns, each with a name, type and other properties such as allowing nulls, case sensitivity, uniqueness, auto-increment, etc. 
+- A DataTable can create new row objects with the <b>NewRow()</b> method, but those rows are not automatically added to the datatable and are only compatible with a DataTable if it has the exact same DataColumns. You cannot actually create a DataRow object directly. You must actually call the NewRow() method on a DataTable to create a DataRow. 
+- DataTables can be created programmatically or automatically based on the need. Programmatic method adds the columns, types and properties within the code itself. <b>Automatic creation</b> occurs when reading from an input XML file, excel file or a database (typically via a <b>DataReader</b>).
+
+### Sample DataTable
+```ruby
+var table = new System.Data.DataTable("tblEmployee"); 
+table.Columns.Add("ID", typeof(int)); 
+table.Columns.Add("First Name", typeof(string)); 
+table.Columns.Add("Last Name", typeof(string)); 
+table.Columns.Add("E-mail Name", typeof(string)); 
+table.Columns.Add("business Phone", typeof(string)); 
+table.Columns.Add("Company", typeof(string)); 
+table.Columns.Add("Job Title", typeof(string)); 
+```
+
+## DataRow
+### Important facts about DataRow
