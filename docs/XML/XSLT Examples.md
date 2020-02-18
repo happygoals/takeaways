@@ -105,7 +105,7 @@ Raw HTML:
       </div>
 ```     
 
- ## Practice 6
+## Practice 6
  
  2. Create an XSLT using the above XML that produces the following HTML (everything between the lines):
 
