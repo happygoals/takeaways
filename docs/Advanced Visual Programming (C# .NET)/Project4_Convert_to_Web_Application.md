@@ -28,11 +28,14 @@ nav_order: 7
 - Description: This method must create a data table object, add the rows manually to the datatable, 
 call the NewRow() method on the DataTable to create the new Row object and return it. 
 1. ThrowsObjectDisposedAfterDisposeCalled
+
 ```ruby
  if (IsDisposed)
     throw new ObjectDisposedException("Previously Disposed."); 
- ```
+```
+
 2. NewRowHasCorrectColumns
+
 ```ruby
             DataTable table = new DataTable(tableName);
 
@@ -48,7 +51,9 @@ call the NewRow() method on the DataTable to create the new Row object and retur
             newRow["ID"] = 0;
             return newRow;
 ```
+
 3. SupportsEmployeeTable 
+
 ```ruby
 if (tableName != "tblEmployees")
     throw new System.ArgumentException("Arguement is invalid.");
