@@ -2,7 +2,7 @@
 layout: default
 title: Access Database Display Front-end
 parent: Advanced Visual Programming (C# .NET)
-permalink: /docs/csharp/project3
+permalink: /csharp/project3
 
 nav_order: 6
 ---
@@ -24,6 +24,7 @@ nav_order: 6
  *  Start Date: 02/10/2020
  *  Last Modified Date: 02/13/2020
 
+```ruby
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -279,3 +280,4 @@ namespace PFW.CSIST203.Project3.Persisters.Access
         }
     }
 }
+```
