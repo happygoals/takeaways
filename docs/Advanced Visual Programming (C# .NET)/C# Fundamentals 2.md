@@ -2,6 +2,7 @@
 layout: default
 title: C# Fundamentals 2
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/fundamentals2
 
 nav_order: 2
 ---
