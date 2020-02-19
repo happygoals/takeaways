@@ -2,7 +2,7 @@
 layout: default
 title: Mathematical and Array Manipulation Utility
 parent: Advanced Visual Programming (C# .NET)
-permalink: /docs/csharp/project1
+permalink: /csharp/project1
 
 nav_order: 3
 ---
@@ -54,7 +54,7 @@ If we make a function include operator as a parameter, it will make less duplica
         }
 ```
 
-```
+```ruby
             string directory = System.IO.Path.GetFullPath(PersistentFile);
             directory = System.IO.Path.GetDirectoryName(directory);
 ```
