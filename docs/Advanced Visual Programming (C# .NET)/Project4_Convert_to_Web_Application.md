@@ -114,7 +114,7 @@ Q. What is 'SELECT @@IDENTITY'?
 
  * File Name: Default.aspx.cs
 ## Method 3: public int CurrentRow 
-( [Create a ViewState Property] (https://www.developer.com/net/asp/article.php/3606741/aspnet-tip-create-a-viewstate-property.html) )
+( [Create a ViewState Property](https://www.developer.com/net/asp/article.php/3606741/aspnet-tip-create-a-viewstate-property.html) )
 ```ruby
 public int CurrentRow
 {
