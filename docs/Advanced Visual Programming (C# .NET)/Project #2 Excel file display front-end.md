@@ -17,9 +17,10 @@ nav_order: 4
 
 ---
 *  Project Name: Project #2 - Excel file display front-end
- *  File Name: ExcelDataPersister.cs and frmMain.cs.
- *  Start Date: 01/27/2020
- *  Last Modified Date: 01/28/2020
+* [Project Description](../../assets/files/012720_Csharp_Project2_Excel_File_Display_Front-end.pdf)
+*  File Name: ExcelDataPersister.cs and frmMain.cs.
+*  Start Date: 01/27/2020
+*  Last Modified Date: 01/28/2020
 
 
 ## Issue 1 : Data connection error: could not find installable ISAM.  when you refresh a data table in Excel.
