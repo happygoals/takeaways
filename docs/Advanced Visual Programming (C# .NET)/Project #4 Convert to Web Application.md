@@ -53,7 +53,6 @@ call the NewRow() method on the DataTable to create the new Row object and retur
 if (tableName != "tblEmployees")
     throw new System.ArgumentException("Arguement is invalid.");
 ```
-
 ## Method 2: public void StoreRow(DataRow row)
 - Description: This method has been renamed as part of the interface from UpdateRow() to StoreRow(). 
 This method must now perform the same function it did before with updating the supplied row,
