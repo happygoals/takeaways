@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Convert to Web Application
+title: Access Database Display Front-end
 parent: Advanced Visual Programming (C# .NET)
 
-nav_order: 7
+nav_order: 6
 ---
 
 #Project #3 - Access Database Display Front-end
