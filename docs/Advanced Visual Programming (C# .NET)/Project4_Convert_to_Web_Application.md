@@ -54,7 +54,7 @@ call the NewRow() method on the DataTable to create the new Row object and retur
 ```
 
 3. SupportsEmployeeTable 
-
+* Error Message: "Assert.Fail failed. Delegate threw exception of type 'System.Data.OleDb.OleDbException', but expected 'System.ArgumentException': The persister should throw an exception when an invalid table is specified."
 ```ruby
 if (tableName != "tblEmployees")
     throw new System.ArgumentException("Arguement is invalid.");
