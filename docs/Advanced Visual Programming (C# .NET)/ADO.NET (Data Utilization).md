@@ -2,6 +2,7 @@
 layout: default
 title: ADO.NET (Data Utilization)
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/adodotnet
 
 nav_order: 5
 ---
