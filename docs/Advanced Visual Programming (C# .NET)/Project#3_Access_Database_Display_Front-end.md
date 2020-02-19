@@ -6,7 +6,7 @@ parent: Advanced Visual Programming (C# .NET)
 nav_order: 6
 ---
 
-#Project #3 - Access Database Display Front-end
+# Project #3 - Access Database Display Front-end
 {: .no_toc }
 
 ## Table of contents
