@@ -2,6 +2,7 @@
 layout: default
 title: Excel File Display Front-end
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/project2
 
 nav_order: 4
 ---
