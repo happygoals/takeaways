@@ -2,6 +2,7 @@
 layout: default
 title: Access Database Display Front-end
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/project3
 
 nav_order: 6
 ---
