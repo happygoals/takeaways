@@ -113,7 +113,8 @@ Q. What is 'SELECT @@IDENTITY'?
 [Reference](https://dba.stackexchange.com/questions/4696/why-is-select-identity-returning-a-decimal)
 
  * File Name: Default.aspx.cs
-## Method 3: public int CurrentRow ( [Create a ViewState Property] (https://www.developer.com/net/asp/article.php/3606741/aspnet-tip-create-a-viewstate-property.html) )
+## Method 3: public int CurrentRow 
+( [Create a ViewState Property] (https://www.developer.com/net/asp/article.php/3606741/aspnet-tip-create-a-viewstate-property.html) )
 ```ruby
 public int CurrentRow
 {
