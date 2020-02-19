@@ -53,10 +53,9 @@ If we make a function include operator as a parameter, it will make less duplica
         }
 ```
 
-{% highlight markdown %}
+```
             string directory = System.IO.Path.GetFullPath(PersistentFile);
             directory = System.IO.Path.GetDirectoryName(directory);
-{% endhighlight %}
-
+```
 
 
