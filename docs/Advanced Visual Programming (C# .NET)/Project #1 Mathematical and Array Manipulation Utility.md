@@ -16,16 +16,16 @@ nav_order: 3
 {:toc}
 
 ---
-*  Project Name: Project #1 - Mathematical and Array Manipulation Utility
- *  File Name: ArrayFunctions.cs , MathFunctions.cs
- *  Start Date: 01/21/2020
- *  Last Modified Date: 01/23/2020
+* Project Name: Project #1 - Mathematical and Array Manipulation Utility
+* [Project Description](../../assets/files/012120_Csharp_Project1_Mathematical_and_Array_Manipulation_Utility.pdf)
+* File Name: ArrayFunctions.cs , MathFunctions.cs
+* Start Date: 01/21/2020
+* Last Modified Date: 01/23/2020
+* Future Work : Calculation functions can be simple by removing duplication. 
+If we make a function include operator as a parameter, it will make less duplication code.  
  
- * Future Work : Calculation functions can be simple by removing duplication. 
- If we make a function include operator as a parameter, it will make less duplication code.  
  
- 
- <div class="code-example" markdown="1">
+```ruby
         public ArrayFunctions(string persistentFile, int? seed)
         {
             this.PersistentFile = persistentFile;     // PersistentFile Parameter and the persistent file are equal. 
@@ -51,7 +51,7 @@ nav_order: 3
                 throw new DirectoryNotFoundException("The data file was not found.");            //FileDoesNotExist
             }
         }
-</div>
+```
 
 {% highlight markdown %}
             string directory = System.IO.Path.GetFullPath(PersistentFile);
