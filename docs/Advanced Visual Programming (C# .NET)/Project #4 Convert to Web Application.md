@@ -16,12 +16,12 @@ nav_order: 7
 {:toc}
 
 --- 
- *  Project Name: Project #4 - Convert to Web Application
- [Project Description](../../assets/files/021720_Csharp_Project4_Conver to Web Application.pdf)
- *  File Name: AccessPersister.cs
- *  Author Name: Haemin Ryu
- *  Start Date: 02/17/2020
- *  Last Modified Date: 02/19/2020
+ * Project Name: Project #4 - Convert to Web Application
+ * [Project Description](../../assets/files/021720_Csharp_Project4_Conver to Web Application.pdf)
+ * File Name: AccessPersister.cs
+ * Author Name: Haemin Ryu
+ * Start Date: 02/17/2020
+ * Last Modified Date: 02/19/2020
 
 
 ## Method 1: public DataRow CreateRow(string tableName)
