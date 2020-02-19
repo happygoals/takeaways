@@ -2,7 +2,7 @@
 layout: default
 title: Convert to Web Application
 parent: Advanced Visual Programming (C# .NET)
-permalink: /docs/csharp/project4
+permalink: /csharp/project4
 
 nav_order: 7
 ---
@@ -36,7 +36,7 @@ call the NewRow() method on the DataTable to create the new Row object and retur
 ```
 
 2. NewRowHasCorrectColumns
-
+[How to add row to data table](https://forums.asp.net/t/1448166.aspx?how+to+add+row+to+data+table)
 ```ruby
             DataTable table = new DataTable(tableName);
 
@@ -65,3 +65,48 @@ This method must now perform the same function it did before with updating the s
 but if the row has an "ID" column of zero, the row must be inserted into the database. 
 It must then execute a 'SELECT @@IDENTITY' to retrieve the newly assigned ID of the new row and assign it to the DataRow's ID column. 
 You will need to write the SQL statement that inserts the new row yourself. 
+1. UpdateExistingRecordWorksWithOleDb, UPdateExistingRecordWorksWithPersister
+Same as the UpdateRow(). 
+2. StoreNewRecordWorksCorrectly
+```ruby
+        using (OleDbCommand command = connection.CreateCommand())
+        {
+            if ((int)row["ID"] == 0)
+            {
+                // Write the SQL statement that inserts the new row yourself. 
+                command.CommandText = "INSERT INTO [tblEmployees]([Company], [Last Name], [First Name], [E-mail Address], [Job Title], [Business Phone], [ID]) VALUES(@Company, @FirstName, @LastName, @EmailAddress, @JobTitle, @BusinessPhone, @ID)";
+            }
+            else
+            {
+                command.CommandText = "UPDATE [tblEmployees] SET[Company] = @Company, [Last Name] = @LastName,[First Name] = @FirstName,[E-mail Address] = @EmailAddress,[Job Title] = @JobTitle,[Business Phone] = @BusinessPhone WHERE [ID] = @ID";
+            }
+```
+... clipping 
+```ruby
+                 var idPar = command.CreateParameter();
+                 idPar.ParameterName = "@ID";
+                 idPar.DbType = DbType.UInt32;
+                 // if the row has an "ID" column of zero, the row must be inserted into the database.
+                 if (row["ID"].Equals(0))
+                 {
+                     row["ID"] = CountRows() + 1;
+                     idPar.Value = CountRows() + 1;
+                 }
+                 else
+                 {
+                     idPar.Value = row["ID"];
+                 }
+                 command.Parameters.Add(idPar);
+
+                 var rowsAffacted = command.ExecuteNonQuery();
+```
+3. UpdateMissingRecordthrowsException
+```ruby
+  if ((int)row["ID"] < 0)       
+  {
+      throw new System.ArgumentException("Exception");
+  }
+```
+
+Q. What is 'SELECT @@IDENTITY'?
+[Reference](https://dba.stackexchange.com/questions/4696/why-is-select-identity-returning-a-decimal)
