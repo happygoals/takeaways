@@ -2,6 +2,7 @@
 layout: default
 title: Mathematical and Array Manipulation Utility
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/project1
 
 nav_order: 3
 ---
