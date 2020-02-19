@@ -1,5 +1,6 @@
 /* 
- *  Project Name: Project #3 - Access Database display front-end
+ *  Project Name: Project #3 - Access database display front-end
+ *  [Project Description](../../../asset/files/021020_Csharp_Project3_Access_Database_Display_Front-end.pdf)
  *  File Name: AccessPersister.cs
  *  Author Name: Haemin Ryu
  *  Start Date: 02/10/2020
