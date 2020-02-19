@@ -34,6 +34,6 @@ install the following [package from Microsoft](https://www.microsoft.com/en-us/d
 
 - Right Click on your project > Properties > Build > Change “Any CPU” under “Platform Target” to the appropriate bitness version(x86 or x64).
 - The “UtilTests+GetExcelConnectionStringMethod” unit test will pass once you configure everything correctly.
-= If the unit test still does not pass, then click on the settings icon(gear) under the Test Explorer window and switch “Processor Architecture for Any CPU Projects” to use the correct bitness (x86 or x64).
+- If the unit test still does not pass, then click on the settings icon(gear) under the Test Explorer window and switch “Processor Architecture for Any CPU Projects” to use the correct bitness (x86 or x64).
 
 2. Visual Studio > Test > Test Settings > Default Professor Architecture > Change 'X84' to 'X64'
