@@ -36,7 +36,7 @@ call the NewRow() method on the DataTable to create the new Row object and retur
 ```
 
 2. NewRowHasCorrectColumns
-[How to add row to data table](https://forums.asp.net/t/1448166.aspx?how+to+add+row+to+data+table)
+* [How to add row to data table](https://forums.asp.net/t/1448166.aspx?how+to+add+row+to+data+table)
 ```ruby
             DataTable table = new DataTable(tableName);
 
@@ -100,6 +100,7 @@ Same as the UpdateRow().
 
                  var rowsAffacted = command.ExecuteNonQuery();
 ```
+
 3. UpdateMissingRecordthrowsException
 ```ruby
   if ((int)row["ID"] < 0)       
