@@ -2,6 +2,7 @@
 layout: default
 title: Convert to Web Application
 parent: Advanced Visual Programming (C# .NET)
+permalink: /docs/csharp/project4
 
 nav_order: 7
 ---
