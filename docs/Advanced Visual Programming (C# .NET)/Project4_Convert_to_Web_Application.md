@@ -81,9 +81,9 @@ Same as the UpdateRow().
             {
                 command.CommandText = "UPDATE [tblEmployees] SET[Company] = @Company, [Last Name] = @LastName,[First Name] = @FirstName,[E-mail Address] = @EmailAddress,[Job Title] = @JobTitle,[Business Phone] = @BusinessPhone WHERE [ID] = @ID";
             }
-  
-        ... clipping
-
+ ```
+         ... clipping
+ ```ruby
                  var idPar = command.CreateParameter();
                  idPar.ParameterName = "@ID";
                  idPar.DbType = DbType.UInt32;
