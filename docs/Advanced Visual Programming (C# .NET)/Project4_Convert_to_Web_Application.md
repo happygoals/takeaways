@@ -55,6 +55,7 @@ call the NewRow() method on the DataTable to create the new Row object and retur
 
 3. SupportsEmployeeTable 
 * Error Message: "Assert.Fail failed. Delegate threw exception of type 'System.Data.OleDb.OleDbException', but expected 'System.ArgumentException': The persister should throw an exception when an invalid table is specified."
+
 ```ruby
 if (tableName != "tblEmployees")
     throw new System.ArgumentException("Arguement is invalid.");
@@ -80,8 +81,8 @@ Same as the UpdateRow().
             {
                 command.CommandText = "UPDATE [tblEmployees] SET[Company] = @Company, [Last Name] = @LastName,[First Name] = @FirstName,[E-mail Address] = @EmailAddress,[Job Title] = @JobTitle,[Business Phone] = @BusinessPhone WHERE [ID] = @ID";
             }
-            
-... clipping
+  
+        ... clipping
 
                  var idPar = command.CreateParameter();
                  idPar.ParameterName = "@ID";
@@ -112,8 +113,9 @@ Same as the UpdateRow().
 Q. What is 'SELECT @@IDENTITY'?
 [Reference](https://dba.stackexchange.com/questions/4696/why-is-select-identity-returning-a-decimal)
 
- * File Name: Default.aspx.cs
+* File Name: Default.aspx.cs
 ## Method 3: public int CurrentRow 
+
 ( [Create a ViewState Property](https://www.developer.com/net/asp/article.php/3606741/aspnet-tip-create-a-viewstate-property.html) )
 ```ruby
 public int CurrentRow
@@ -130,9 +132,9 @@ public int CurrentRow
         ViewState["ID"] = value; 
     }
 }
- ```
+```
  
- ## Method 3: protected void Page_Load(object sender, System.EventArgs e)
+## Method 3: protected void Page_Load(object sender, System.EventArgs e)
 First Trial
 ```ruby
         protected void Page_Load(object sender, System.EventArgs e)
@@ -171,7 +173,7 @@ Final Solution
                 }
             }
         }
- ```
+```
 ## Method 4: private void UpdateDisplay()
 ```ruby
         private void UpdateDisplay()
@@ -207,7 +209,7 @@ Final Solution
 ```
 ## Method 5: protected void btnSave_Click(object sender, EventArgs e) <-- Most difficult one 
  My wrong answer
- ```ruby
+```ruby
          protected void btnSave_Click(object sender, EventArgs e)
         {
             // TODO: First check to see if the current page is IsValid() and if so, retrieve the row pointed to by the CurrentRow property. 
