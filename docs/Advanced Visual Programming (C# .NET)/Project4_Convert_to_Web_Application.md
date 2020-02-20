@@ -80,9 +80,9 @@ Same as the UpdateRow().
             {
                 command.CommandText = "UPDATE [tblEmployees] SET[Company] = @Company, [Last Name] = @LastName,[First Name] = @FirstName,[E-mail Address] = @EmailAddress,[Job Title] = @JobTitle,[Business Phone] = @BusinessPhone WHERE [ID] = @ID";
             }
-```
-... clipping 
-```ruby
+            
+... clipping
+
                  var idPar = command.CreateParameter();
                  idPar.ParameterName = "@ID";
                  idPar.DbType = DbType.UInt32;
@@ -130,4 +130,149 @@ public int CurrentRow
         ViewState["ID"] = value; 
     }
 }
+ ```
+ 
+ ## Method 3: protected void Page_Load(object sender, System.EventArgs e)
+First Trial
+```ruby
+        protected void Page_Load(object sender, System.EventArgs e)
+        {
+            if (IsPostBack)
+                Detect 
+            else
+            {
+                 int checkRow = ap.CountRows();    // Check the number of database rows. ap is an AccessPersister instance.
+                 if (checkRow > 0)
+                 {
+                    UpdateDisplay();
+                 } 
+            }
+        }
+```
+Final Solution 
+```ruby
+        protected void Page_Load(object sender, System.EventArgs e)
+        {
+            // Detect if the page is a PostBack
+            if (IsPostBack)
+            {
+                lblID.Text = CurrentRow.ToString();
+            }
+            //if not
+            else
+            {
+                // check the number of database rows
+                int checkRow = ap.CountRows();
+                // and if that number is greater than zero 
+                if (checkRow > 0)
+                {
+                    // call the UpdateDisplay() method.
+                    UpdateDisplay();
+                }
+            }
+        }
+ ```
+## Method 4: private void UpdateDisplay()
+```ruby
+        private void UpdateDisplay()
+        {
+            // DONE: Retrieve the row for the value specified by the CurrentRow property. 
+            System.Data.DataRow row2 = ap.GetRow(CurrentRow);
+
+            // If the row returned is null, then assign the empty string to all of the textboxes on the form 
+            // and set the lblID.Text to "0". 
+            if (row2 == null)
+            {
+                txtFirstName.Text = "";
+                txtLastName.Text = "";
+                txtEmailAddress.Text = "";
+                txtBusinessPhone.Text = "";
+                txtCompany.Text = "";
+                txtJobTitle.Text = "";
+                lblID.Text = "0";
+            }
+            // If the row is non-null, assign all of the textboxes the corresponding values from the DataRow 
+            // and lblID.Text accordingly. 
+            else
+            {
+                txtCompany.Text = (row2["Company"]).ToString();
+                txtLastName.Text = (row2["Last Name"]).ToString();
+                txtFirstName.Text = (row2["First Name"]).ToString();
+                txtEmailAddress.Text = (row2["E-mail Address"]).ToString();
+                txtBusinessPhone.Text = (row2["Business Phone"]).ToString();
+                txtJobTitle.Text = (row2["Job Title"]).ToString();
+                lblID.Text = (row2["ID"]).ToString();
+            }
+        }
+```
+## Method 5: protected void btnSave_Click(object sender, EventArgs e) 
+ * Most difficult one 
+ My wrong answer
+ ```ruby
+         protected void btnSave_Click(object sender, EventArgs e)
+        {
+            // TODO: First check to see if the current page is IsValid() and if so, retrieve the row pointed to by the CurrentRow property. 
+            // If the DataRow returned is null, then call the CreateRow() method on the persister to create it. 
+            // Then, assign all of the DataRow's columns from those values present in the textboxes on the webform and call StoreRow() with the DataRow.
+            // Also, update the lblID to show the ID column form the data row after storeRow() is called and assign the DataRow's ID to the CurrentRow property. 
+
+            // if the current page is IsValid() and if so, retrieve the row pointed to by the CurrentRow property.
+            if (Page.IsValid)
+            {
+                //retrieve the row pointed to by the CurrentRow property.
+                ap.GetRow(CurrentRow);
+            }
+            if (ap.GetRow(CurrentRow) == null)
+            {
+                // call the CreateRow() method on the persister to create it. 
+                // assign all of the DataRow's columns from those values present in the textboxes on the webform
+                // and call StoreRow() with the DataRow.
+                System.Data.DataRow row = ap.CreateRow("tblEmployees");
+                (row["Company"]) = txtCompany.Text;
+                (row["Last Name"]) = txtLastName.Text;
+                (row["First Name"]) = txtFirstName.Text;
+                (row["E-mail Address"]) = txtEmailAddress.Text;
+                (row["Business Phone"]) = txtBusinessPhone.Text;
+                (row["Job Title"]) = txtJobTitle.Text;
+
+                ap.StoreRow(ap.CreateRow("tblEmployees"));
+                // update the lblID to show the ID column form the data row after storeRow() is called
+                // assign the DataRow's ID to the CurrentRow property. 
+                (ap.CreateRow("tblEmployees")["ID"]) = lblID.Text;
+                CurrentRow = (int)(ap.CreateRow("tblEmployees")["ID"]);
+            }
+        }
+ ```
+ Correct Solution
+ ```ruby
+         protected void btnSave_Click(object sender, EventArgs e)
+        {
+            // if the current page is IsValid() and if so, retrieve the row pointed to by the CurrentRow property.
+            // Add required field validators to each of the textboxes that uses a reasonable message to the user informing them that the field is required.
+            if (Page.IsValid)
+            {
+                //retrieve the row pointed to by the CurrentRow property.
+                var row = ap.GetRow(CurrentRow);
+
+                // If the DataRow returned is null, then call the CreateRow() method on the persister to create it. 
+                if (row == null)
+                    row = ap.CreateRow("tblEmployees");
+
+                // Then, assign all of the DataRow's columns from those values present in the textboxes on the webform
+                row["Company"] = txtCompany.Text;
+                row["Last Name"] = txtLastName.Text;
+                row["First Name"] = txtFirstName.Text;
+                row["E-mail Address"] = txtEmailAddress.Text;
+                row["Business Phone"] = txtBusinessPhone.Text;
+                row["Job Title"] = txtJobTitle.Text;
+
+                // and call StoreRow() with the DataRow.
+                ap.StoreRow(row);
+
+                // assign the DataRow's ID to the CurrentRow property. 
+                CurrentRow = (int)row["ID"];
+                // update the lblID to show the ID column form the data row after storeRow() is called.
+                lblID.Text = CurrentRow.ToString();
+            }
+        }
  ```
