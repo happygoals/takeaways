@@ -26,7 +26,7 @@ If we make a function include operator as a parameter, it will make less duplica
 
 * File Name: MathFunctions.cs
 
-## Method 1: public string Add(string input1, string input2) <-- Basic way 
+### Method 1: public string Add(string input1, string input2) <-- Basic way 
 ```ruby
         public string Add(string input1, string input2)
         {
@@ -36,7 +36,7 @@ If we make a function include operator as a parameter, it will make less duplica
                 return (val1 + val2).ToString();
         }
 ```
-## Method 2: public string Multiply(string input1, string input2) <-- Using MathematicalOperation Method 
+### Method 2: public string Multiply(string input1, string input2) <-- Using MathematicalOperation Method 
 ```ruby
         public string Multiply(string input1, string input2)
         {
@@ -47,7 +47,7 @@ If we make a function include operator as a parameter, it will make less duplica
             }); 
         }
 ```
-## Method 3: public string Subtract(string input1, string input2) <-- Using Add Method
+### Method 3: public string Subtract(string input1, string input2) <-- Using Add Method
 ```ruby
         public string Subtract(string input1, string input2)
         {
@@ -61,7 +61,7 @@ If we make a function include operator as a parameter, it will make less duplica
 
 ```
 
-## Method 4: public string Divide(string input1, string input2) <-- Consider the case 'DividByZero' 
+### Method 4: public string Divide(string input1, string input2) <-- Consider the case 'DividByZero' 
 ```ruby
         public string Divide(string input1, string input2)
         {
@@ -73,7 +73,7 @@ If we make a function include operator as a parameter, it will make less duplica
         }
 ```
 
-## Method 5: public string Power(string input1, string input2)
+### Method 5: public string Power(string input1, string input2)
 ```ruby
         public string Power(string input1, string input2)
         {
@@ -90,7 +90,7 @@ If we make a function include operator as a parameter, it will make less duplica
 ```
  
  * File Name: ArrayFunctions.cs
- ## Method 6: public ArrayFunctions(string persistentFile, int? seed)
+ ### Method 6: public ArrayFunctions(string persistentFile, int? seed)
 ```ruby
         public ArrayFunctions(string persistentFile, int? seed)
         {
