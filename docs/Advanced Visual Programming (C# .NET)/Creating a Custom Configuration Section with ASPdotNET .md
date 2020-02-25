@@ -40,7 +40,8 @@ nav_order: 8
 
 
 ### Example 
-* App.config
+
+#### App.config
 ```ruby
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration> 
@@ -54,7 +55,7 @@ nav_order: 8
 </configuration> 
 ```
 
-* Program.cs
+#### Program.cs
 ```ruby
 using System; 
 using System.Collections.Generic; 
@@ -80,7 +81,8 @@ namespace AppSettingsData
     }
 }
 ```
-- Result
+
+#### Result
 ```ruby
 Name = Haemin
 City = Seoul
