@@ -23,7 +23,7 @@ nav_order: 9
 * Goal: To verify the project by creating, running, and customizing a series of unit tests using the Microsoft unit test framwork for managed code and Visual Studio Test Explorer. 
 * Process: Create tests that exercise its code --> Run the tests --> Examine the results --> Change the project Code --> Rerun the tests. 
 
-## How to create a unit test project 
+## How to Create a Unit Test Project 
 1. On the File menu, select Add > New Project.
 2. Search for and select the C# MSTest Test Project (.NET Core) project template, and then click Next.
 3. Name the project for testing. 
@@ -65,7 +65,7 @@ namespace ExampleTests
 * Returns void.
 * No parameters.
 
-## Build and run the test, Fix your code and rerun your tests
+## Build and Run the Test, Fix Your Code and Rerun your Tests
 1. On the Build menu, choose Build Solution.
 2. If Test Explorer is not open, open it by choosing Test > Windows > Test Explorer from the top menu bar.
 3. Choose Run All to run the test.
