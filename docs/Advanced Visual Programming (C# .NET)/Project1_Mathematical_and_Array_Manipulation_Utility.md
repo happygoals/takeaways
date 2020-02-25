@@ -24,8 +24,7 @@ nav_order: 3
 * Future Work : Calculation functions can be simple by removing duplication. 
 If we make a function include operator as a parameter, it will make less duplication code.  
 
-* File Name: MathFunctions.cs
-
+## File Name: MathFunctions.cs
 ### Method 1: public string Add(string input1, string input2) <-- Basic way 
 ```ruby
         public string Add(string input1, string input2)
@@ -91,8 +90,8 @@ If we make a function include operator as a parameter, it will make less duplica
             }); 
         }
 ```
- * File Name: ArrayFunctions.cs
- ### Method 6: public ArrayFunctions(string persistentFile, int? seed)
+## File Name: ArrayFunctions.cs
+### Method 6: public ArrayFunctions(string persistentFile, int? seed)
 ```ruby
         public ArrayFunctions(string persistentFile, int? seed)
         {
