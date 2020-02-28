@@ -43,3 +43,5 @@ Those headers are:
 - The remaining headers offer more precise mechanisms of identification.
 [Reference](https://code-maze.com/http-series-part-3/)
 
+
+[binary check](https://stackoverflow.com/questions/910873/how-can-i-determine-if-a-file-is-binary-or-text-in-c)
