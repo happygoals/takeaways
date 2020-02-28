@@ -22,3 +22,24 @@ nav_order: 7
  * File Name: DownloadConfiguration.cs
  * Author Name: Haemin Ryu
  * Start Date: 02/21/2020
+
+## HTTP: Client Identification 
+* Why client identification is important: Content personalization has become part of our daily lives. 
+* How Web servers can identify you & How information is used and stored
+### HTTP Request Headers Used for Identification
+- Web servers have a few ways to extract information about you directly from the HTTP request headers. 
+Those headers are:
+
+* From – contains user’s email address if provided
+* User-Agent – contains the information about Web client
+* Referer – contains the source user came from
+* Authorization – contains username and password
+* Client-ip – contains user’s IP address
+* X-Forwarded-For – contains user’s IP address (when going through the proxy server)
+* Cookie – contains server-generated ID label
+
+- The <b>user-agent<b> header contains the information like the browser version, operating system. While this is important for customizing content, it doesn’t identify the user in a more relevant way.
+- The <b>Referer</b> header tells the server where the user is coming from. This information is used to improve the understanding of the user behavior, but less so to identify it.
+- The remaining headers offer more precise mechanisms of identification.
+[Reference](https://code-maze.com/http-series-part-3/)
+
