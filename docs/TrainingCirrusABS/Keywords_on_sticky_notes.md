@@ -2,7 +2,7 @@
 * My working directory (020720)
 Local Disk(C:) > Develop > Local > training-hry > App_Data> ..?
 
-* Tortoise SVN = ssouce version control 
+* Tortoise SVN = source version control 
 
 * My repo URL: https://cirrus-2.cirrusabs.com:8080/svn/trining-v40/trunk/hryu
 
