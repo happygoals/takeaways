@@ -24,7 +24,7 @@ I could access using that new user account and we created it on workbench first 
  1) Open the Command Prompt 
  2) Go to the location of sql file you want to use (e.g. cd C:\Users\hryu\Download) 
  3) Type > osql -S CIRRUS-3\MSSQL2008R2 -E -d iwdc.com -i iwdc.sql
-                      Drive Name              DB Name    Script Name
+
     - Drive Name: CIRRUS-3\MSSQL2008R2
     - DB Name: iwdc.com
     - Script Name: iwdc.sql
