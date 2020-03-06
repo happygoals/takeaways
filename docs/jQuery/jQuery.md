@@ -10,10 +10,10 @@ permalink: /jquery
 ## How to get started with jQuery 
 - It is a JavaScript library and it is not a programming language (You might call a Framework). 
 - It is a simplified version of JavaScript that allow for people to write JavaScript and websites but in a much more simple way. 
-- Where you don't want to learn JavaScript because it might be too tough, then jQuery is a great place to start/
+- Where you don't want to learn JavaScript because it might be too tough, then jQuery is a great place to start.
 - Most people who learn JavaScript is actually using jQuery today because it makes it much easier and it is just such a powerful framework when it comes to creating websites using javaScript.
-- It is for both beginners and professional people who use this jQuery today on Most websites 
-- <b>"Do more than JavaScript, but write less code"</b>
+- It is for both beginners and professional people who use this jQuery today on Most websites.
+- <b>"Do more than JavaScript, but write less code."</b>
 
 ## jQuery vs JavaScript
 - It is the same programming language, but a different framework. 
