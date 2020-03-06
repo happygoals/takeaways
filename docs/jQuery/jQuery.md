@@ -46,8 +46,8 @@ $("#test").click(function(){
 - Making it disappear. 
 
 ## Reference 
-[jQuery Tutorial](https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n)
-[Learn jQuery](https://learn.jquery.com/about-jquery)
+* [jQuery Tutorial](https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n)
+* [Learn jQuery](https://learn.jquery.com/about-jquery)
 
 {: .fs-6 .fw-300 }
 
