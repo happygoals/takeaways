@@ -18,6 +18,7 @@ permalink: /jquery
 ## jQuery vs JavaScript
 - It is the same programming language, but a different framework. 
 - Example of the code comparison 
+
 ```ruby 
 
 /*JavaScript*/ 
