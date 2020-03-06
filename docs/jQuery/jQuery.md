@@ -15,7 +15,7 @@ permalink: /jquery
 - It is for both beginners and professional people who use this jQuery today on Most websites 
 - <b>"Do more than JavaScript, but write less code"</b>
 
-## JQuery vs JavaScript
+## jQuery vs JavaScript
 - It is the same programming language, but a different framework. 
 - Example of the code comparison 
 ```ruby 
