@@ -42,8 +42,8 @@ $("#test").click(function(){
 ## what we do using JavaScript and jQuery (Examples) 
 - If I were to go to a website that has a banner as soon as you enter the website and the banner slides after a couple of seconds then the sliding effects.
 - Moving around inside the website. 
-- clicking on something inside the website.
-- making it disappear. 
+- Clicking on something inside the website.
+- Making it disappear. 
 
 ## Reference 
 [jQuery Tutorial](https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n)
