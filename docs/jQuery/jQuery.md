@@ -33,6 +33,7 @@ $("#test").click(function(){
 });
 
 ```
+
 ## Why it is good to learn when you want to build a website
 - The thing that jQuery allow for us to do inside websites is to change the behavior of the website when users interact with it.
 -> Certain amount of time have passed inside the website 
