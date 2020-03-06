@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advanced Visual Programming (C# .NET)
+title: jQuery
 nav_order: 6
 has_children: true
 permalink: /jquery
