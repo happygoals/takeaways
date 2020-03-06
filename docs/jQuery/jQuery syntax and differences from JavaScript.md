@@ -1,10 +1,10 @@
 ---
 layout: default
-title: jQuery Syntax and Differences from JavaScript    
+title: jQuery Syntax and Differences from JavaScript
 parent: jQuery
 permalink: /jquery/syntax-compared-to-js
 
-nav_order: 2
+nav_order: 1
 ---
 
 # jQuery Syntax and Differences from JavaScript  
