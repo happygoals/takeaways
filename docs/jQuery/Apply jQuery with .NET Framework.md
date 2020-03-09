@@ -1,28 +1,45 @@
-					<tr>
-						<td>Country</td>
-						<td>
+---
+layout: default
+title: Apply jQuery with .NET Framework
+parent: jQuery
+permalink: /jquery/jquery-with-dotnet
 
-                            <!--
-                                1) Target the dropdown
-                                2) Add a handler to each dropdown
-                                3) The change function must switch the state dropdown
-                            -->
+nav_order: 2
+---
 
-                            <!-- <pre>
-                                <xsl:value-of select="cirrus:GetFormattedXml(.)" />
-                            </pre> -->
+# Apply jQuery with .NET Framework
+{: .no_toc }
 
-							<xsl:variable name="countryControlId" select="cirrus:GetNextUniqueControlId()"/>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+```ruby
+<tr>
+	<td>Country</td>
+	<td>
+
+      <!--
+    1) Target the dropdown
+    2) Add a handler to each dropdown
+    3) The change function must switch the state dropdown
+       -->
+
+ <xsl:variable name="countryControlId" select="cirrus:GetNextUniqueControlId()"/>
 
                             <!-- My Country: '<xsl:value-of select="Country" />'<br /> -->
 
-							<Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor runat="server" id="{$countryControlId}" data-id="editcountries{./@_id}" column="Country" GroupKey="{$GroupKey}" style="width:220px;" Value="{$locationXml/Entities/Data/tblLocations/Country}">									
+			<Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor runat="server" id="{$countryControlId}" data-id="editcountries{./@_id}" column="Country" GroupKey="{$GroupKey}" style="width:220px;" Value="{$locationXml/Entities/Data/tblLocations/Country}">									
                                 <asp:ListItem Text="Select Country" Value="" />
                                 <asp:ListItem Text="United States"  Value="United States" />
                                 <asp:ListItem Text="Canada"         Value="Canada" />
                                 <asp:ListItem Text="Mexico"         Value="Mexico" />
-							</Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor>
-							<Cirrus:Controls.Validators.HighlightValidators.HighlightRequiredValidator runat="server" enableClientScript="true" Display="Dynamic" errorMessage="Country is required" controlToValidate="{$countryControlId}" validationGroup="{$ValidationGroup}" SetFocusOnError="true"/>
+			</Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor>
+			<Cirrus:Controls.Validators.HighlightValidators.HighlightRequiredValidator runat="server" enableClientScript="true" Display="Dynamic" errorMessage="Country is required" controlToValidate="{$countryControlId}" validationGroup="{$ValidationGroup}" SetFocusOnError="true"/>
 
                             <script>
 
@@ -88,7 +105,9 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
 									
-								</Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor>
-								<Cirrus:Controls.Validators.HighlightValidators.HighlightRequiredValidator runat="server" enableClientScript="true" Display="Dynamic" errorMessage="State is required" controlToValidate="{$stateControlId}" validationGroup="{$ValidationGroup}" SetFocusOnError="true"/>
+			</Cirrus:Controls.GenericEditor.FieldEditors.DropDownListFieldEditor>
+			<Cirrus:Controls.Validators.HighlightValidators.HighlightRequiredValidator runat="server" enableClientScript="true" Display="Dynamic" errorMessage="State is required" controlToValidate="{$stateControlId}" validationGroup="{$ValidationGroup}" SetFocusOnError="true"/>
 						</td>
 					</tr>
+```
+
