@@ -114,7 +114,7 @@ nav_order: 2
 
 ## Reference
 * [Add options to a DropDownList using jQuery](https://stackoverflow.com/questions/317095/how-do-i-add-options-to-a-dropdownlist-using-jquery)
-* [Add options to a drop-down list using jQuery] (https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-31.php)
+* [Add options to a drop-down list using jQuery](https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-31.php)
 * [Clear dropdownlist with JQuery](https://stackoverflow.com/questions/9909326/clear-dropdownlist-with-jquery)
 * [Control.ClientID Property](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.clientid?view=netframework-3.5#System_Web_UI_Control_ClientID)
 * [How to set a default value for DropDownList in asp.net](https://asp-net-example.blogspot.com/2013/12/aspnet-example-dropdownlist-default.html)
