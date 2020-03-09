@@ -8,6 +8,8 @@ Local Disk(C:) > Develop > Local > training-hry > App_Data> SetupScript..?
 
 * Cirrus-2, Remote Desktop Connection = RDC
 
+* Internet Information Services = IIS (Application Pools, Recycle)
+
 * Should not be in the SVN folder : bin, data, static, dll, user 
 
 * WordPress setting : IIS super authority needed, MySql and Workbench should be synchronized, check wp-config.php file. 
