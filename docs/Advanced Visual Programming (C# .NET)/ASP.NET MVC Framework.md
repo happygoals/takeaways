@@ -1,4 +1,20 @@
+---
+layout: default
+title: ASP.NET MVC Framework
+parent: Advanced Visual Programming (C# .NET)
+permalink: /csharp/mvc-framework
+nav_order: 10
+---
+
 # ASP.NET MVC Framework
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 
 ## Advantages:
 •	Separation of concerns. The application is divided into Model, View, Controller.
