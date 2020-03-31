@@ -6,10 +6,10 @@ description: "Takeaways"
 permalink: /
 ---
 
-# Capture what Haemin has learned!
+# Capture what I have learned!
 {: .fs-9 }
 
-These takeaways are to help myself reviewing the concept of course for each topic and to save what I studied through courses. It hosted on GitHub Pages.
+These takeaways are to help myself reviewing the concept of course for each topic and to save what I studied through courses. I'm studying for being a real developer. 
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/happygoals/takeaways){: .btn .fs-5 .mb-4 .mb-md-0 }
