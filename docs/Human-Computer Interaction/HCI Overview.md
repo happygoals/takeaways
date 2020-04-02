@@ -2,7 +2,7 @@
 layout: default
 title: HCI Overview
 parent: Human-Computer Interaction
-permalink: /hci/hci-overview
+permalink: docs/hci/hci-overview
 
 nav_order: 1
 ---
