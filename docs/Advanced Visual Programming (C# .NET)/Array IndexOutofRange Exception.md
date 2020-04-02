@@ -16,6 +16,7 @@ nav_order: 12
 {:toc}
 
 ## Array IndexOutofRange Exception
+[Reference](https://www.geeksforgeeks.org/c-sharp-array-indexoutofrange-exception/)
 
 * IndexOutOfRangeException = a Runtime Exception thrown only at runtime.
 * The index of an array is an integer value that has value in the interval [0, n-1], where n is the size of the array. 
@@ -71,3 +72,6 @@ public class GFG {
     } 
 } 
 ```
+
+
+
