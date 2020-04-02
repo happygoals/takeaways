@@ -59,7 +59,6 @@ If we make a function include operator as a parameter, it will make less duplica
         }
 
 ```
-
 ### Method 4: public string Divide(string input1, string input2) <-- Consider the case 'DividByZero' 
 ```ruby
         public string Divide(string input1, string input2)
@@ -71,7 +70,6 @@ If we make a function include operator as a parameter, it will make less duplica
             return(val1/val2).ToString();   // Else. If (val2 != 0).
         }
 ```
-
 ### Method 5: public string Power(string input1, string input2)
 - About double Pow(double base, double power) 
 1. Math.Pow() method is used to calculate a number raise to the power of some other number.
@@ -202,7 +200,8 @@ public string[] Load(int dataCount)
             return data.OrderBy(n => Randomizer.Next()).ToArray();
         }
  ```
- ### Method 4 : public string[] Reverse(string[] data)
+ 
+### Method 4 : public string[] Reverse(string[] data)
 ```ruby
          public string[] Reverse(string[] data)
         {
