@@ -1,8 +1,7 @@
-
 ---
 layout: default
 title: XSLT Test Page
-parent: SML
+parent: XML
 
 nav_order: 7
 ---
