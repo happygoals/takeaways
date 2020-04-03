@@ -11,4 +11,14 @@ Human-Computer Interaction (HCI) is the discipline of designing, engineering, an
 
 https://engineering.purdue.edu/hci/18sp/resources
 
+Discovery & Facilitation
+User Research
+Empathy & Ethics
+User Journey Mapping
+Ideation & Prototyping
+Feedback & Critique
+Usability Testing
+Selling & Pitching
+Confidence & Communication
+
 {: .fs-6 .fw-300 }
