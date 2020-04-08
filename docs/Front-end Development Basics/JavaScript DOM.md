@@ -22,8 +22,6 @@ nav_order: 4
 ## What is DOM? 
 - A W3C (World Wide Web Consortium) standard for accessing documents or an API to express document(All, HTML, XML) as an object. 
 - When a web page is loaded, the browser creates a Document Object Model of the page.
-
-출처: https://abc1211.tistory.com/199?category=940461 [길위의 개발자]
 - DOM is composed as a <b>tree</b> of Objects, and it is a hierachy structure with nested tags.
 
 "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
