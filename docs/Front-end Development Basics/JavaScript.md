@@ -22,3 +22,10 @@ nav_order: 3
 * JavaScript is everywhere – on Desktop/Server/Mobile.
 * JavaScript is important for everyone.
 * JavaScript is quirky/dynamic/scripting/functional oriented language.
+
+
+
+
+
+
+
