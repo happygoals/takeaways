@@ -75,7 +75,7 @@ NamedNodeMap {0: class, 1: index, class: class, index: index, length: 2}
  
 ## Reference
 * [Stackoverflow-How to swap HTML elements in javascript?](https://stackoverflow.com/questions/2943140/how-to-swap-html-elements-in-javascript)
-* [MDN web docs-NamedNodeMapy](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap)
+* [MDN web docs-NamedNodeMap](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap)
 * [The HTML DOM Attribute Object](https://www.w3schools.com/jsref/dom_obj_attributes.asp)
 * [MDN web docs-WebAPI Element.attributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes)
 * [HTML DOM offsetHeight Property](https://www.w3schools.com/jsref/prop_element_offsetheight.asp)
