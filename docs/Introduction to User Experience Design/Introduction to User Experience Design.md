@@ -1,3 +1,13 @@
+---
+layout: default
+title: Introduction to User Experience Design.md
+nav_order: 0
+has_children: true
+permalink: /docs/UXD-intro
+---
+
+# Introduction to User Experience Design
+ 
 The focus of this course is to introduce the learner to User Experience (UX) Design
 
 User Experience design is design that is user centered. The goal is to design artifacts that allow the users to meet their needs in the most effective efficient and satisfying manner. The course introduces the novice to a cycle of discovery and evaluation and a set of techniques that meet the user's needs.
@@ -33,3 +43,6 @@ Techniques for modelling the novel designs before a final version is produced
 Step 4: Evaluation
 
 A set of techniques for ascertaining that your design meets the needs of the user
+
+
+{: .fs-6 .fw-300 }
