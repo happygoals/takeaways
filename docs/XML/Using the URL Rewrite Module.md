@@ -78,12 +78,13 @@ For example, if a request was made for this URL: http://www.mysite.com/content/d
   * For example, if you create a rewrite rule to rewrite mydomain/a.aspx to /b.aspx. Then when you access mydomain/a.aspx, the page will display /b.aspx while the URL in web browser is still displaying mydomain/a.aspx. 
   * It could be used to build the reverse proxy while you need your application to display the content from another site or another server. If you set the redirect in inbound rule, it will change both the URL and displayed content to the target URL.
 * <b>Outbound rule</b> is used to rewrite the attribute in response like a,img,script tag in the html page. IT could also used to rewrite the response header in rewrite rule.
- * If we want to make any changes in the response headers or content after the processing has been completed by the specific handler or execution engine before sending it to the client, we can use outbound rules.
+* If we want to make any changes in the response headers or content after the processing has been completed by the specific handler or execution engine before sending it to the client, we can use outbound rules.
 
 ### Adding an Inbound Rewrite Rules 
 To add the inbound rewrite rule:
 1. Open the web.config file located in the following location: %SystemDrive%\inetpub\wwwroot\
 2. Under the /configuration/system.webServer element, add the following and then save the file:
+
 ```ruby 
 <rewrite>
   <rules>
@@ -94,10 +95,13 @@ To add the inbound rewrite rule:
   </rules>
 </rewrite>
 ```
+
 ### Creating an Outbound Rewrite Rules
+
 To add the outbound rewrite rules:
 1. aplicationHost.config file or in web.config files, Open the web.config file located in the following location:  %SystemDrive%\inetput\wwwroot\
 2. In this file you see the <rewrite> section that contains all the rules definitions, as in the following example:
+
 ```ruby
 <rewrite>
  <rules>
@@ -118,7 +122,7 @@ To add the outbound rewrite rules:
   </preConditions>
  </outboundRules>
 </rewrite>
-  ```
+```
 
 ## Reference
 * [reference1](https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/using-the-url-rewrite-module)
