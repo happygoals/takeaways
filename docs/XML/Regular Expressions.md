@@ -24,7 +24,7 @@ nav_order: 6
 | ?                             |   Something can be there.                                                 |
 | -?                            | '-' availability                                                          |
 | [- ]?                         |  '-' or blank availability                                                |
-| {number}                      | Repeat 'number' times. Digits. 2자리 수.                                  |
+| {number}                      | Repeat 'number' times. Digits. 2자리 수.                                   |
 | {number1, number2}            | Repeat from 'number1' to 'number2'. Range of the number of numbers. n ~ m |
 | \w{2,3}                       | There's 2 or 3 linked(continuous) characters.                             |
 | \d+-?\d+-?\d+                 | Phone number (Without any blank) [2]                                      |
