@@ -8,7 +8,7 @@ nav_order: 6
 
 # Chapter 3 - Regular Expressions
 
-1) Basic Regex
+## Basic Regex
 
 | Regex        | Meaning                                                                 |
 |:-------------|:------------------------------------------------------------------------|
@@ -17,7 +17,7 @@ nav_order: 6
 | +            |  Linked number. one or more than one.                                   |
 | \d+          | 1 or linked more than one number digits.                                |
 
-2) Quantifier 
+## Quantifier 
 
 | Regex                         | Meaning                                                                   |
 |:------------------------------|:--------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ nav_order: 6
  2. There's '-' between the 3 - 4 Continuous numbers or not. 
   c.f. If there are blanks on the phone number, we should use this condition: There's '-' or blank between the 3 - 4 Continuous numbers or not. 
   
-3) 자리 수 (Unit of digit) 
+## 자리 수 (Unit of digit) 
 
 | 자리 수 unit of digit   | Regex                            |
 |:-----------------------|:----------------------------------|
@@ -50,7 +50,7 @@ nav_order: 6
 | 가운데	3 ~ 4자리        | {3,4}                            |
 | 마지막	4자리            | {4}                              | 
 
-4) Select
+## Select
 
 | Regex    | Meaning                                                                |
 |:---------|:-----------------------------------------------------------------------|
@@ -61,7 +61,7 @@ nav_order: 6
 
 ** [가-힣]+ : It should be the combination of the vowels and consonant.
 
-5) Others
+## Others
 
 | Regex    | Meaning                                       |
 |:---------|:----------------------------------------------|
@@ -73,4 +73,3 @@ nav_order: 6
 Reference: 
 [Reference1](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
 [Reference2](https://regex101.com/)
-
