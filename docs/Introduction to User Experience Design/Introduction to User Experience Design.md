@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introduction to User Experience Design.md
+title: Introduction to User Experience Design
 nav_order: 0
 has_children: true
 permalink: /docs/UXD-intro
