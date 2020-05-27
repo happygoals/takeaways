@@ -18,7 +18,7 @@ The Microsoft URL Rewrite Module 2.0 for IIS 7 and above enables IIS administrat
 
 ## Creating Rewrite Rules for the URL Rewrite Module
 The rewrite rules are stored either in the ApplicationHost.config file or in Web.config files. To check the configuration of the rule that we have just created, open a Web.config file located in %SystemDrive%\inetpub\wwwroot. In this file you should see the <rewrite> section that contains this rule definition:
-'''ruby 
+```ruby 
 <rewrite>
   <rules>
     <rule name="Rewrite to article.aspx">
@@ -27,10 +27,10 @@ The rewrite rules are stored either in the ApplicationHost.config file or in Web
     </rule>
   </rules>
 </rewrite>
-'''
+```
+  
 ## Creating an Access Block Rule
-
-''ruby
+```ruby
 <rewrite>
   <rules>
     <rule name="Fail bad requests">
@@ -50,7 +50,7 @@ The rewrite rules are stored either in the ApplicationHost.config file or in Web
     </rule>
   </rules>
 </rewrite>
-''
+```
 
 ## How Certain Parts of the URL String Can Be Accessed from a Rewrite Rule
 For an HTTP URL in this form: http(s)://<host>:<port>/<path>?<querystring>
