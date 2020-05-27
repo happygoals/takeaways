@@ -9,6 +9,7 @@ nav_order: 6
 # Chapter 3 - Regular Expressions
 
 1) Basic Regex
+
 | Regex        | Meaning                                                                 |
 |:-------------|:------------------------------------------------------------------------|
 | \d           | Digit. Find the number (Only one number of number character).           |
@@ -17,6 +18,7 @@ nav_order: 6
 | \d+          | 1 or linked more than one number digits.                                |
 
 2) Quantifier 
+
 | Regex                         | Meaning                                                                   |
 |:------------------------------|:--------------------------------------------------------------------------|
 | *                             | 0 or more.                                                                |
@@ -41,6 +43,7 @@ nav_order: 6
   c.f. If there are blanks on the phone number, we should use this condition: There's '-' or blank between the 3 - 4 Continuous numbers or not. 
   
 3) 자리 수 (Unit of digit) 
+
 | 자리 수 unit of digit   | Regex                            |
 |:-----------------------|:----------------------------------|
 | 처음	2 ~ 3자리          | {2,3}                            |
@@ -48,6 +51,7 @@ nav_order: 6
 | 마지막	4자리            | {4}                              | 
 
 4) Select
+
 | Regex    | Meaning                                                                |
 |:---------|:-----------------------------------------------------------------------|
 | [aeiou]  | Select one of Alphabets only from a,e,i,o,u. Vowels.                   |
@@ -58,6 +62,7 @@ nav_order: 6
 ** [가-힣]+ : It should be the combination of the vowels and consonant.
 
 5) Others
+
 | Regex    | Meaning                                       |
 |:---------|:----------------------------------------------|
 | \s       | Space characters (Space, tab, New line)       |
