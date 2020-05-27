@@ -8,8 +8,6 @@ nav_order: 6
 
 # Chapter 3 - Regular Expressions
 
-
-
 | Regex        | Meaning                                                                 |
 |:-------------|:------------------------------------------------------------------------|
 | \d           | Digit. Find the number (Only one number of number character).           |
@@ -17,18 +15,20 @@ nav_order: 6
 | +            |  Linked number. one or more than one.                                   |
 | \d+          | 1 or linked more than one number digits.                                |
 
-Quantifier
-*                     0 or more.
-[1-9]\d*              Natural numbers. [1]
-?                     Something can be there. 
--?                    '-' availability 
-[- ]?                 '-' or blank availability 
-{number}              Repeat 'number' times. Digits. 2자리 수.
-{number1, number2}    Repeat from 'number1' to 'number2'. Range of the number of numbers. n ~ m
-\w{2,3}               There's 2 or 3 linked(continuous) characters
-\d+-?\d+-?\d+         Phone number (Without any blank) [2]
-\d+[- ]?\d+[- ]?\d+   Phone number (Including 'with blank or not') [2]
-\d{2,3}[- ]?\d{3,4}[- ]?\d{4}   Phone number with the digit limits [2] - 3)
+
+| Quantifier                    | Meaning                                                                   |
+|:------------------------------|:--------------------------------------------------------------------------|
+| *                             | 0 or more.                                                                |
+| [1-9]\d*                      | Natural numbers. [1]                                                      |
+| ?                             |   Something can be there.                                                 |
+| -?                            | '-' availability                                                          |
+| [- ]?                         |  '-' or blank availability                                                |
+| {number}                      | Repeat 'number' times. Digits. 2자리 수.                                  |
+| {number1, number2}            | Repeat from 'number1' to 'number2'. Range of the number of numbers. n ~ m |
+| \w{2,3}                       | There's 2 or 3 linked(continuous) characters.                             |
+| \d+-?\d+-?\d+                 | Phone number (Without any blank) [2]                                      |
+| \d+[- ]?\d+[- ]?\d+           | Phone number (Including 'with blank or not') [2]                          |
+| \d{2,3}[- ]?\d{3,4}[- ]?\d{4} | Phone number with the digit limits [2] - 3)                               |
 
 [1] How to find the natural number using Regex
  1) The first position of the natural number should not start from 0. It should be between 1 and 9. 
@@ -42,8 +42,6 @@ Quantifier
       처음	2 ~ 3자리    {2,3} 
       가운데	3 ~ 4자리   {3,4} 
       마지막	4자리       {4} 
-
-
 
 Select 
 [aeiou]             Select one of Alphabets only from a,e,i,o,u. Vowels. 
