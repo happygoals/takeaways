@@ -18,9 +18,9 @@ nav_order: 8
 ## Creating Outbound Rules for URL Rewrite Module
 ### Differences between Inbound Rewrite Rules and Outbound Rewrite Rules 
 * <b>Inbound rule</b> is used to rewrite the incoming request. 
-* For example, if you create a rewrite rule to rewrite mydomain/a.aspx to /b.aspx. Then when you access mydomain/a.aspx, the page will display /b.aspx while the URL in web browser is still displaying mydomain/a.aspx. 
-* It could be used to build the reverse proxy while you need your application to display the content from another site or another server. If you set the redirect in inbound rule, it will change both the URL and displayed content to the target URL.
-* <b>Outbound rule</b> is used to rewrite the attribute in response like a,img,script tag in the html page.  Of course, it could also used to rewrite the response header in rewrite rule.
+  * For example, if you create a rewrite rule to rewrite mydomain/a.aspx to /b.aspx. Then when you access mydomain/a.aspx, the page will display /b.aspx while the URL in web browser is still displaying mydomain/a.aspx. 
+  * It could be used to build the reverse proxy while you need your application to display the content from another site or another server. If you set the redirect in inbound rule, it will change both the URL and displayed content to the target URL.
+* <b>Outbound rule</b> is used to rewrite the attribute in response like a,img,script tag in the html page. IT could also used to rewrite the response header in rewrite rule.
 
 ### Adding an Inbound Rewrite Rules 
 To add the inbound rewrite rule:
