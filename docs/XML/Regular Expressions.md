@@ -34,12 +34,12 @@ nav_order: 6
 | \d{2,3}[- ]?\d{3,4}[- ]?\d{4} | Phone number with the digit limits [2] - 3)                               |
 
 [1] How to find the natural number using Regex
- 1) The first position of the natural number should not start from 0. It should be between 1 and 9. 
- 2) Next position can have the number between 0 and 9. The number of the numbers should be more than 0. 
+ 1. The first position of the natural number should not start from 0. It should be between 1 and 9. 
+ 2. Next position can have the number between 0 and 9. The number of the numbers should be more than 0. 
 
 [2] How to find the phone number (e.g. 021234567, 02-123-4567)
- 1) 3 - 4 Continuous numbers
- 2) There's '-' between the 3 - 4 Continuous numbers or not. 
+ 1. 3 - 4 Continuous numbers
+ 2. There's '-' between the 3 - 4 Continuous numbers or not. 
   c.f. If there are blanks on the phone number, we should use this condition: There's '-' or blank between the 3 - 4 Continuous numbers or not. 
   
 3) 자리 수 (Unit of digit) 
