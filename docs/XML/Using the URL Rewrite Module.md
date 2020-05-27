@@ -30,7 +30,7 @@ The rewrite rules are stored either in the ApplicationHost.config file or in Web
 '''
 ## Creating an Access Block Rule
 
-'''ruby
+''ruby
 <rewrite>
   <rules>
     <rule name="Fail bad requests">
@@ -50,7 +50,7 @@ The rewrite rules are stored either in the ApplicationHost.config file or in Web
     </rule>
   </rules>
 </rewrite>
-'''
+''
 
 ## How Certain Parts of the URL String Can Be Accessed from a Rewrite Rule
 For an HTTP URL in this form: http(s)://<host>:<port>/<path>?<querystring>
