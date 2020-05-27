@@ -8,10 +8,14 @@ nav_order: 6
 
 # Chapter 3 - Regular Expressions
 
-\d                    Digit. Find the number (Only one number of number character).
-\w                    Character. Find the character. Not special character but underscore(_).
-+                     Linked number. one or more than one. 
-\d+                   1 or linked more than one number digits. 
+
+
+| Regex        | Meaning                                                                 |
+|:-------------|:------------------------------------------------------------------------|
+| \d           | Digit. Find the number (Only one number of number character).           |
+| \w           | Character. Find the character. Not special character but underscore(_). |
+| +            |  Linked number. one or more than one.                                   |
+| \d+          | 1 or linked more than one number digits.                                |
 
 Quantifier
 *                     0 or more.
