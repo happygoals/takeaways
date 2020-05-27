@@ -8,6 +8,7 @@ nav_order: 6
 
 # Chapter 3 - Regular Expressions
 
+1) Basic Regex
 | Regex        | Meaning                                                                 |
 |:-------------|:------------------------------------------------------------------------|
 | \d           | Digit. Find the number (Only one number of number character).           |
@@ -15,8 +16,8 @@ nav_order: 6
 | +            |  Linked number. one or more than one.                                   |
 | \d+          | 1 or linked more than one number digits.                                |
 
-
-| Quantifier                    | Meaning                                                                   |
+2) Quantifier 
+| Regex                         | Meaning                                                                   |
 |:------------------------------|:--------------------------------------------------------------------------|
 | *                             | 0 or more.                                                                |
 | [1-9]\d*                      | Natural numbers. [1]                                                      |
@@ -38,24 +39,31 @@ nav_order: 6
  1) 3 - 4 Continuous numbers
  2) There's '-' between the 3 - 4 Continuous numbers or not. 
   c.f. If there are blanks on the phone number, we should use this condition: There's '-' or blank between the 3 - 4 Continuous numbers or not. 
- 3) 	자리 수
-      처음	2 ~ 3자리    {2,3} 
-      가운데	3 ~ 4자리   {3,4} 
-      마지막	4자리       {4} 
+  
+ 3) 자리 수 (Unit of digit) 
+| 자리 수 unit of digit   | Regex                            |
+|:-----------------------|:---------------------------------|
+| 처음	2 ~ 3자리          | {2,3}                            |
+| 가운데	3 ~ 4자리        | {3,4}                            |
+| 마지막	4자리            | {4}                              | 
 
-Select 
-[aeiou]             Select one of Alphabets only from a,e,i,o,u. Vowels. 
-[a-z]               Select all Alphabet lowercases. [abcdefghijklmnopqrlstuvwxyz]
-[a-z]+              Select continuous Alphabet lowercases.
-[가-힣]+            Select continuous Korean lowercases. (Words, not 'ㄱㄴㄷ' or 'ㅏㅑㅓㅕ'. It should be the combination of the vowels and consonant)
+4) Select
+| Regex    | Meaning                                                                |
+|:---------|:-----------------------------------------------------------------------|
+| [aeiou]  | Select one of Alphabets only from a,e,i,o,u. Vowels.                   |
+| [a-z]    | Select all Alphabet lowercases. [abcdefghijklmnopqrlstuvwxyz]          |
+| [a-z]+   | Select continuous Alphabet lowercases.                                 | 
+| [가-힣]+  | Select continuous Korean lowercases. Words, not 'ㄱㄴㄷ' or 'ㅏㅑㅓㅕ'. | 
 
+** [가-힣]+ : It should be the combination of the vowels and consonant.
 
-Others
-\s                  Space characters (Space, tab, New line)
-\S                  Except Space characters 
-\D                  Except number characters. 
-\W                  Only special characters and space characters.
-
+5) Others
+| Regex    | Meaning                                       |
+|:---------|:----------------------------------------------|
+| \s       | Space characters (Space, tab, New line)       |
+| \S       | Except Space characters                       |
+| \D       | Except number characters.                     | 
+| \W       | Only special characters and space characters. | 
 
 Reference: 
 [Reference1](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
