@@ -34,7 +34,7 @@ nav_order: 4
 #### Naturalistic Observation Data : Platform for future study 
 * Qualitative : A set of notes written by the designer as he observes the user.
 * Quantitative : A set of counts for events the designer expects to see. It can be collected during a naturalistic observation session as well.
-  e.g. If a secondary stakeholder is expected to be in the field as well, we may have to keep track of how many times these two users interact.
+    - e.g. If a secondary stakeholder is expected to be in the field as well, we may have to keep track of how many times these two users interact.
 
 ### Advantages and shortcomings 
 #### Advantages 
