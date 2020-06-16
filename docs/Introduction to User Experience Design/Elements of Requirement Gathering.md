@@ -29,11 +29,13 @@ nav_order: 4
 * The designer must have a plan for the observation session.
  - Discover what the user is doing now
  - Review Module of interacton with users
+
 ### Data Gathered (Kinds of Data we can gather)
 #### Naturalistic Observation Data : Platform for future study 
 * Qualitative : A set of notes written by the designer as he observes the user.
 * Quantitative : A set of counts for events the designer expects to see. It can be collected during a naturalistic observation session as well.
   e.g. If a secondary stakeholder is expected to be in the field as well, we may have to keep track of how many times these two users interact.
+
 ### Advantages and shortcomings 
 #### Advantages 
 * No direct interaction with user 
@@ -49,6 +51,7 @@ nav_order: 4
 #### Ethical Consideration
 * Maintain anonymity of users (safeguard the privacy of the individual)
 * Cannot collect identifying information without asking user permission
+
 ### Naturalistic Observation in Iterative Data Gathering Process
 * To conduct the technique that provides us with the information we need
 ![Iterative Data Gathering Process](/assets/images/UXD-Iterative_data_gathering_process_2020-06-16.jpg)
