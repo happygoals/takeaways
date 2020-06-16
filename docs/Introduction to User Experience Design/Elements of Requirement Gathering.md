@@ -27,8 +27,8 @@ nav_order: 4
 * Field technique: We want to get a sense of the environment where the task takes place (in the field).
 * Least interaction technique: In most cases, there is no interaction between the designer and the user.
 * The designer must have a plan for the observation session.
-      - Discover what the user is doing now
-      - Review Module of interacton with users
+    - Discover what the user is doing now
+    - Review Module of interacton with users
 
 ### Data Gathered (Kinds of Data we can gather)
 #### Naturalistic Observation Data : Platform for future study 
