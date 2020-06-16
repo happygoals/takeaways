@@ -27,8 +27,8 @@ nav_order: 4
 * Field technique: We want to get a sense of the environment where the task takes place (in the field).
 * Least interaction technique: In most cases, there is no interaction between the designer and the user.
 * The designer must have a plan for the observation session.
- : Discover what the user is doing now
- : Review Module of interacton with users
+ - Discover what the user is doing now
+ - Review Module of interacton with users
 ### Data Gathered (Kinds of Data we can gather)
 #### Naturalistic Observation Data : Platform for future study 
 * Qualitative : A set of notes written by the designer as he observes the user.
@@ -37,13 +37,13 @@ nav_order: 4
 ### Advantages and shortcomings 
 #### Advantages 
 * No direct interaction with user 
- : Able to see what the user is doing directly, collect data anywhere and at any time
+ - Able to see what the user is doing directly, collect data anywhere and at any time
 * NO social desirability 
 : The user is simply engaging in their normal behavior. They're not changing it based on what they expect the designer might ask or might want.
-#### shortcomings
+#### Shortcomings
 * Observer Bias may lead to incorrect notes 
- : The designers' data are limited to his or her own collection technique and interpretation. 
- : This is the main reason why naturalistic observations are usually first steps in the requirements gathering process.
+ - The designers' data are limited to his or her own collection technique and interpretation. 
+ - This is the main reason why naturalistic observations are usually first steps in the requirements gathering process.
 * No feedback from user 
  : Good design involves interaction with the user.
 #### Ethical Consideration
