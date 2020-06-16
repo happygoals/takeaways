@@ -40,14 +40,14 @@ nav_order: 4
 #### Advantages 
 * No direct interaction with user 
  - Able to see what the user is doing directly, collect data anywhere and at any time
-* NO social desirability 
-: The user is simply engaging in their normal behavior. They're not changing it based on what they expect the designer might ask or might want.
+* oO social desirability 
+- The user is simply engaging in their normal behavior. They're not changing it based on what they expect the designer might ask or might want.
 #### Shortcomings
 * Observer Bias may lead to incorrect notes 
  - The designers' data are limited to his or her own collection technique and interpretation. 
  - This is the main reason why naturalistic observations are usually first steps in the requirements gathering process.
 * No feedback from user 
- : Good design involves interaction with the user.
+ - Good design involves interaction with the user.
 #### Ethical Consideration
 * Maintain anonymity of users (safeguard the privacy of the individual)
 * Cannot collect identifying information without asking user permission
