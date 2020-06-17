@@ -59,3 +59,20 @@ nav_order: 4
 * We can come up with a set of questions to ask during a direct interaction with the user.
 * We can develop a survey where we find out in the Naturalistic Observation session.
 * We can host a focus group or do a set of interviews to further clarify the findings from the survey data.
+
+## Survey
+### Goal 
+* Survey: A set of questions ( = Questionnaire) 
+* To get the users' opinions (Behavior, perceptions, attitudes and feelings, and opinion about someone else)
+* Field/Lab technique: Surveys can take place in the field or the lab (Walk, home, call).
+* Little interaction technique: Sheet of paper, completely digital like kiosk or website
+* The quality of the data will be directly related to how well you prepare.
+
+### Data Gathered
+* Qualitative : Closed ended questions 
+    - Ordered response: Dichotomous response(Yes or now), Likert scales(How much you like, One to Five), Rank (Listed from the most to the least preferred)
+    - Unrdered response: The user with questions that don't have a logical order. Lists, Demographic questionnaires, etc.
+* Quantitative : Open ended questions 
+    - Goal: To get brief answers from the user about their opinions, preferences, attitudes in a couple of sentences. 
+### Advantages and shortcomings
+#### Advantages
