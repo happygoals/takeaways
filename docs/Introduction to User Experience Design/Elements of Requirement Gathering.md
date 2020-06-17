@@ -69,6 +69,7 @@ nav_order: 4
 * The quality of the data will be directly related to how well you prepare.
 
 ### Data Gathered
+#### Survey Data : Platform for future study 
 * Qualitative : Closed ended questions 
     - Ordered response: Dichotomous response(Yes or now), Likert scales(How much you like, One to Five), Rank (Listed from the most to the least preferred)
     - Unrdered response: The user with questions that don't have a logical order. Lists, Demographic questionnaires, etc.
@@ -76,3 +77,23 @@ nav_order: 4
     - Goal: To get brief answers from the user about their opinions, preferences, attitudes in a couple of sentences. 
 ### Advantages and shortcomings
 #### Advantages
+* Efficient data collection 
+    - Collect data from a number of individuals simultaneously.
+* Relatively easy data analyses 
+#### Shortcomings
+* Superficial knowledge 
+    - Not provide us with insight into the problem area or what we want to design.
+* Recall bias
+    - Users' recollections are incorrect or inaccurate.
+* Social desirability bias
+    - Responses that pleases the researcher
+* Sample bias
+    - Users that chose to participate may not represent the users we couldn't reach or that didn't want to participate.
+
+### Survey in Iterative Data Gathering Process
+* To lead us to use other techniques
+* To indicate that there are these three prominent ways the user completes a task
+* We can then organize a focus group to try to understand what is driving these preferences.
+* e.g. We could just as easily decide that in fact, following the survey we would like to do a naturalistic observation where we observe males and we observe females engaging in the task.
+
+## Focus Groups
