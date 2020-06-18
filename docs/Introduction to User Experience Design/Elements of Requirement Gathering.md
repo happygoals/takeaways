@@ -97,3 +97,30 @@ nav_order: 4
 * e.g. We could just as easily decide that in fact, following the survey we would like to do a naturalistic observation where we observe males and we observe females engaging in the task.
 
 ## Focus Groups
+### Goal
+* To engage users in direct conversations
+* Room technique: Focus groups take place in a controlled environment, usually a room where users can feel free to share and discuss information in a private setting.
+* A high degree of interaction technique
+* Composition
+    - User : Between 5-10 users who represent the group that the designer want to address
+    - Design team : Trained moderator, Note taker, Media person(Audio tapes or video tapes - optional)
+* Structure
+    - Schedule : 1 hour = 5 minute warm up + 5 minute creative exercise + 45 minute discussion(3topics) + 5 minute wrap up 
+### Data Gathered
+* Qualitative : A set of notes written by the note taker, Transcribed data (An entire focus group session transcripts and analysis of that session) 
+* Quantitative : A data gathered at the begining of the focus group. 
+    - e.g. Demographic information about the users, Initial survey information about the attitudes and opinions on the topic of interest
+### Advantages and shortcomings
+#### Advantages
+* Rich data in a timely manner
+* Group dynamic inspires
+* Good for the one who does not want an one-to-one session
+#### Shortcomings
+* Need a team headed by an experienced moderator to optimize the data that is collected.
+* Social influence may lead to group think. 
+* Influential member (Echoing or status or other social desirability factor)
+
+### Focus groups in Iterative Data Gathering Process
+* Focus group = The culmination of the design process (because of the rich data)
+* The designer may want to interview other users to get information from interesting themes that arose during the focus group.
+* We could just as easily have developed an interview following the focus group to conduct the technique that provides us with the information we need.
