@@ -131,3 +131,15 @@ nav_order: 4
 ### Advantages and Shortcomings
 #### Advantages
 #### Shortcomings
+
+## Resources for Requirement Gathering 
+[25 Useful Brainstorming Techniques](http://personalexcellence.co/blog/brainstorming-techniques/)
+[Non-Functional Requirements - Minimal Checklist](http://leadinganswers.typepad.com/leading_answers/2009/03/nonfunctional-requirements-minimal-checklist.html)
+[](http://searchsoftwarequality.techtarget.com/answer/Differentiating-between-Functional-and-Nonfunctional-Requirements)
+[](http://www.usabilityfirst.com/usability-methods/facilitated-brainstorming/)
+[](http://blog.abovethefolddesign.com/2010/11/11/5-powerful-ways-to-brainstorming-with-teams/)
+[](http://www.inspireux.com/2013/07/18/tips-for-structuring-better-brainstorming-sessions/)
+[](http://www.slideshare.net/jessicaivins/aiga-cincy-uxworkshop01)
+[](http://asq.org/learn-about-quality/idea-creation-tools/overview/affinity.html)
+[](https://www.mindtools.com/pages/article/newTMC_86.html)
+[](http://infodesign.com.au/usabilityresources/affinitydiagramming/)
