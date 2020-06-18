@@ -18,6 +18,8 @@ nav_order: 4
 ---
 ## Overview 
 ## Types of Users and Types of Data
+### Qualitative
+### Quantitative
 ## Discovery Technique Overview
 
 ## Naturalistic Observation
