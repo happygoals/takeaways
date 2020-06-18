@@ -36,7 +36,7 @@ nav_order: 4
 * Quantitative : A set of counts for events the designer expects to see. It can be collected during a naturalistic observation session as well.
     - e.g. If a secondary stakeholder is expected to be in the field as well, we may have to keep track of how many times these two users interact.
 
-### Advantages and shortcomings 
+### Advantages and Shortcomings 
 #### Advantages 
 * No direct interaction with user 
     - Able to see what the user is doing directly, collect data anywhere and at any time
@@ -75,7 +75,7 @@ nav_order: 4
     - Unrdered response: The user with questions that don't have a logical order. Lists, Demographic questionnaires, etc.
 * Quantitative : Open ended questions 
     - Goal: To get brief answers from the user about their opinions, preferences, attitudes in a couple of sentences. 
-### Advantages and shortcomings
+### Advantages and Shortcomings
 #### Advantages
 * Efficient data collection 
     - Collect data from a number of individuals simultaneously.
@@ -110,7 +110,7 @@ nav_order: 4
 * Qualitative : A set of notes written by the note taker, Transcribed data (An entire focus group session transcripts and analysis of that session) 
 * Quantitative : A data gathered at the begining of the focus group. 
     - e.g. Demographic information about the users, Initial survey information about the attitudes and opinions on the topic of interest
-### Advantages and shortcomings
+### Advantages and Shortcomings
 #### Advantages
 * Rich data in a timely manner
 * Group dynamic inspires
@@ -124,3 +124,10 @@ nav_order: 4
 * Focus group = The culmination of the design process (because of the rich data)
 * The designer may want to interview other users to get information from interesting themes that arose during the focus group.
 * We could just as easily have developed an interview following the focus group to conduct the technique that provides us with the information we need.
+
+## Interview
+### Goal
+### Data Gathered
+### Advantages and Shortcomings
+#### Advantages
+#### Shortcomings
