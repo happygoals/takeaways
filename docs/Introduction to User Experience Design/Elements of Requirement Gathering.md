@@ -130,12 +130,27 @@ nav_order: 4
 
 ## Interview
 ### Goal
+* To gather indepth information from a user
+* Private place technique : Interview can take place either in the field or in the lab which is enough privacy that the user can freely answer the questions being asked.
+* Most interaction technique : The interview offers the designer an opportunity to have a conversation with the user and the interviewer can then follow any interesting lead the user can have.
 
-### Data Gathered
+### Data Gathered 
+#### Interview Data: Mostly be qualitative
+* Qualitative : Designer's handwritten notes, Systematic analysis from the inteview transcript
+* Quantitative : A data gathered at the begining of the focus group. (form of a short survey)
+    - e.g. Demographic information about the users, Initial survey information about the attitudes and opinions on the topic of interest
 
 ### Advantages and Shortcomings
 #### Advantages
+* In depth (One on one) conversation
+* Flexible protocol for the interview so that the designer can choose to ask followup questions that weren't on the protocol
 #### Shortcomings
+* Skilled interviewer : Lead agenda and manage and build rapport(honest opinions, not favorable responses)
+* More time intensive process : For data collection and analyses, we are spending a lot of time on one person.
+
+### Focus groups in Iterative Data Gathering Process
+* Interviews are most useful when they are a culmination of the data gathering strategy.
+* When the problem faced in the requirements gathering process was well understood and what was needed was some final clarifications or insights from the user by interview.
 
 ## Resources for Requirement Gathering 
 * [25 Useful Brainstorming Techniques](http://personalexcellence.co/blog/brainstorming-techniques/)
