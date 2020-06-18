@@ -141,5 +141,5 @@ nav_order: 4
 * [Tips for Structuring Better Brainstorming Sessions](http://www.inspireux.com/2013/07/18/tips-for-structuring-better-brainstorming-sessions/)
 * [Collaborative Brainstorming for Better UX Workshop](http://www.slideshare.net/jessicaivins/aiga-cincy-uxworkshop01)
 * [WHAT IS AN AFFINITY DIAGRAM?](http://asq.org/learn-about-quality/idea-creation-tools/overview/affinity.html)
-* [Affinity diagramming](https://www.mindtools.com/pages/article/newTMC_86.html)
-* [](http://infodesign.com.au/usabilityresources/affinitydiagramming/)
+* [Affinity Diagrams:Organizing Information and Ideas Into Common Themes](https://www.mindtools.com/pages/article/newTMC_86.htm)
+* [Affinity diagramming](http://infodesign.com.au/usabilityresources/affinitydiagramming/)
