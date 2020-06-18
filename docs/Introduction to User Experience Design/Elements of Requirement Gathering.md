@@ -40,7 +40,7 @@ nav_order: 4
 #### Advantages 
 * No direct interaction with user 
     - Able to see what the user is doing directly, collect data anywhere and at any time
-* NO social desirability 
+* No social desirability 
     - The user is simply engaging in their normal behavior. They're not changing it based on what they expect the designer might ask or might want.
 #### Shortcomings
 * Observer Bias may lead to incorrect notes 
