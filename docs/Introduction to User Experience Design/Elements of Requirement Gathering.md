@@ -75,6 +75,7 @@ nav_order: 4
     - Unrdered response: The user with questions that don't have a logical order. Lists, Demographic questionnaires, etc.
 * Quantitative : Open ended questions 
     - Goal: To get brief answers from the user about their opinions, preferences, attitudes in a couple of sentences. 
+
 ### Advantages and Shortcomings
 #### Advantages
 * Efficient data collection 
@@ -106,10 +107,12 @@ nav_order: 4
     - Design team : Trained moderator, Note taker, Media person(Audio tapes or video tapes - optional)
 * Structure
     - Schedule : 1 hour = 5 minute warm up + 5 minute creative exercise + 45 minute discussion(3topics) + 5 minute wrap up 
+
 ### Data Gathered
 * Qualitative : A set of notes written by the note taker, Transcribed data (An entire focus group session transcripts and analysis of that session) 
 * Quantitative : A data gathered at the begining of the focus group. 
     - e.g. Demographic information about the users, Initial survey information about the attitudes and opinions on the topic of interest
+
 ### Advantages and Shortcomings
 #### Advantages
 * Rich data in a timely manner
@@ -127,7 +130,9 @@ nav_order: 4
 
 ## Interview
 ### Goal
+
 ### Data Gathered
+
 ### Advantages and Shortcomings
 #### Advantages
 #### Shortcomings
