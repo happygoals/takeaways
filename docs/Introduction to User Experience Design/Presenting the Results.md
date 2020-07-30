@@ -18,6 +18,8 @@ nav_order: 5
 ---
 
 ## User Results
+* Users use interfaces to accomplish tasks
+* The first step of the design process is to understand how users are completing the task NOW
 ### Designer Techniques
 * Discover what the user is doing now 
   - Naturalistic observation, servey, focus group, interview
