@@ -16,3 +16,25 @@ nav_order: 5
 {:toc}
 
 ---
+
+## User Results
+### Designer Techniques
+* Discover what the user is doing now 
+  - Naturalistic observation, servey, focus group, interview
+* Present out requirements gathering(RG) findings
+
+### Critical Note: 
+* The qualitative and quantitative data in the appropriate manner
+
+### Techniques to communicate RG findings
+* About the User
+  1. Descriptive statistics
+    - Range
+    - Mean
+    - Median
+  2. User Characteristics tables
+  3. Personas
+## Presenting Task Findings
+### 
+* 
+*
