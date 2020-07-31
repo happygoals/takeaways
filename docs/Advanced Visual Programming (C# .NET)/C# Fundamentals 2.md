@@ -125,3 +125,43 @@ Result : True
 
 # Exceptions
 ## Excetpions and Try/Catch/Finally
+* Encapsulate all I/O operations in a try/catch/finally block (especially streams).
+* Catch specific known exceptions first, then more general exceptions.
+* Best Practice: Avoid Exceptions by checking conditions that may cause them.
+```ruby
+public void tryCatchExample1()
+{
+     var data = string.Empty;
+     try
+     {
+         data = system.IO.File.ReadAllText("data.txt");       
+     }
+     catch (System.IO.FileNotFoundException fnf)
+     {
+         // handle situation where the file doesn't exist
+     }
+     catch (System.Exception ex)
+     {
+         // handle any other error that occurs
+     }
+}
+```
+
+```ruby
+public void tryCatchExample2()
+{
+     var data = string.Empty;
+     try
+     {
+         data = system.IO.File.ReadAllText("data.txt");       
+     }
+     catch (System.Exception ex)
+     {
+          // perform some logging of the error 
+          Console.WriteLine(ex.Message); 
+          
+          // re-throw the original exception to retain all stack trace information
+          throw; 
+     }
+}
+```
