@@ -165,3 +165,28 @@ public void tryCatchExample2()
      }
 }
 ```
+* Utilize the finally block to ensure an operation completes
+```ruby
+var data = string.Empty;
+System.IO.FileStream stream = null; 
+System.IO.streamReader reader = null; 
+try
+{
+   stream = System.IO.File.OpenRead("data.txt");
+   reader = new System.IO.StreamReader(stream); 
+   data = reader.ReadToEnd();
+}
+catch (System.Exception ex)
+{
+   Console.WriteLine(ex.Message);
+   throw;
+}
+finally 
+{
+   // dispose of unmanaged resources safely 
+   if (null != reader)
+      reader.Dispose(); 
+   if (null != stream)
+      stream.Dispose(); 
+}
+```
