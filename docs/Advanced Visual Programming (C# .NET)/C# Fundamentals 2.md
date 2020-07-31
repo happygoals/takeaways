@@ -190,3 +190,16 @@ finally
       stream.Dispose(); 
 }
 ```
+* Exception Handling shorthand syntax with Using statements 
+  - Using statement is only valid on classes implementing the IDsiposable interface
+```ruby
+var data = string.Empty;
+using (var stream = System.IO.File.OpenRead("data.txt"))
+{
+   using (var reader = new System.IO.StreamReader(stream)
+   {
+      data = reader.ReadToEnd(); 
+   }
+}
+```
+  
