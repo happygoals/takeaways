@@ -219,8 +219,8 @@ public void ParseValuetypesExample3()
 ```
 
 ## Utilizing Unit Tests within Visual Studio
-1) Requires a reference to be added to your project
-2) Requires that your class containing tests have the TestClass attribute
-3) Requires methods used for testing have the TestMethod attribute
-4) Use the Main Menu > Test > Windows > Test Explorer Window to display all available tests in your current project (may require compiling the solution)
-5) May require adjusting the bitness depending on your implementation.  The unit testing executable must be told whether to run 32 or 64 bit.
+* 1) Requires a reference to be added to your project
+* 2) Requires that your class containing tests have the TestClass attribute
+* 3) Requires methods used for testing have the TestMethod attribute
+* 4) Use the Main Menu > Test > Windows > Test Explorer Window to display all available tests in your current project (may require compiling the solution)
+* 5) May require adjusting the bitness depending on your implementation.  The unit testing executable must be told whether to run 32 or 64 bit.
