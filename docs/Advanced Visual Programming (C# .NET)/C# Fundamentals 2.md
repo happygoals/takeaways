@@ -124,7 +124,7 @@ public void typeCheck1()
 Result : True
 
 # Exceptions
-## Excetpions and Try/Catch/Finally
+## Exceptions and Try/Catch/Finally
 * Encapsulate all I/O operations in a try/catch/finally block (especially streams).
 * Catch specific known exceptions first, then more general exceptions.
 * Best Practice: Avoid Exceptions by checking conditions that may cause them.
