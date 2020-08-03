@@ -53,14 +53,14 @@ nav_order: 5
   
 * Critical Note: The qualitative and quantitative data are analyzed appropriately. 
 
-## Scenarios 
+#### Scenarios 
 * Scenarios provide a narrative of both the <b>qualitative</b> and <b>quantitative</b> data.
 * It allows us an opportunity to <b>convey the richness of the data set we collected in a storyline</b> that highlights all of the important aspects about the task and how it is currently accomplished. 
 * It allows the task to <b>come to life</b>, beyond the graphs and tables that present cold hard statistics. 
 * Make a list of questions that the designer asks in order to get the narrative. 
 * It allows us to understand how a system is used by the user. 
 
-## Essential Use Case Scenario
+#### Essential Use Case Scenario
 * Essential Use Case Scenario allows us to understand the users's activities, and what the system requirements are. 
 * Three important elements
   1. <b>Users' Goals</b>
@@ -70,14 +70,14 @@ nav_order: 5
   3. <b>System's Responsibilities</b>
     - What the system must do after each step completed by the user. 
   
-## Hierarchical Task Analyses
+#### Hierarchical Task Analyses
 * Hierarchical Task Analyses allow us to consider <b>how users are currently completing a task</b>. 
 * It is all about the <b>users goals</b>. 
 * <b>User and the steps</b> to accomplish the goals.
    - Start with the goal, and number each of the major steps towards meeting the goal. 
    - Some of the steps have substeps that I must fulfill before going on the next step. 
   
-## Current UI Critique
+#### Current UI Critique
 * Subjects: Mobile apps, Websites, or a set of paper forms that the user currently uses.
   1. What task is it used for?
     - Interact with UI. 
