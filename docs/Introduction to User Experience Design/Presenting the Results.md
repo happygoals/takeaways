@@ -20,6 +20,7 @@ nav_order: 5
 ## User Results
 * Users use interfaces to accomplish tasks
 * The first step of the design process is to understand how users are completing the task NOW
+
 ### Designer Techniques
 * Discover what the user is doing now 
   - Naturalistic observation, servey, focus group, interview
@@ -36,7 +37,9 @@ nav_order: 5
     - Median
   2. User Characteristics tables
   3. Personas
+
 ## Presenting Task Findings
+
 ### Pitfall Averted!
 * Techniques to understand how the user is currently accomplishing the task
 * Collected data via naturalistic observation, survey, focus group, interview that have given you what the user currently does
@@ -60,11 +63,11 @@ nav_order: 5
 ## Essential Use Case Scenario
 * Essential Use Case Scenario allows us to understand the users's activities, and what the system requirements are. 
 * Three important elements
-1. <b>Users' Goals</b>
-   - What aspect of X this captures. 
-2. <b>User Intention</b>
+  1. <b>Users' Goals</b>
+    - What aspect of X this captures. 
+  2. <b>User Intention</b>
     - The series of steps the user needs to enter into the system.
-3. <b>System's Responsibilities</b>
+  3. <b>System's Responsibilities</b>
     - What the system must do after each step completed by the user. 
   
 ## Hierarchical Task Analyses
@@ -76,17 +79,17 @@ nav_order: 5
   
 ## Current UI Critique
 * Subjects: Mobile apps, Websites, or a set of paper forms that the user currently uses.
-1. What task is it used for?
+  1. What task is it used for?
     - Interact with UI. 
-    - Take UI for a spin so to speak 
-   - If each UI for each UI, you would want to identify the task or task of the users uses it for.
-2. Clicks to complete task
+    - Take UI for a spin so to speak. 
+    - If each UI for each UI, you would want to identify the task or task of the users uses it for.
+  2. Clicks to complete task
     - An <b>objective</b> measure of performance (How long it takes to complete the task). 
-3. What does it well?
-   - You could use either <b>objective</b> or <b>subjective</b> measures. 
-   - Articulate where the needs are being met. 
-4. How could it be improved? 
-   - Systematically analyzing the interfaces that are currently being used. 
-   - What can you do to improve the user experience?
-   - We want to improve the user experience but this requires that <b>we know what the user is already enjoying and build on that</b>. 
+  3. What does it well?
+    - You could use either <b>objective</b> or <b>subjective</b> measures. 
+    - Articulate where the needs are being met. 
+  4. How could it be improved? 
+    - Systematically analyzing the interfaces that are currently being used. 
+    - What can you do to improve the user experience?
+    - We want to improve the user experience but this requires that <b>we know what the user is already enjoying and build on that</b>. 
    
