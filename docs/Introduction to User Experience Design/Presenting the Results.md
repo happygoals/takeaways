@@ -60,11 +60,11 @@ nav_order: 5
 ## Essential Use Case Scenario
 * Essential Use Case Scenario allows us to understand the users's activities, and what the system requirements are. 
 * Three important elements
-1. Users' Goals
+1. <b>Users' Goals</b>
    - What aspect of X this captures. 
-2. User Intention
+2. <b>User Intention</b>
     - The series of steps the user needs to enter into the system.
-3. System's Responsibilities
+3. <b>System's Responsibilities</b>
     - What the system must do after each step completed by the user. 
   
  ## Hierarchical Task Analyses
