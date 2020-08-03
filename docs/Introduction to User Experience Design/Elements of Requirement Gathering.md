@@ -56,7 +56,7 @@ nav_order: 4
 
 ### Naturalistic Observation in Iterative Data Gathering Process
 * To conduct the technique that provides us with the information we need
-![Iterative Data Gathering Process](/assets/images/UXD-Iterative_data_gathering_process_2020-06-16.jpg)
+* ![Iterative Data Gathering Process](/assets/images/UXD-Iterative_data_gathering_process_2020-06-16.jpg)
 * We can take the qualitative data from this Naturalistic Observation session.
 * We can come up with a set of questions to ask during a direct interaction with the user.
 * We can develop a survey where we find out in the Naturalistic Observation session.
