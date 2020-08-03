@@ -67,26 +67,26 @@ nav_order: 5
 3. <b>System's Responsibilities</b>
     - What the system must do after each step completed by the user. 
   
- ## Hierarchical Task Analyses
- * Hierarchical Task Analyses allow us to consider <b>how users are currently completing a task</b>. 
- * It is all about the <b>users goals</b>. 
- * <b>User and the steps</b> to accomplish the goals.
+## Hierarchical Task Analyses
+* Hierarchical Task Analyses allow us to consider <b>how users are currently completing a task</b>. 
+* It is all about the <b>users goals</b>. 
+* <b>User and the steps</b> to accomplish the goals.
    - Start with the goal, and number each of the major steps towards meeting the goal. 
    - Some of the steps have substeps that I must fulfill before going on the next step. 
   
-  ## Current UI Critique
-  * Subjects: Mobile apps, Websites, or a set of paper forms that the user currently uses.
-  1. What task is it used for?
-      - Interact with UI. 
-      - Take UI for a spin so to speak 
-     - If each UI for each UI, you would want to identify the task or task of the users uses it for.
-  2. Clicks to complete task
-      - An <b>objective</b> measure of performance (How long it takes to complete the task). 
-  3. What does it well?
-     - You could use either <b>objective</b> or <b>subjective</b> measures. 
-     - Articulate where the needs are being met. 
-  4. How could it be improved? 
-     - Systematically analyzing the interfaces that are currently being used. 
-     - What can you do to improve the user experience?
-     - We want to improve the user experience but this requires that <b>we know what the user is already enjoying and build on that</b>. 
+## Current UI Critique
+* Subjects: Mobile apps, Websites, or a set of paper forms that the user currently uses.
+1. What task is it used for?
+    - Interact with UI. 
+    - Take UI for a spin so to speak 
+   - If each UI for each UI, you would want to identify the task or task of the users uses it for.
+2. Clicks to complete task
+    - An <b>objective</b> measure of performance (How long it takes to complete the task). 
+3. What does it well?
+   - You could use either <b>objective</b> or <b>subjective</b> measures. 
+   - Articulate where the needs are being met. 
+4. How could it be improved? 
+   - Systematically analyzing the interfaces that are currently being used. 
+   - What can you do to improve the user experience?
+   - We want to improve the user experience but this requires that <b>we know what the user is already enjoying and build on that</b>. 
    
