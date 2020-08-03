@@ -61,32 +61,32 @@ nav_order: 5
 * Essential Use Case Scenario allows us to understand the users's activities, and what the system requirements are. 
 * Three important elements
 1. Users' Goals
-  - What aspect of X this captures. 
+   - What aspect of X this captures. 
 2. User Intention
-  - The series of steps the user needs to enter into the system.
+    - The series of steps the user needs to enter into the system.
 3. System's Responsibilities
-  - What the system must do after each step completed by the user. 
+    - What the system must do after each step completed by the user. 
   
  ## Hierarchical Task Analyses
  * Hierarchical Task Analyses allow us to consider how users are currently completing a task. 
  * It is all about the users goals. 
- * User and the steps to accomplish the goals.
-  - Start with the goal, and number each of the major steps towards meeting the goal. 
-  - Some of the steps have substeps that I must fulfill before going on the next step. 
+ * <b>User and the steps</b> to accomplish the goals.
+   - Start with the goal, and number each of the major steps towards meeting the goal. 
+   - Some of the steps have substeps that I must fulfill before going on the next step. 
   
   ## Current UI Critique
   * Subjects: Mobile apps, Websites, or a set of paper forms that the user currently uses.
   1. What task is it used for?
-   - Interact with UI. 
-   - Take UI for a spin so to speak 
-   - If each UI for each UI, you would want to identify the task or task of the users uses it for.
+    - Interact with UI. 
+    - Take UI for a spin so to speak 
+    - If each UI for each UI, you would want to identify the task or task of the users uses it for.
   2. Clicks to complete task
-   - An <b>objective</b> measure of performance (How long it takes to complete the task). 
+    - An <b>objective</b> measure of performance (How long it takes to complete the task). 
   3. What does it well?
-   - You could use either <b>objective</b> or <b>subjective</b> measures. 
-   - Articulate where the needs are being met. 
+    - You could use either <b>objective</b> or <b>subjective</b> measures. 
+    - Articulate where the needs are being met. 
   4. How could it be improved? 
-   - Systematically analyzing the interfaces that are currently being used. 
-   - What can you do to improve the user experience?
-   - We want to improve the user experience but this requires that we know what the user is already enjoying and build on that. 
+    - Systematically analyzing the interfaces that are currently being used. 
+    - What can you do to improve the user experience?
+    - We want to improve the user experience but this requires that <b>we know what the user is already enjoying and build on that</b>. 
    
