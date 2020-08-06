@@ -19,3 +19,4 @@ nav_order: 2
 ---
 
 # What is CSS? 
+![](../assets/images/Front-end_Development_Basics_CSS-cheat-sheet.jpg)
