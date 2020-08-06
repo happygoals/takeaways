@@ -18,7 +18,5 @@ nav_order: 2
 
 ---
 
-![](https://github.com/happygoals/takeaways/master/assets/images/Front-end_Development_Basics_CSS-cheat-sheet.jpg)
-
 # What is CSS? 
 ![](../../assets/images/Front-end_Development_Basics_CSS-cheat-sheet.jpg)
